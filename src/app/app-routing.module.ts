@@ -5,6 +5,7 @@ import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   { path: '', component: MenuComponent },
+  { path: 'about-me', component: PhotographyComponent },
   { path: 'photography', component: PhotographyComponent }
 ];
 
