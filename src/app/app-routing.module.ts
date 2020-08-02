@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', component: MenuComponent },
   { path: 'about-me', component: PhotographyComponent },
   { path: 'photography', component: PhotographyComponent }
+  //add error path which would be path: '**'
 ];
 
 @NgModule({

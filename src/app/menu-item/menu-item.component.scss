@@ -1,50 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+// todo: center
 .menu-image {
   max-width: 100%;
   min-height: 100%;
-  //top: 50%;
-  object-fit: cover;
-  //transform: translate(0, -25%);
+  //object-fit: cover;
+  margin:0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .image-container {
-  height: 400px;
+  height: 30vh;
   width: 100%;
   overflow: hidden;
   text-align: center;
   position: relative;
-  //justify-content: center;
-
+  cursor: pointer;
 }
 
+//Adds a shadow over the image
 .image-container:after {
   content: "";
   position: absolute;
   width: 100%; height: 100%;
   left: 0; top: 0;
-  -moz-box-shadow:    inset 3px 3px 20px 10px black;
-  -webkit-box-shadow: inset 3px 3px 20px 10px black;
-  box-shadow:         inset 0 0 50px 20px rgba(0,0,0,0.6);
-  transition: box-shadow .05s;
+  -moz-box-shadow:    inset 15px 15px 100px 0 black;
+  -webkit-box-shadow: inset 15px 15px 100px 0 black;
+  box-shadow:         inset 15px 15px 100px 0 black;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
+//Removes the shadow when hovering over item
 .image-container:hover:after {
-  -moz-box-shadow:    inset 3px 3px 20px 10px black;
-  -webkit-box-shadow: inset 3px 3px 20px 10px black;
-  box-shadow:         none;
+  opacity: 0;
 }
 
+//Title on top of the item, centered
 .title {
+  z-index: 2;
   margin: 0;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8rem;
-  font-weight: 300;
+  color: grey;
+
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+//Changes color of title when hovering item
+.image-container:hover .title {
   color: white;
-  font-family: 'Roboto', sans-serif;
-  text-shadow: 3px 4px 10px rgba(0,0,0,0.6);
 }
