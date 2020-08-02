@@ -7,11 +7,15 @@ body {
   background-color: black;
 }
 
-h1, h2 {
+h1, h2, a {
   font-family: 'Roboto', sans-serif;
-  text-shadow: 3px 4px 10px rgba(0,0,0,0.6);
   color: white;
-  margin: 0;
+}
+
+h1, h2 {
+  text-shadow: 3px 4px 10px rgba(0,0,0,0.6);
+  margin: 10px;
+  line-height: 0.9em;
 }
 
 h1 {
