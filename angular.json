@@ -121,8 +121,13 @@
               "devServerTarget": "gd-portfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "gd-portfolio"
 }

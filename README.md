@@ -2,4 +2,5 @@
 Repository for my personal website.
 
 # Deploy
-ng build --prod --base-href="Portfolio"
+ng add angular-cli-ghpages
+ng build --base-href="Portfolio"
