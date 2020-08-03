@@ -1,17 +1,29 @@
 .footnotes {
-  height: 36px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: auto;
   padding-right: 20px;
   padding-left: 20px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .footnotes img {
-  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  height: 36px;
 }
 
 .footnotes a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  //height: 100%;
   margin-left: 20px;
+  //text-align: center;
+}
+
+.footnotes .icons-container {
+  height: 100%;
 }

@@ -5,17 +5,19 @@
 //}
 
 .header {
-  height: 280px;
+  height: 20vh;
   position: relative;
 }
 
 .header h1{
   position: absolute;
   top: 0;
+  font-size: min(9.5vh, 13vw);
 }
 
 .header h2{
   position: absolute;
   bottom: 0;
   right:0;
+  font-size: 9.5vh;
 }
