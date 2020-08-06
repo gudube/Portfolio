@@ -3,24 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
-import { PhotographyComponent } from './photography/photography.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { UiToolsModule } from './ui-tools/ui-tools.module';
 import { TitlePageComponent } from './title-page/title-page.component';
+import { PhotographyPageModule } from './photography-page/photography-page.module';
+import { AboutMePageModule } from './about-me-page/about-me-page.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    MenuItemComponent,
-    PhotographyComponent,
-    AboutMeComponent,
-    TitlePageComponent
+    TitlePageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UiToolsModule,
+    PhotographyPageModule,
+    AboutMePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

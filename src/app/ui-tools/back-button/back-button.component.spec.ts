@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PhotographyComponent } from './photography.component';
+import { BackButtonComponent } from './back-button.component';
 
-describe('PhotographyComponent', () => {
-  let component: PhotographyComponent;
-  let fixture: ComponentFixture<PhotographyComponent>;
+describe('BackButtonComponent', () => {
+  let component: BackButtonComponent;
+  let fixture: ComponentFixture<BackButtonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhotographyComponent ]
+      declarations: [ BackButtonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PhotographyComponent);
+    fixture = TestBed.createComponent(BackButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
