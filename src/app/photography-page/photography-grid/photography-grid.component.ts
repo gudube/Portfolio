@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
 	selector: 'app-photography-grid',
@@ -6,9 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
 	styleUrls: ['./photography-grid.component.scss'],
 })
 export class PhotographyGridComponent implements OnInit {
-	@Input() public folderName: string;
 
-	constructor() {}
+	public album: string;
 
-	ngOnInit(): void {}
+	constructor(private route: ActivatedRoute) {}
+
+	ngOnInit(): void {
+		this.route.queryParams.subscribe(params => {
+			this.album = params['album'];
+		});
+	}
+
 }
