@@ -9,18 +9,15 @@ import { PhotographyPageModule } from './photography-page/photography-page.modul
 import { AboutMePageModule } from './about-me-page/about-me-page.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TitlePageComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    UiToolsModule,
-    PhotographyPageModule,
-    AboutMePageModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [AppComponent, TitlePageComponent],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		UiToolsModule,
+		PhotographyPageModule,
+		AboutMePageModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,17 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-back-button',
-  templateUrl: './back-button.component.html',
-  styleUrls: ['./back-button.component.scss']
+	selector: 'app-back-button',
+	templateUrl: './back-button.component.html',
+	styleUrls: ['./back-button.component.scss'],
 })
 export class BackButtonComponent implements OnInit {
+	@Input() public route: string = '';
 
-  @Input() public route: string = "";
+	constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+	ngOnInit(): void {}
 }
