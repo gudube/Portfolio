@@ -17,5 +17,4 @@ export class PhotographyGridComponent implements OnInit {
 			this.album = params['album'];
 		});
 	}
-
 }
