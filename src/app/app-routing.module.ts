@@ -9,7 +9,7 @@ const routes: Routes = [
 	{ path: '', component: TitlePageComponent },
 	{ path: 'about-me', component: AboutMeComponent },
 	{ path: 'photography', component: PhotographyMenuComponent },
-	{ path: 'photography/:album', component: PhotographyGridComponent },
+	{ path: 'photography/:albumId', component: PhotographyGridComponent },
 	//add error path which would be path: '**'
 ];
 

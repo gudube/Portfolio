@@ -1,34 +1,9 @@
 <app-back-button></app-back-button>
 <app-menu>
 	<app-menu-item
-		*ngFor="let album of albums"
+		*ngFor="let album of service.albums"
 		imgSrc="assets/photography/{{album.id}}-menu.jpg"
 		title={{album.title}}
-		route={{album.id}}
+		[route]="['/photography', album.id]"
 	></app-menu-item>
-	<!--<app-menu-item
-		imgSrc="assets/photography/slovenia-menu.jpg"
-		title="Slovenia"
-		route="photography/slovenia"
-	></app-menu-item>
-	<app-menu-item
-		imgSrc="assets/photography/russia-menu.jpg"
-		title="Russia"
-		route="photography/russia"
-	></app-menu-item>
-	<app-menu-item
-		imgSrc="assets/photography/italia-menu.jpg"
-		title="Italia"
-		route="photography/italia"
-	></app-menu-item>
-	<app-menu-item
-		imgSrc="assets/photography/lapland-menu.jpg"
-		title="Lapland"
-		route="photography/lapland"
-	></app-menu-item>
-	<app-menu-item
-		imgSrc="assets/photography/tallinn-menu.jpg"
-		title="Tallinn"
-		route="photography/tallinn"
-	></app-menu-item>-->
 </app-menu>

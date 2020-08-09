@@ -1,1 +1,7 @@
-<p>photography-grid works! {{album}}</p>
+<div class="grid">
+	<div class="cell" *ngFor="let imageFileName of album.photoFileNames">
+		<div class="imageContainer">
+			<img src="assets/photography/{{album.id}}/{{imageFileName}}">
+		</div>
+	</div>
+</div>

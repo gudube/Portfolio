@@ -7,7 +7,7 @@ import { UiToolsModule } from './ui-tools/ui-tools.module';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { PhotographyPageModule } from './photography-page/photography-page.module';
 import { AboutMePageModule } from './about-me-page/about-me-page.module';
-import { ConfigService } from './config.service';
+import { PhotographyService } from './photography-page/photography.service';
 
 @NgModule({
 	declarations: [AppComponent, TitlePageComponent],
@@ -21,13 +21,13 @@ import { ConfigService } from './config.service';
 	providers: [{
 		provide: APP_INITIALIZER,
 		useFactory: ConfigurationServiceFactory,
-		deps: [ConfigService],
+		deps: [PhotographyService],
 		multi: true
 	}],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
 
-export function ConfigurationServiceFactory(configService: ConfigService){
-	return (): void => configService.loadPhotography();
+export function ConfigurationServiceFactory(photoService: PhotographyService){
+	return (): void => photoService.loadAlbums();
 }
