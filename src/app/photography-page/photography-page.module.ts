@@ -4,9 +4,10 @@ import { PhotographyMenuComponent } from './photography-menu/photography-menu.co
 import { UiToolsModule } from '../ui-tools/ui-tools.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { PhotographyGridComponent } from './photography-grid/photography-grid.component';
+import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
 
 @NgModule({
-	declarations: [PhotographyMenuComponent, PhotographyGridComponent],
+	declarations: [PhotographyMenuComponent, PhotographyGridComponent, FullImageViewerComponent],
 	imports: [CommonModule, UiToolsModule, AppRoutingModule],
 })
 export class PhotographyPageModule {}

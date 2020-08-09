@@ -2,6 +2,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 50px;
+}
+
+.background-grid {
+	overflow: hidden;
 }
 
 .cell {
@@ -11,14 +16,14 @@
 	margin: 20px;
 }
 
-.imageContainer {
+.squareImgContainer {
 	height: 300px;
 	width: 300px;
   overflow: hidden;
 	cursor: pointer;
 }
 
-.imageContainer img {
+.squareImgContainer img {
 	width: 100%;
   height: 100%;
   object-fit: cover;

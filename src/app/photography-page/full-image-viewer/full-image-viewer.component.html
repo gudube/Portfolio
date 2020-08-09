@@ -1,0 +1,8 @@
+<div class="controls" *ngIf="visible">
+	<p>HD</p>
+	<p>{{zoomed ? '-' : '+'}}</p>
+	<p (click)="hide()">X</p>
+</div>
+<div class="fullImgContainer" (click)="hide()" *ngIf="visible">
+	<img src="{{imgSrc}}" (click)="zoom($event)" [ngClass]="{'zoomedImg': zoomed, 'unzoomedImg': !zoomed}">
+</div>

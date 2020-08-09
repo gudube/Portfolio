@@ -1,6 +1,13 @@
-<div class="grid">
+<full-image-viewer
+	[(visible)]=showingFullImage
+	[(imgSrc)]=selectedImg>
+</full-image-viewer>
+
+<app-back-button route='/photography'></app-back-button>
+
+<div class="grid" [ngClass]="{'background-grid': showingFullImage}">
 	<div class="cell" *ngFor="let imageFileName of album.photoFileNames">
-		<div class="imageContainer">
+		<div class="squareImgContainer" (click)="selectImage(imageFileName)">
 			<img src="assets/photography/{{album.id}}/{{imageFileName}}">
 		</div>
 	</div>
