@@ -1,0 +1,34 @@
+{
+	"albums": [
+		{
+			"id": "italia",
+			"title" : "Italia",
+			"subtitle" : "Capri, Amalfi Coast and Cinque Terre",
+			"photoFileNames" : []
+		},
+		{
+			"id" : "lapland",
+			"title" : "Lapland",
+			"subtitle" : "Northern Sweden and Norway",
+			"photoFileNames" : []
+		},
+		{
+			"id" : "russia",
+			"title" : "Russia",
+			"subtitle" : "St-Petersburg",
+			"photoFileNames" : ["20191011-DSCF4327.jpg","20191013-DSCF4861.jpg","20191013-DSCF5133.jpg","20191015-DSCF5794.jpg","20191016-DSCF6015.jpg","20191020-DSCF6291.jpg","20191028-DSCF6471.jpg","20191028-DSCF6537.jpg","20191028-DSCF6630.jpg","20191028-DSCF6791.jpg","20191122-DSCF6886.jpg","20191124-DSCF7114.jpg","20191124-DSCF7160.jpg","20191124-DSCF7235.jpg","20191220-DSCF7621.jpg","20191222-DSCF8005.jpg","20200106-DSCF8590.jpg","20200106-DSCF8603-Edit.jpg","20200106-DSCF8616.jpg","DSCF2887.jpg"]
+		},
+		{
+			"id" : "slovenia",
+			"title" : "Slovenia",
+			"subtitle" : "Triglav National Park",
+			"photoFileNames" : []
+		},
+		{
+			"id" : "estonia",
+			"title" : "Estonia",
+			"subtitle" : "Tallinn",
+			"photoFileNames" : []
+		}
+	]
+}

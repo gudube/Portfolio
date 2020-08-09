@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/config.service';
+import { IAlbum } from '../models/album.model';
 
 @Component({
 	selector: 'app-photography-menu',
@@ -9,4 +11,8 @@ export class PhotographyMenuComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit(): void {}
+
+	get albums(): IAlbum[]{
+		return ConfigService.albums;
+	}
 }

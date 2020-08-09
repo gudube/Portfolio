@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-	title = "Guilhem Dubois's portfolio";
+	title = 'Guilhem Dubois\'s portfolio';
 	//todo: add localization fr/en
 }

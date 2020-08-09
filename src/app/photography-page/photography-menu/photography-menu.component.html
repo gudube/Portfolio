@@ -1,6 +1,12 @@
 <app-back-button></app-back-button>
 <app-menu>
 	<app-menu-item
+		*ngFor="let album of albums"
+		imgSrc="assets/photography/{{album.id}}-menu.jpg"
+		title={{album.title}}
+		route={{album.id}}
+	></app-menu-item>
+	<!--<app-menu-item
 		imgSrc="assets/photography/slovenia-menu.jpg"
 		title="Slovenia"
 		route="photography/slovenia"
@@ -24,5 +30,5 @@
 		imgSrc="assets/photography/tallinn-menu.jpg"
 		title="Tallinn"
 		route="photography/tallinn"
-	></app-menu-item>
+	></app-menu-item>-->
 </app-menu>
