@@ -3,6 +3,6 @@
 	<p (click)="zoom($event)" >{{zoomed ? '-' : '+'}}</p>
 	<p (click)="hide()">X</p>
 </div>
-<div class="fullImgContainer" (click)="hide()" *ngIf="visible">
+<div class="fullImgContainer" (click)="hide()" *ngIf="visible" [ngClass]="{'zoomedContainer': zoomed}">
 	<img src="{{imgSrc}}" (click)="zoom($event)" [ngClass]="{'zoomedImg': zoomed, 'unzoomedImg': !zoomed}">
 </div>

@@ -9,17 +9,23 @@
 	padding: 50px;
 	text-align: center;
 	box-sizing: border-box;
+	overflow-y: hidden;
+}
+
+.zoomedContainer {
+	overflow-y: scroll;
 }
 
 .fullImgContainer img {
-	//padding: 50px;
-  object-position: center center;
+	object-position: center center;
+	-webkit-box-shadow: 0 0 49px 20px rgba(0,0,0,1);
+	-moz-box-shadow: 0 0 49px 20px rgba(0,0,0,1);
+	box-shadow: 0 0 49px 20px rgba(0,0,0,1);
 }
 
 .zoomedImg {
 	width: 100%;
-	height: 100%;
-  object-fit: cover;
+	height: auto;
 }
 
 .unzoomedImg {

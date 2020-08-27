@@ -29,6 +29,7 @@ export class PhotographyGridComponent implements OnInit {
 	public selectImage(fileName: string): void{
 		this.selectedImg = 'assets/photography/' + this.album.id + '/' + fileName;
 		this.showingFullImage = true;
+		document.body.style.overflow = 'hidden';
 	}
 
 }

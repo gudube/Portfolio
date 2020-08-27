@@ -25,6 +25,7 @@ export class FullImageViewerComponent {
 	public hide(): void {
 		this.visible = !this.visible;
 		this.visibleChange.emit(this.visible);
+		document.body.style.overflow = 'auto';
 	}
 
 }
