@@ -1,6 +1,6 @@
 <div class="controls" *ngIf="visible">
 	<p>HD</p>
-	<p>{{zoomed ? '-' : '+'}}</p>
+	<p (click)="zoom($event)" >{{zoomed ? '-' : '+'}}</p>
 	<p (click)="hide()">X</p>
 </div>
 <div class="fullImgContainer" (click)="hide()" *ngIf="visible">
