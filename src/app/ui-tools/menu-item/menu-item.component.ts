@@ -12,6 +12,8 @@ export class MenuItemComponent implements OnInit {
 
 	@Input() public readonly route: string;
 
+	//todo: leave text white when on mobile?
+	//todo: add subtitle functionality (used for photography section)
 	constructor() {}
 
 	ngOnInit(): void {}

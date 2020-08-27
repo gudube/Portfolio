@@ -5,12 +5,12 @@ import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostList
 	templateUrl: './full-image-viewer.component.html',
 	styleUrls: ['./full-image-viewer.component.scss'],
 })
-export class FullImageViewerComponent { //todo: check out virtual scrolling for performance
+export class FullImageViewerComponent {
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
 	@Input() public sdImgSrc: string;
 	//@Output() sdImgSrcChange = new EventEmitter<string>();
-	@Input() public hdImgSrc: string;
+	@Input() public hdImgSrc: string; //todo: have some images only available in SD (like subway in russia)
 	//@Output() hdImgSrcChange = new EventEmitter<string>();
 
 	@Output() nextImage = new EventEmitter<boolean>();
@@ -57,6 +57,8 @@ export class FullImageViewerComponent { //todo: check out virtual scrolling for 
 		this.hd = !this.hd;
 	}
 
+	//todo: add swipe vertically for mobile too
+	//todo: add arrow that is either on the side or on the top/bottom depending on the calculation made in zoom()
 	public swipe(nextImage: boolean): void{
 		if(!this.zoomedWidthOverflow)
 			this.changeImage(nextImage);

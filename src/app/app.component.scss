@@ -1,4 +1,4 @@
-.footnotes {
+#footnotes {
   height: auto;
   padding-right: 20px;
   padding-left: 20px;
@@ -9,14 +9,14 @@
   align-items: center;
 }
 
-.footnotes img {
+#footnotes img {
   margin-top: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
   height: 36px;
 }
 
-.footnotes a {
+#footnotes a {
   margin-top: 10px;
   margin-bottom: 10px;
   //height: 100%;
@@ -24,6 +24,6 @@
   //text-align: center;
 }
 
-.footnotes .icons-container {
+#footnotes #icons-container {
   height: 100%;
 }
