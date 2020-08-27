@@ -26,11 +26,19 @@ export class PhotographyGridComponent implements OnInit {
 		});
 	}
 
+	private selectedFileName: string;
 	public selectImage(fileName: string): void{
+		this.selectedFileName = fileName;
 		this.selectedSdImg = 'assets/photography/' + this.album.id + '/sd/' + fileName;
 		this.selectedHdImg = 'assets/photography/' + this.album.id + '/hd/' + fileName;
 		this.showingFullImage = true;
 		document.body.style.overflow = 'hidden';
 	}
 
+	public nextImage(next: boolean): void{
+		const currentId = this.album.photoFileNames.indexOf(this.selectedFileName);
+		const newId = next ? currentId + 1 : currentId - 1;
+		if(newId >=0 && newId < this.album.photoFileNames.length)
+			this.selectImage(this.album.photoFileNames[newId]);
+	}
 }

@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { BrowserModule, HammerGestureConfig, HAMMER_GESTURE_CONFIG, HammerModule } from '@angular/platform-browser';
+import { NgModule, APP_INITIALIZER, Injectable } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +8,20 @@ import { TitlePageComponent } from './title-page/title-page.component';
 import { PhotographyPageModule } from './photography-page/photography-page.module';
 import { AboutMePageModule } from './about-me-page/about-me-page.module';
 import { PhotographyService } from './photography-page/photography.service';
+import * as Hammer from 'hammerjs';
+
+@Injectable()
+export class HammerConfig extends HammerGestureConfig {
+	overrides = <any> {
+		pinch: { enable: false },
+		rotate: { enable: false },
+		tap: { enable: false },
+		doubletap: { enable: false },
+		press: { enable: false },
+		pan: { enable: false },
+		swipe: { enable: true, direction: Hammer.DIRECTION_HORIZONTAL },
+	}
+}
 
 @NgModule({
 	declarations: [AppComponent, TitlePageComponent],
@@ -17,12 +31,16 @@ import { PhotographyService } from './photography-page/photography.service';
 		UiToolsModule,
 		PhotographyPageModule,
 		AboutMePageModule,
+		HammerModule,
 	],
 	providers: [{
 		provide: APP_INITIALIZER,
 		useFactory: ConfigurationServiceFactory,
 		deps: [PhotographyService],
 		multi: true
+	}, {
+		provide: HAMMER_GESTURE_CONFIG,
+		useClass: HammerConfig
 	}],
 	bootstrap: [AppComponent],
 })

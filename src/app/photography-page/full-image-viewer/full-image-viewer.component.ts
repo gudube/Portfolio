@@ -1,19 +1,19 @@
-import { Component, Output, EventEmitter, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
 	selector: 'full-image-viewer',
 	templateUrl: './full-image-viewer.component.html',
-	styleUrls: ['./full-image-viewer.component.scss']
+	styleUrls: ['./full-image-viewer.component.scss'],
 })
 export class FullImageViewerComponent { //todo: check out virtual scrolling for performance
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
 	@Input() public sdImgSrc: string;
-	@Output() sdImgSrcChange = new EventEmitter<string>();
+	//@Output() sdImgSrcChange = new EventEmitter<string>();
 	@Input() public hdImgSrc: string;
-	@Output() hdImgSrcChange = new EventEmitter<string>();
+	//@Output() hdImgSrcChange = new EventEmitter<string>();
 
-	//@Output() public unselectedEvent = new EventEmitter();
+	@Output() nextImage = new EventEmitter<boolean>();
 
 	public zoomedWidthOverflow = false;
 	public zoomedHeightOverflow = false;
@@ -44,7 +44,7 @@ export class FullImageViewerComponent { //todo: check out virtual scrolling for 
 	}
 
 	public hide(): void {
-		this.visible = !this.visible;
+		this.visible = false;
 		this.visibleChange.emit(this.visible);
 		document.body.style.overflow = 'auto';
 	}
@@ -55,5 +55,17 @@ export class FullImageViewerComponent { //todo: check out virtual scrolling for 
 			this.zoomedWidthOverflow = false;
 		}
 		this.hd = !this.hd;
+	}
+
+	public swipe(nextImage: boolean): void{
+		if(!this.zoomedWidthOverflow)
+			this.changeImage(nextImage);
+	}
+
+	@HostListener('window:keydown.arrowright', ['true'])
+	@HostListener('window:keydown.arrowleft', ['false'])
+	public changeImage(nextImage: boolean): void{
+		this.nextImage.emit(nextImage);
+		//todo: load one image before
 	}
 }

@@ -1,7 +1,8 @@
 <full-image-viewer
 	[(visible)]=showingFullImage
-	[(hdImgSrc)]=selectedHdImg
-	[(sdImgSrc)]=selectedSdImg>
+	[hdImgSrc]=selectedHdImg
+	[sdImgSrc]=selectedSdImg
+	(nextImage)="nextImage($event)">
 </full-image-viewer>
 
 <app-back-button route='/photography'></app-back-button>

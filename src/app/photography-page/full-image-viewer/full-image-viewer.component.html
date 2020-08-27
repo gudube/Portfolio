@@ -6,7 +6,8 @@
 </div>
 <div #fullImgContainer id="fullImgContainer" (click)="hide()" *ngIf="visible"
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
-		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">
+		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
+	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
 	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">

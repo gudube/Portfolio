@@ -31,6 +31,7 @@
 .zoomedWidthOverflowContainer {
 	overflow-x: scroll;
 	overflow-y: hidden;
+	touch-action: pan-x !important;
 }
 
 #fullImgContainer img {
