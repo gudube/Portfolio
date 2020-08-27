@@ -1,11 +1,11 @@
-import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Component, Output, EventEmitter, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
 	selector: 'full-image-viewer',
 	templateUrl: './full-image-viewer.component.html',
 	styleUrls: ['./full-image-viewer.component.scss']
 })
-export class FullImageViewerComponent {
+export class FullImageViewerComponent { //todo: check out virtual scrolling for performance
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
 	@Input() public sdImgSrc: string;
@@ -15,14 +15,31 @@ export class FullImageViewerComponent {
 
 	//@Output() public unselectedEvent = new EventEmitter();
 
-	public zoomed = false;
+	public zoomedWidthOverflow = false;
+	public zoomedHeightOverflow = false;
 	public hd = true;
+
+	@ViewChild('fullImgContainer') public imageContainer: ElementRef;
 
 	constructor() { }
 
 	public zoom(e: Event): void {
-		this.zoomed = !this.zoomed;
-		//set a zoomedY or zoomedZ depending on screen and adjust overflow and width/height accordingly
+		if (this.zoomedHeightOverflow) {
+			this.zoomedHeightOverflow = false;
+		} else if (this.zoomedWidthOverflow) {
+			this.zoomedWidthOverflow = false;
+		} else {
+			const nativeContainer = this.imageContainer.nativeElement;
+			const image = nativeContainer.querySelector('img');
+			const computedStyle = getComputedStyle(nativeContainer);
+			const heightContainer = nativeContainer.clientHeight - parseFloat(computedStyle.paddingTop) - parseFloat(computedStyle.paddingBottom);
+			//const widthContainer = nativeContainer.clientWidth - parseFloat(computedStyle.paddingLeft) - parseFloat(computedStyle.paddingRight);
+			if (heightContainer == image.height) {
+				this.zoomedHeightOverflow = true;
+			} else {
+				this.zoomedWidthOverflow = true;
+			}
+		}
 		e.stopPropagation();
 	}
 
@@ -34,9 +51,9 @@ export class FullImageViewerComponent {
 
 	public switchHd(): void {
 		if(this.hd){
-			this.zoomed = false;
+			this.zoomedHeightOverflow = false;
+			this.zoomedWidthOverflow = false;
 		}
 		this.hd = !this.hd;
 	}
-
 }

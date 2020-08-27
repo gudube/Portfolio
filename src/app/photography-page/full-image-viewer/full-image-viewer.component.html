@@ -1,9 +1,13 @@
-<div class="controls" *ngIf="visible">
+<div id="controls" *ngIf="visible">
 	<p (click)="switchHd()" 	style="text-align: right;">{{hd ? 'HD' : 'SD'}}</p>
 	<p (click)="zoom($event)" style="text-align: center;"
-			[style.visibility]="hd ? 'visible' : 'hidden'">{{zoomed ? '-' : '+'}}</p>
+			[style.visibility]="hd ? 'visible' : 'hidden'">{{(zoomedHeightOverflow || zoomedWidthOverflow) ? '-' : '+'}}</p>
 	<p (click)="hide()"				style="text-align: left;">X</p>
 </div>
-<div class="fullImgContainer" (click)="hide()" *ngIf="visible" [ngClass]="{'zoomedContainer': zoomed}">
-	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)" [ngClass]="{'zoomedImg': zoomed, 'unzoomedImg': !zoomed}">
+<div #fullImgContainer id="fullImgContainer" (click)="hide()" *ngIf="visible"
+	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
+		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">
+	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)"
+		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
+		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">
 </div>
