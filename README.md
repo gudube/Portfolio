@@ -22,7 +22,15 @@ Let's do images around 4:11
 width: 2048
 
 ### Squares
+short edge: 300
+
 
 ### SD
+max width: 600
+max height: 900
+cause squares are 300 pixels but we use the same ones for the sd images
+so 600 sounds good
+should I do squares with 300 pixels?
 
 ### HD
+max width: 2048

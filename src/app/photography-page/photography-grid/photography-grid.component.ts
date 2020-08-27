@@ -1,8 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IAlbum } from '../models/album.model';
 import { PhotographyService } from '../photography.service';
-import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 
 @Component({
 	selector: 'app-photography-grid',
@@ -13,7 +12,8 @@ export class PhotographyGridComponent implements OnInit {
 	//@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
 	public album: IAlbum;
 
-	public selectedImg: string;
+	public selectedHdImg: string;
+	public selectedSdImg: string;
 	public showingFullImage = false;
 
 	constructor(private route: ActivatedRoute, private service: PhotographyService) {}
@@ -27,7 +27,8 @@ export class PhotographyGridComponent implements OnInit {
 	}
 
 	public selectImage(fileName: string): void{
-		this.selectedImg = 'assets/photography/' + this.album.id + '/' + fileName;
+		this.selectedSdImg = 'assets/photography/' + this.album.id + '/sd/' + fileName;
+		this.selectedHdImg = 'assets/photography/' + this.album.id + '/hd/' + fileName;
 		this.showingFullImage = true;
 		document.body.style.overflow = 'hidden';
 	}

@@ -1,8 +1,9 @@
 <div class="controls" *ngIf="visible">
-	<p>HD</p>
-	<p (click)="zoom($event)" >{{zoomed ? '-' : '+'}}</p>
-	<p (click)="hide()">X</p>
+	<p (click)="switchHd()" 	style="text-align: right;">{{hd ? 'HD' : 'SD'}}</p>
+	<p (click)="zoom($event)" style="text-align: center;"
+			[style.visibility]="hd ? 'visible' : 'hidden'">{{zoomed ? '-' : '+'}}</p>
+	<p (click)="hide()"				style="text-align: left;">X</p>
 </div>
 <div class="fullImgContainer" (click)="hide()" *ngIf="visible" [ngClass]="{'zoomedContainer': zoomed}">
-	<img src="{{imgSrc}}" (click)="zoom($event)" [ngClass]="{'zoomedImg': zoomed, 'unzoomedImg': !zoomed}">
+	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)" [ngClass]="{'zoomedImg': zoomed, 'unzoomedImg': !zoomed}">
 </div>
