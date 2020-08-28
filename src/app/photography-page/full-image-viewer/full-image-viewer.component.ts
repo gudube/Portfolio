@@ -5,7 +5,7 @@ import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostList
 	templateUrl: './full-image-viewer.component.html',
 	styleUrls: ['./full-image-viewer.component.scss'],
 })
-export class FullImageViewerComponent {
+export class FullImageViewerComponent { //TODO [3]: Add video support
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
 	@Input() public sdImgSrc: string;
@@ -24,21 +24,35 @@ export class FullImageViewerComponent {
 	constructor() { }
 
 	//TODO [2]: disable chrome back feature when image is zoomed with width overflow
-	public zoom(e: Event): void {
+	public zoom(e: MouseEvent): void {
 		if (this.zoomedHeightOverflow) {
 			this.zoomedHeightOverflow = false;
 		} else if (this.zoomedWidthOverflow) {
 			this.zoomedWidthOverflow = false;
 		} else {
 			const nativeContainer = this.imageContainer.nativeElement;
-			const image = nativeContainer.querySelector('img');
-			const computedStyle = getComputedStyle(nativeContainer);
-			const heightContainer = nativeContainer.clientHeight - parseFloat(computedStyle.paddingTop) - parseFloat(computedStyle.paddingBottom);
-			//const widthContainer = nativeContainer.clientWidth - parseFloat(computedStyle.paddingLeft) - parseFloat(computedStyle.paddingRight);
-			if (heightContainer == image.height) {
-				this.zoomedHeightOverflow = true;
-			} else {
+			const image = nativeContainer.querySelector('img') as HTMLImageElement;
+			const bounds = image.getBoundingClientRect();
+
+			//size of the real image (image file itself)
+			const naturalRatio = image.naturalWidth / image.naturalHeight;
+			//size of the img Element (filling the space)
+			const visibleRatio = image.clientWidth / image.clientHeight;
+			if (naturalRatio > visibleRatio) //width is 100% unzoomed
+			{
+				const clickY = e.clientY - bounds.top;
+				const actualHeight = image.clientWidth * image.naturalHeight / image.naturalWidth;
+				const emptyBorder = (image.clientHeight - actualHeight) / 2;
+				if(clickY < emptyBorder || clickY > emptyBorder + actualHeight)
+					return; //clicking outside the image
 				this.zoomedWidthOverflow = true;
+			}else{ //height is 100% unzoomed
+				const clickX = e.clientX - bounds.left;
+				const actualWidth = image.clientHeight * image.naturalWidth / image.naturalHeight;
+				const emptyBorder = (image.clientWidth - actualWidth) / 2;
+				if(clickX < emptyBorder || clickX > emptyBorder + actualWidth)
+					return;
+				this.zoomedHeightOverflow = true;
 			}
 		}
 		e.stopPropagation();
