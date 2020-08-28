@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'Guilhem Dubois\'s portfolio';
-	//todo: add localization fr/en
+	//TODO [3]: add localization fr/en
 }

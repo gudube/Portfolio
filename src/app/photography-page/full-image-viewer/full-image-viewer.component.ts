@@ -10,7 +10,7 @@ export class FullImageViewerComponent {
 	@Output() visibleChange = new EventEmitter<boolean>();
 	@Input() public sdImgSrc: string;
 	//@Output() sdImgSrcChange = new EventEmitter<string>();
-	@Input() public hdImgSrc: string; //todo: have some images only available in SD (like subway in russia)
+	@Input() public hdImgSrc: string; //TODO [2]: have some images only available in SD (like subway in russia)
 	//@Output() hdImgSrcChange = new EventEmitter<string>();
 
 	@Output() nextImage = new EventEmitter<boolean>();
@@ -23,6 +23,7 @@ export class FullImageViewerComponent {
 
 	constructor() { }
 
+	//TODO [2]: disable chrome back feature when image is zoomed with width overflow
 	public zoom(e: Event): void {
 		if (this.zoomedHeightOverflow) {
 			this.zoomedHeightOverflow = false;
@@ -57,8 +58,8 @@ export class FullImageViewerComponent {
 		this.hd = !this.hd;
 	}
 
-	//todo: add swipe vertically for mobile too
-	//todo: add arrow that is either on the side or on the top/bottom depending on the calculation made in zoom()
+	//TODO [1]: add swipe vertically for mobile too
+	//TODO [1]: add arrow that is either on the side or on the top/bottom depending on the calculation made in zoom()
 	public swipe(nextImage: boolean): void{
 		if(!this.zoomedWidthOverflow)
 			this.changeImage(nextImage);
@@ -68,6 +69,6 @@ export class FullImageViewerComponent {
 	@HostListener('window:keydown.arrowleft', ['false'])
 	public changeImage(nextImage: boolean): void{
 		this.nextImage.emit(nextImage);
-		//todo: load one image before
+		//TODO [2]: load one image before
 	}
 }

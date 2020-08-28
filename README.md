@@ -6,6 +6,11 @@ ng add angular-cli-ghpages
 ng deploy --cname="guilhemdubois.me"
 <!--ng deploy --base-href=/Portfolio/-->
 
+## TODOS
+Under this format:
+`//TODO [3]: add localization fr/en`
+where `[x]` is the priority. 1 being the biggest priority
+
 ## Images
 ### Adding images (photography section):
 Add an entry to photos.json
