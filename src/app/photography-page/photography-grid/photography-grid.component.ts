@@ -15,6 +15,8 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 	public selectedHdImg: string;
 	public selectedSdImg: string;
 	public showingFullImage = false;
+	public hasPreviousImage = false;
+	public hasNextImage = false;
 
 	constructor(private route: ActivatedRoute, private service: PhotographyService) {}
 
@@ -27,10 +29,13 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 	}
 
 	private selectedFileName: string;
-	public selectImage(fileName: string): void{
-		this.selectedFileName = fileName;
-		this.selectedSdImg = 'assets/photography/' + this.album.id + '/sd/' + fileName;
-		this.selectedHdImg = 'assets/photography/' + this.album.id + '/hd/' + fileName;
+	public selectImage(index: number): void{
+		console.log(index);
+		this.selectedFileName = this.album.photoFileNames[index];
+		this.selectedSdImg = 'assets/photography/' + this.album.id + '/sd/' + this.selectedFileName;
+		this.selectedHdImg = 'assets/photography/' + this.album.id + '/hd/' + this.selectedFileName;
+		this.hasPreviousImage = index > 0;
+		this.hasNextImage = index < this.album.photoFileNames.length - 1;
 		this.showingFullImage = true;
 		document.body.style.overflow = 'hidden';
 	}
@@ -39,6 +44,6 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 		const currentId = this.album.photoFileNames.indexOf(this.selectedFileName);
 		const newId = next ? currentId + 1 : currentId - 1;
 		if(newId >=0 && newId < this.album.photoFileNames.length)
-			this.selectImage(this.album.photoFileNames[newId]);
+			this.selectImage(newId);
 	}
 }

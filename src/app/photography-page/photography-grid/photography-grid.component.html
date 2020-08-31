@@ -2,14 +2,16 @@
 	[(visible)]=showingFullImage
 	[hdImgSrc]=selectedHdImg
 	[sdImgSrc]=selectedSdImg
+	[hasPreviousImage]=hasPreviousImage
+	[hasNextImage]=hasNextImage
 	(nextImage)="nextImage($event)">
 </full-image-viewer>
 
 <app-back-button route='/photography'></app-back-button>
 
 <div class="grid" [ngClass]="{'background-grid': showingFullImage}">
-	<div class="cell" *ngFor="let imageFileName of album.photoFileNames">
-		<div class="squareImgContainer" (click)="selectImage(imageFileName)">
+	<div class="cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
+		<div class="squareImgContainer" (click)="selectImage(index)">
 			<img src="assets/photography/{{album.id}}/sd/{{imageFileName}}">
 		</div>
 	</div>

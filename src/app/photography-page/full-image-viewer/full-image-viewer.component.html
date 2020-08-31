@@ -4,6 +4,9 @@
 			[style.visibility]="hd ? 'visible' : 'hidden'">{{(zoomedHeightOverflow || zoomedWidthOverflow) ? '-' : '+'}}</p>
 	<p (click)="hide()"				style="text-align: left;">X</p>
 </div>
+<div class="arrowContainer" *ngIf="visible && hasPreviousImage" style="left: 0;" (click)="changeImage(false)">
+	<span>&lt;</span>
+</div>
 <div #fullImgContainer id="fullImgContainer" (click)="hide()" *ngIf="visible"
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
 		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
@@ -11,4 +14,7 @@
 	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">
+</div>
+<div class="arrowContainer" *ngIf="visible && hasNextImage" style="right: 0;" (click)="changeImage(true)">
+	<span>&gt;</span>
 </div>

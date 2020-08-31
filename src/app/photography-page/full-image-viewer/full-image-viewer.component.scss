@@ -62,7 +62,7 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.25);
+	background-color: rgba(0,0,0,0.35);
 	z-index: 10;
 	padding: 10px;
 	display: inline-block;
@@ -76,4 +76,30 @@
 	min-width: 15px;
 	text-align: left;
 	cursor: pointer;
+}
+
+.arrowContainer {
+	height: 90px;
+	width: 50px;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+	text-align: center;
+	background-color: rgba(0,0,0,0.35);
+}
+
+.arrowContainer span {
+	color: grey;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 78px; //magic number to make it centered
+}
+
+.arrowContainer:hover {
+	cursor: pointer;
+}
+
+.arrowContainer:hover span {
+	color: white;
 }

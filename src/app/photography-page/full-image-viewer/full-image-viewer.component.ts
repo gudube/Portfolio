@@ -12,6 +12,8 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	//@Output() sdImgSrcChange = new EventEmitter<string>();
 	@Input() public hdImgSrc: string; //TODO [2]: have some images only available in SD (like subway in russia)
 	//@Output() hdImgSrcChange = new EventEmitter<string>();
+	@Input() public hasPreviousImage: boolean;
+	@Input() public hasNextImage: boolean;
 
 	@Output() nextImage = new EventEmitter<boolean>();
 
@@ -40,18 +42,22 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 			const visibleRatio = image.clientWidth / image.clientHeight;
 			if (naturalRatio > visibleRatio) //width is 100% unzoomed
 			{
-				const clickY = e.clientY - bounds.top;
-				const actualHeight = image.clientWidth * image.naturalHeight / image.naturalWidth;
-				const emptyBorder = (image.clientHeight - actualHeight) / 2;
-				if(clickY < emptyBorder || clickY > emptyBorder + actualHeight)
-					return; //clicking outside the image
+				if(e.target == image){ //if clicked in image, make sure it was actually the image
+					const clickY = e.clientY - bounds.top;
+					const actualHeight = image.clientWidth * image.naturalHeight / image.naturalWidth;
+					const emptyBorder = (image.clientHeight - actualHeight) / 2;
+					if(clickY < emptyBorder || clickY > emptyBorder + actualHeight)
+						return; //clicking outside the image
+				}
 				this.zoomedWidthOverflow = true;
 			}else{ //height is 100% unzoomed
-				const clickX = e.clientX - bounds.left;
-				const actualWidth = image.clientHeight * image.naturalWidth / image.naturalHeight;
-				const emptyBorder = (image.clientWidth - actualWidth) / 2;
-				if(clickX < emptyBorder || clickX > emptyBorder + actualWidth)
-					return;
+				if(e.target == image){
+					const clickX = e.clientX - bounds.left;
+					const actualWidth = image.clientHeight * image.naturalWidth / image.naturalHeight;
+					const emptyBorder = (image.clientWidth - actualWidth) / 2;
+					if(clickX < emptyBorder || clickX > emptyBorder + actualWidth)
+						return;
+				}
 				this.zoomedHeightOverflow = true;
 			}
 		}
