@@ -9,9 +9,9 @@
 
 <app-back-button route='/photography'></app-back-button>
 
-<div class="grid" [ngClass]="{'background-grid': showingFullImage}">
-	<div class="cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
-		<div class="squareImgContainer" (click)="selectImage(index)">
+<div id="grid" [ngClass]="{'background-grid': showingFullImage}">
+	<div id="cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
+		<div id="squareImgContainer" (click)="selectImage(index)">
 			<img src="assets/photography/{{album.id}}/sd/{{imageFileName}}">
 		</div>
 	</div>
