@@ -6,6 +6,10 @@ ng add angular-cli-ghpages
 ng deploy --cname="www.guilhemdubois.me"
 <!--ng deploy --base-href=/Portfolio/-->
 
+## Test on another device
+ng serve --host 10.0.0.17 --disableHostCheck
+where 10.0.0.17 is the local ip from Wifi settings -> Hardware properties (or ipconfig)
+
 ## TODOS
 Under this format:
 `//TODO [3]: add localization fr/en`

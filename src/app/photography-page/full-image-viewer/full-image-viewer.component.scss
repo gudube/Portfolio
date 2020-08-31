@@ -85,25 +85,30 @@
 	color: white;
 }
 
-.arrowContainer {
-	height: 90px;
-	width: 50px;
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 9;
-	text-align: center;
-	background-color: rgba(0,0,0,0.35);
-	cursor: pointer;
-}
+//todo: find a better way of using arrows on touchscreen
+@media (hover: hover){
+	.arrowContainer {
+		height: 90px;
+		width: 50px;
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 9;
+		text-align: center;
+		background-color: rgba(0,0,0,0.35);
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-.arrowContainer span {
-	color: grey;
-	font-weight: 300;
-	font-size: 50px;
-	line-height: 78px; //magic number to make it centered
-}
+	.arrowContainer:hover svg {
+		fill: white;
+	}
 
-.arrowContainer:hover span {
-	color: white;
+	svg {
+		fill:grey;
+		height: 40px;
+		width: 20px;
+	}
 }
