@@ -29,6 +29,12 @@
 			"title" : "Estonia",
 			"subtitle" : "Tallinn",
 			"photoFileNames" : []
+		},
+		{
+			"id" : "sweden",
+			"title" : "Sweden",
+			"subtitle" : "Stockholm",
+			"photoFileNames" : ["20191028-DSCF6472.jpg","20191028-DSCF6537.jpg","20191028-DSCF6538.jpg","20191028-DSCF6612.jpg","20191028-DSCF6630.jpg","20191028-DSCF6784.jpg","20191028-DSCF6791.jpg","20191028-DSCF6794.jpg","DSCF1236.jpg","DSCF1243.jpg","DSCF1244.jpg","DSCF1246.jpg","DSCF1249.jpg","DSCF1260.jpg","DSCF1264.jpg","DSCF1405.jpg","DSCF1407.jpg","DSCF1412.jpg","DSCF1427.jpg","DSCF1522.jpg","DSCF1542.jpg","DSCF1550-Edit.jpg","DSCF1590.jpg","DSCF1649.jpg","DSCF1668.jpg","DSCF1758.jpg","DSCF1840.jpg","DSCF2074.jpg","DSCF2089.jpg","DSCF2136.jpg","DSCF2140.jpg","DSCF2887.jpg"]
 		}
 	]
 }
