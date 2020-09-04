@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'app-menu-item',
 	templateUrl: './menu-item.component.html',
 	styleUrls: ['./menu-item.component.scss'],
 })
-export class MenuItemComponent implements OnInit {
+export class MenuItemComponent {
 	@Input() public readonly imgSrc: string;
 
 	@Input() public readonly title: string;
@@ -15,6 +15,4 @@ export class MenuItemComponent implements OnInit {
 	//TODO [1]: leave text white when on mobile?
 	//TODO [2]: add subtitle functionality (used for photography section)
 	constructor() {}
-
-	ngOnInit(): void {}
 }

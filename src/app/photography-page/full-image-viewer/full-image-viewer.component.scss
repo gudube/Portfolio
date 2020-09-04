@@ -78,11 +78,15 @@
 	min-width: 15px;
 	text-align: left;
 	cursor: pointer;
-	color: grey;
+	color: var(--hoverable-color);
 }
 
 #controls p:hover {
-	color: white;
+	color: var(--hovered-color);
+}
+
+.arrowContainer {
+	visibility: collapse;
 }
 
 //todo: find a better way of using arrows on touchscreen
@@ -100,14 +104,15 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		visibility: visible;
 	}
 
 	.arrowContainer:hover svg {
-		fill: white;
+		fill: var(--hovered-color);
 	}
 
 	svg {
-		fill:grey;
+		fill:var(--hoverable-color);
 		height: 40px;
 		width: 20px;
 	}

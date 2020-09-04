@@ -11,7 +11,8 @@
   overflow: hidden;
   text-align: center;
   position: relative;
-  cursor: pointer;
+	cursor: pointer;
+	margin-bottom: 10px;
 }
 
 //Adds a shadow over the image
@@ -28,30 +29,38 @@
   transition: opacity 0.1s ease-in-out;
 }
 
-//Removes the shadow when hovering over item
-#image-container:hover:after {
-  opacity: 0;
-}
-
 //Title on top of the item, centered
 #title {
-  font-size: 10vh;
+  font-size: min(4rem, 10vw);
   z-index: 2;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: grey;
-  text-shadow: 3px 4px 10px rgba(0,0,0,0.5);
+  color: var(--accent-color);
+  text-shadow: 1px 2px 3px rgba(0,0,0,1);
 
   transition-property: color, text-shadow;
   transition-duration: 0.1ms;
   transition-timing-function: ease-in-out;;
 }
 
-//Changes color of title when hovering item
-#image-container:hover #title {
-  color: white;
-  text-shadow: 3px 4px 10px rgba(0,0,0,1); //can remove if want better performance
+@media (hover: hover){
+	//Removes the shadow when hovering over item
+	#image-container:hover:after {
+		opacity: 0;
+	}
+
+	//Changes color of title when hovering item
+	#title {
+		color: var(--hoverable-color);
+		text-shadow: 3px 4px 10px rgba(0,0,0,0.5);
+	}
+
+	//Changes color of title when hovering item
+	#image-container:hover #title {
+		color: var(--hovered-color);
+		text-shadow: 3px 4px 10px rgba(0,0,0,1); //can remove if want better performance
+	}
 }

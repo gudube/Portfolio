@@ -1,2 +1,20 @@
-<p>about-me works!</p>
-<app-menu></app-menu>
+<div id="about-page-container">
+	<h1 id="title">
+		About Me
+	</h1>
+	<h2 id="subtitle">
+		I code, design and photograph
+	</h2>
+	<div id="about-type-chooser">
+		<div class="about-type-container" [ngClass]="{'selected': showByDate}"
+			(click)="this.showByDate = true">
+			<h4 class="about-type-text">By Date</h4>
+		</div>
+		<div class="about-type-container" [ngClass]="{'selected': !showByDate}"
+			(click)="this.showByDate = false">
+			<h4 class="about-type-text">By category</h4>
+		</div>
+	</div>
+	<hr id="separator">
+	<app-about-me-date></app-about-me-date>
+</div>
