@@ -16,5 +16,6 @@
 		</div>
 	</div>
 	<hr id="separator">
-	<app-about-me-date></app-about-me-date>
+	<app-about-me-date *ngIf="showByDate"></app-about-me-date>
+	<app-about-me-type *ngIf="!showByDate"></app-about-me-type>
 </div>

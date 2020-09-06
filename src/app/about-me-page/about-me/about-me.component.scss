@@ -1,8 +1,10 @@
 #about-page-container {
 	background-color: var(--background-soft-color);
+	padding-top: 10px;
 }
 
 #title {
+	margin-top: 0;
 	margin-bottom: 20px;
 }
 
@@ -28,6 +30,14 @@
 	-moz-box-shadow:    inset 15px 15px 100px 0 black;
   -webkit-box-shadow: inset 15px 15px 100px 0 black;
   box-shadow:         inset 0 -15px 10px -15px var(--accent-color);
+}
+
+.about-type-text {
+	color: var(--hoverable-color);
+}
+
+.about-type-container:hover .about-type-text {
+	color: var(--hovered-color);
 }
 
 .about-type-container.selected .about-type-text {
