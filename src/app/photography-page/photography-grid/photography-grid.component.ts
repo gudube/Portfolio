@@ -30,7 +30,6 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 
 	private selectedFileName: string;
 	public selectImage(index: number): void{
-		console.log(index);
 		this.selectedFileName = this.album.photoFileNames[index];
 		this.selectedSdImg = 'assets/photography/' + this.album.id + '/sd/' + this.selectedFileName;
 		this.selectedHdImg = 'assets/photography/' + this.album.id + '/hd/' + this.selectedFileName;

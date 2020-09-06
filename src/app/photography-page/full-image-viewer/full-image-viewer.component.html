@@ -27,11 +27,12 @@
 		</g>
 		</svg>
 </div>
+<mat-spinner id="loadingSpinner" *ngIf="visible && !loaded" diameter="100" strokeWidth="5"></mat-spinner>
 <div #fullImgContainer id="fullImgContainer" (click)="hide()" *ngIf="visible"
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
 		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
 	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
-	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)"
+	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)" (load)="loaded = true"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">
 </div>

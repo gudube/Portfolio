@@ -9,6 +9,7 @@ import { PhotographyPageModule } from './photography-page/photography-page.modul
 import { AboutMePageModule } from './about-me-page/about-me-page.module';
 import { PhotographyService } from './photography-page/photography.service';
 import * as Hammer from 'hammerjs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {
@@ -32,6 +33,7 @@ export class HammerConfig extends HammerGestureConfig {
 		PhotographyPageModule,
 		AboutMePageModule,
 		HammerModule,
+		BrowserAnimationsModule,
 	],
 	providers: [{
 		provide: APP_INITIALIZER,

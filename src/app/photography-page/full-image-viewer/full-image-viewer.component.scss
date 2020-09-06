@@ -85,6 +85,16 @@
 	color: var(--hovered-color);
 }
 
+#loadingSpinner {
+	position: absolute;
+	width: 10px;
+	top: 50%;
+	left: 50%;
+	z-index: 20;
+	margin-left: -50px;
+	margin-top: -50px;
+}
+
 .arrowContainer {
 	visibility: collapse;
 }

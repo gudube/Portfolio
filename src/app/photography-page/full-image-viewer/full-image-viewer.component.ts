@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
 	selector: 'full-image-viewer',
@@ -9,9 +9,15 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
 	@Input() public sdImgSrc: string;
-	//@Output() sdImgSrcChange = new EventEmitter<string>();
-	@Input() public hdImgSrc: string; //TODO [2]: have some images only available in SD (like subway in russia)
-	//@Output() hdImgSrcChange = new EventEmitter<string>();
+	private _hdImgSrc: string;
+	@Input() set hdImgSrc(value: string) {
+		this.loaded = false;
+		this._hdImgSrc = value;
+	}
+	get hdImgSrc(): string {
+		return this._hdImgSrc;
+	}
+	//TODO [2]: have some images only available in SD (like subway in russia)
 	@Input() public hasPreviousImage: boolean;
 	@Input() public hasNextImage: boolean;
 
@@ -20,6 +26,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	public zoomedWidthOverflow = false;
 	public zoomedHeightOverflow = false;
 	public hd = true;
+	public loaded = false;
 
 	@ViewChild('fullImgContainer') public imageContainer: ElementRef;
 
