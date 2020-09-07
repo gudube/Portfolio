@@ -14,7 +14,9 @@
 
 #separator {
 	margin: 0 10px;
-	border-color: var(--accent-color)
+	border-color: var(--accent-color);
+	box-shadow: 0 2px 15px 1px var(--accent-color);
+	position: relative;
 }
 
 #about-type-chooser {

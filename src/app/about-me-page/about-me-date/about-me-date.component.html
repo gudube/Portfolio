@@ -1,28 +1,39 @@
 <div #container id="aboutDateContainer">
-	<div #sliderContainer id="sliderContainer" [style.visibility.hidden]="disabled">
+	<div #sliderContainer id="sliderContainer">
 		<mat-slider #dateSlider id="dateSlider" [vertical]="true" [invert]="false"
 		[min]=0 [max]=1 [step]=0.001 [disabled]="disabled"
 		[value]="sliderValue" (input)="updateScrollPos($event.value)"></mat-slider>
-		<div id="labelContainer" [style.top.px]="labelPos">
+		<div id="labelContainer" [style.top.px]="labelPos" [ngClass]="{'disabled': disabled}">
 			<h4 #sliderLabel id="sliderLabelLeft" class="sliderLabel">20</h4>
 			<h4 id="sliderLabelRight" class="sliderLabel">{{labelYear}}</h4>
 		</div>
 	</div>
 	<div id="textContainer">
 		<div #2020>
-			<h3>2020</h3>
+			<h3 class="year">2020</h3>
+			<div class="title"><h4>Technology Part Time Analyst</h4> <span>September 2020 - December 2020</span></div>
+			<div class="subtitle">Morgan Stanley, Montreal</div>
+			<div class="title"><h4>Personal project: This website</h4> <span>August 2020 - Now</span></div>
+			<div class="title"><h4>Technology Summer Analyst</h4> <span>June 2020 - August 2020</span></div>
+			<div class="subtitle">Morgan Stanley, Montreal</div>
+			<div class="title"><h4>Personal project: SheetMusicOrganizer (WIP)</h4> <span>March 2020 - Now</span></div>
+			<div class="title"><h4>Bachelor's degree in Software Engineering</h4> <span>2017 - Expected Graduation December 2021</span></div>
+			<div class="subtitle">Polytechnique Montréal</div>
+			<div class="subtitle">70 credits accumulated, Grading and Grade Point Averages (GPA) of 3,77/4,00</div>
+			<div class="subtitle">Mention of excellence from the General Director at Polytechnique</div>
 		</div>
 		<div #2019>
-			<h3>2019</h3>
+			<h3 class="year">2019</h3>
+			<div class="title"><h4>International exchange studies (Computer Science Master courses)</h4> <span>August 2019 - January 2020</span></div>
 		</div>
 		<div #2018>
-			<h3>2018</h3>
+			<h3 class="year">2018</h3>
 		</div>
 		<div #2017>
-			<h3>2017</h3>
+			<h3 class="year">2017</h3>
 		</div>
 		<div #2016>
-			<h3>2016 and before</h3>
+			<h3 class="year">2016 and before</h3>
 		</div>
 	</div>
 </div>

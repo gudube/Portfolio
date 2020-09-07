@@ -16,7 +16,7 @@ export class AboutMeDateComponent {
 	@ViewChild('2016') container2016: ElementRef;
 
 
-	public sliderValue = 0;
+	public sliderValue = 1;
 	public labelPos = 0;
 	public disabled = true;
 	public labelYear = '20';

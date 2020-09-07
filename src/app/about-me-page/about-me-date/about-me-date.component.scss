@@ -1,11 +1,14 @@
 #aboutDateContainer {
 	height: 6000px; //temp
+	display: flex;
+	align-items: flex-start;
+	background-color: var(--background-softer-color);
 }
 
 #sliderContainer {
-	margin: 10px 10px;
+	margin: 30px 5px 10px 5px;
 	position: sticky;
-	top: 0;
+	top: 10px;
 	width: 160px;
 	display: inline-block;
 	text-align: center;
@@ -23,6 +26,11 @@
 	transition: none !important;
 }
 
+#dateSlider.mat-slider-disabled ::ng-deep .mat-slider-track-fill{
+	transform: translateY(0) !important;
+	//background-color: var(--accent-color) !important;
+}
+
 #dateSlider ::ng-deep .mat-slider-thumb {
 	visibility: hidden;
 }
@@ -31,6 +39,9 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+#labelContainer:not(.disabled) {
 	cursor: grab;
 }
 
@@ -42,6 +53,10 @@
 
 #labelContainer:hover .sliderLabel {
 	color: var(--hovered-color);
+}
+
+#labelContainer.disabled .sliderLabel {
+	color: var(--disabled-color);
 }
 
 #sliderLabelLeft {
@@ -59,4 +74,28 @@
 
 #textContainer {
 	display: inline-block;
+	flex-grow: 1;
+}
+
+.year {
+	margin-left: 0;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.title {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	margin-top: 55px;
+}
+
+.title h4 {
+	margin-left: 0;
+}
+
+.subtitle {
+	margin-left: 12px;
+	margin-top: 10px;
+	font-size: larger;
 }
