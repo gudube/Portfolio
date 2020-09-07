@@ -1,5 +1,5 @@
 #about-page-container {
-	background-color: var(--background-soft-color);
+	background-color: var(--background-color);
 	padding-top: 10px;
 }
 
@@ -13,7 +13,7 @@
 }
 
 #separator {
-	margin: 0 10px;
+	margin: 0 0;
 	border-color: var(--accent-color);
 	box-shadow: 0 2px 15px 1px var(--accent-color);
 	position: relative;

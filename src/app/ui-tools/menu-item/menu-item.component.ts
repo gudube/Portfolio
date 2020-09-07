@@ -12,6 +12,9 @@ export class MenuItemComponent {
 
 	@Input() public readonly route: string;
 
+	@Input() public readonly smallItem: boolean = false;
+
+
 	//TODO [1]: leave text white when on mobile?
 	//TODO [2]: add subtitle functionality (used for photography section)
 	constructor() {}
