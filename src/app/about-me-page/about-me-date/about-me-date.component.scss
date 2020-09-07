@@ -27,11 +27,21 @@
 	visibility: hidden;
 }
 
-#sliderLabelLeft, #sliderLabelRight {
-	margin: 0;
-	top: 0;
+#labelContainer {
 	position: absolute;
+	top: 0;
+	width: 100%;
 	cursor: grab;
+}
+
+.sliderLabel {
+	margin: 0;
+	color: var(--hoverable-color);
+	display: inline-block;
+}
+
+#labelContainer:hover .sliderLabel {
+	color: var(--hovered-color);
 }
 
 #sliderLabelLeft {

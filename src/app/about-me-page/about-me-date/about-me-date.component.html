@@ -1,10 +1,12 @@
 <div #container id="aboutDateContainer">
-	<div #sliderContainer id="sliderContainer">
+	<div #sliderContainer id="sliderContainer" [style.visibility.hidden]="disabled">
 		<mat-slider #dateSlider id="dateSlider" [vertical]="true" [invert]="false"
 		[min]=0 [max]=1 [step]=0.001 [disabled]="disabled"
 		[value]="sliderValue" (input)="updateScrollPos($event.value)"></mat-slider>
-		<h4 #sliderLabel id="sliderLabelLeft" [style.top.px]="labelPos">20</h4>
-		<h4 id="sliderLabelRight" [style.top.px]="labelPos">{{labelYear}}</h4>
+		<div id="labelContainer" [style.top.px]="labelPos">
+			<h4 #sliderLabel id="sliderLabelLeft" class="sliderLabel">20</h4>
+			<h4 id="sliderLabelRight" class="sliderLabel">{{labelYear}}</h4>
+		</div>
 	</div>
 	<div id="textContainer">
 		<div #2020>

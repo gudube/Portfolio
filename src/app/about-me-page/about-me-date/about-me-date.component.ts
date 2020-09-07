@@ -9,7 +9,6 @@ import { MatSlider } from '@angular/material/slider';
 export class AboutMeDateComponent {
 	@ViewChild('container') container: ElementRef;
 	@ViewChild('dateSlider') slider: MatSlider;
-	@ViewChild('sliderLabel') label: ElementRef;
 
 	@ViewChild('2019') container2019: ElementRef;
 	@ViewChild('2018') container2018: ElementRef;
