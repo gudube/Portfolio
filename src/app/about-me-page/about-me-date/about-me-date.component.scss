@@ -1,0 +1,52 @@
+#aboutDateContainer {
+	height: 6000px; //temp
+}
+
+#sliderContainer {
+	margin: 10px 10px;
+	position: sticky;
+	top: 0;
+	width: 160px;
+	display: inline-block;
+	text-align: center;
+}
+
+#dateSlider {
+	height: 80vh;
+	margin-top: 7px;
+	margin-bottom: 10px;
+}
+
+#dateSlider ::ng-deep .mat-slider-thumb-container,
+#dateSlider ::ng-deep .mat-slider-track-background,
+#dateSlider ::ng-deep .mat-slider-track-fill {
+	transition: none !important;
+}
+
+#dateSlider ::ng-deep .mat-slider-thumb {
+	visibility: hidden;
+}
+
+#sliderLabelLeft, #sliderLabelRight {
+	margin: 0;
+	top: 0;
+	position: absolute;
+	cursor: grab;
+}
+
+#sliderLabelLeft {
+	text-align: right;
+	padding-right: 7px;
+	width: calc(50% - 7px);
+}
+
+#sliderLabelRight {
+	text-align: left;
+	padding-left: 5px;
+	width: calc(50% - 5px);
+	left: 50%;
+}
+
+#textContainer {
+	display: inline-block;
+}
