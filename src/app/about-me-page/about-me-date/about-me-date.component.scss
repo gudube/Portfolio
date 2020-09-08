@@ -1,5 +1,4 @@
 #aboutDateContainer {
-	height: 6000px; //temp
 	display: flex;
 	align-items: flex-start;
 	background-color: var(--background-softer-color);
@@ -9,13 +8,13 @@
 	margin: 30px 5px 10px 5px;
 	position: sticky;
 	top: 10px;
-	width: 160px;
+	width: 120px;
 	display: inline-block;
 	text-align: center;
 }
 
 #dateSlider {
-	height: 80vh;
+	height: calc(100vh - 30px);
 	margin-top: 7px;
 	margin-bottom: 10px;
 }
@@ -26,9 +25,9 @@
 	transition: none !important;
 }
 
-#dateSlider.mat-slider-disabled ::ng-deep .mat-slider-track-fill{
+#dateSlider.mat-slider-disabled ::ng-deep .mat-slider-track-fill,
+#dateSlider ::ng-deep .mat-slider-track-background {
 	transform: translateY(0) !important;
-	//background-color: var(--accent-color) !important;
 }
 
 #dateSlider ::ng-deep .mat-slider-thumb {
@@ -75,17 +74,20 @@
 #textContainer {
 	display: inline-block;
 	flex-grow: 1;
+	margin-right: 15px;
 }
 
 .year {
 	margin-left: 0;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 65px;
+	margin-bottom: 0;
 }
 
 .title {
 	display: flex;
 	align-items: baseline;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 55px;
 }
@@ -94,8 +96,17 @@
 	margin-left: 0;
 }
 
+.title span {
+	flex-grow: 1;
+	text-align: right;
+}
+
 .subtitle {
 	margin-left: 12px;
 	margin-top: 10px;
 	font-size: larger;
+}
+
+#lastItem {
+	margin: 40px 0;
 }

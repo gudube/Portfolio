@@ -34,19 +34,22 @@ export class AboutMeDateComponent {
 			return;
 		}
 
-		const fullHeight = this.container.nativeElement.scrollHeight;
-		const percentage = positionPx / fullHeight;
+		const fullHeight = this.container.nativeElement.scrollHeight - innerHeight;
+		let percentage = positionPx / fullHeight;
 		this.sliderValue = 1 - percentage;
-		this.labelPos = percentage * this.slider._elementRef.nativeElement.scrollHeight;
+		if(percentage > 1){
+			percentage = 1;
+		}
+		this.labelPos = percentage * (this.slider._elementRef.nativeElement.scrollHeight - 17);
 		this.disabled = false;
 
-		if(window.pageYOffset < this.container2019.nativeElement.offsetTop)
+		if(window.pageYOffset < this.container2019.nativeElement.offsetTop - innerHeight / 1.5)
 			this.labelYear = '20';
-		else if(window.pageYOffset < this.container2018.nativeElement.offsetTop)
+		else if(window.pageYOffset < this.container2018.nativeElement.offsetTop - innerHeight / 1.5)
 			this.labelYear = '19';
-		else if(window.pageYOffset < this.container2017.nativeElement.offsetTop)
+		else if(window.pageYOffset < this.container2017.nativeElement.offsetTop - innerHeight / 1.5)
 			this.labelYear = '18';
-		else if(window.pageYOffset < this.container2016.nativeElement.offsetTop)
+		else if(window.pageYOffset < this.container2016.nativeElement.offsetTop - innerHeight / 1.5)
 			this.labelYear = '17';
 		else
 			this.labelYear = '16';
