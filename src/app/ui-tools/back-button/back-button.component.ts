@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
 	styleUrls: ['./back-button.component.scss'],
 })
 export class BackButtonComponent implements OnInit {
-	@Input() public route: string = '';
-
+	@Input() public route = '';
+	//todo: add input to make it static
 	constructor() {}
 
 	ngOnInit(): void {}
