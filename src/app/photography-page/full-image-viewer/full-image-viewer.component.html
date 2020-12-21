@@ -34,7 +34,7 @@
 	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
 	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)" (load)="loaded = true"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
-		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}">
+		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Image">
 </div>
 <div class="arrowContainer" *ngIf="visible && hasNextImage" style="right: 0;" (click)="changeImage(true)">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

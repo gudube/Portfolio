@@ -13,7 +13,11 @@
   //margin-top: 10px;
   //margin-bottom: 5px;
   box-sizing: border-box;
-  height: 32px;
+	height: 32px;
+	opacity: var(--hoverable-opacity);
+	&:hover{
+		opacity: var(--hovered-opacity);
+	}
 }
 
 .image-container {
@@ -22,9 +26,17 @@
 	margin-left: 20px;
 }
 
-#mail {
-	font-size: min(1.2rem, 5vw);
+#text-container {
 	flex-grow: 1;
+}
+
+#contact-me {
+	opacity: var(--hoverable-opacity);
+	&:hover{
+		opacity: var(--hovered-opacity);
+	}
+	text-decoration: none;
+	font-size: min(1.4rem, 5vw);
 	margin-top: 5px;
 	margin-bottom: 10px;
 }

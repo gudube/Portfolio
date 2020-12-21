@@ -2,7 +2,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-//Default color variables
+//Default variables
 :root {
   --primary-text-color: white;
   --background-color: black;
@@ -12,6 +12,9 @@
 	--hoverable-color: #BDBDBD;
 	--hovered-color: white;
 	--disabled-color: rgba(255, 255, 255, 0.3);
+
+	--hoverable-opacity: 0.6;
+	--hovered-opacity: 1;
 }
 
 body {
