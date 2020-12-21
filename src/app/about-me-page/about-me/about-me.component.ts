@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
-	public showByDate = true;
+	public showByDate = false;
 
 	constructor() {}
 }

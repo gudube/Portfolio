@@ -1,5 +1,5 @@
-<!--<app-back-button></app-back-button>-->
 <div id="about-page-container">
+	<app-back-button></app-back-button>
 	<h1 id="title">
 		About Me
 	</h1>
@@ -7,16 +7,16 @@
 		I code, design and photograph
 	</h2>
 	<div id="about-type-chooser">
-		<div class="about-type-container" [ngClass]="{'selected': showByDate}"
-			(click)="this.showByDate = true">
-			<h4 class="about-type-text">By date</h4>
-		</div>
 		<div class="about-type-container" [ngClass]="{'selected': !showByDate}"
 			(click)="this.showByDate = false">
 			<h4 class="about-type-text">By category</h4>
 		</div>
+			<div class="about-type-container" [ngClass]="{'selected': showByDate}"
+			(click)="this.showByDate = true">
+			<h4 class="about-type-text">By date</h4>
+		</div>
 	</div>
 	<hr id="separator">
-	<app-about-me-date *ngIf="showByDate"></app-about-me-date>
 	<app-about-me-type *ngIf="!showByDate"></app-about-me-type>
+	<app-about-me-date *ngIf="showByDate"></app-about-me-date>
 </div>

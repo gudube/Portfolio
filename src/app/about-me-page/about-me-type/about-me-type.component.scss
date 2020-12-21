@@ -1,0 +1,59 @@
+#aboutTypeContainer {
+	display: flex;
+	align-items: flex-start;
+	background-color: var(--background-softer-color);
+}
+
+#labelContainer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#textContainer {
+	display: inline-block;
+	flex-grow: 1;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.category {
+	margin-left: 0;
+	text-align: center;
+	margin-top: 65px;
+	margin-bottom: 0;
+}
+
+.title {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 55px;
+	h4{
+		margin-left: 0;
+	}
+	span{
+		flex-grow: 1;
+		text-align: right;
+	}
+}
+
+.subtitle {
+	margin-left: 12px;
+	margin-top: 10px;
+	font-size: larger;
+
+	img {
+		//background-color: white;
+		height: 30px; //todo: resize the images to all be the same size to not have to do that
+		width: 70px;
+		object-fit: scale-down;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+#lastItem {
+	margin: 40px 0;
+}

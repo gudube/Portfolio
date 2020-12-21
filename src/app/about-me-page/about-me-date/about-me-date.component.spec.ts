@@ -10,7 +10,7 @@ describe('AboutMeDateComponent', () => {
 		TestBed.configureTestingModule({
 			declarations: [ AboutMeDateComponent ]
 		})
-		.compileComponents();
+			.compileComponents();
 	}));
 
 	beforeEach(() => {
