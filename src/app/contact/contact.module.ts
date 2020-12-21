@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContactPageComponent } from './contact-page/contact-page.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './contact.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UiToolsModule } from '../ui-tools/ui-tools.module';
 
 @NgModule({
-	declarations: [ContactPageComponent, ContactFormComponent],
+	declarations: [ContactPageComponent],
 	imports: [
-		CommonModule
-	]
+		CommonModule,
+		HttpClientModule,
+		FormsModule,
+		ReactiveFormsModule,
+		UiToolsModule
+	],
+	providers: [ContactService]
 })
 export class ContactModule { }
