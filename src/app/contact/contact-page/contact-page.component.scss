@@ -81,10 +81,12 @@ form {
 	text-align: center;
 	#social-media-message {
 		display: inline-block;
+		vertical-align: super;
 	}
 
 	#icons-container {
 		//height: 100%;
+		margin-top: 10px;
 		padding-right: 10px;
 		display: inline-block;
 		.image-container {
