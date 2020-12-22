@@ -19,7 +19,7 @@ export class ContactPageComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.FullnameControl = new FormControl('', [Validators.required]);
-		this.EmailControl = new FormControl('', [Validators.compose([Validators.required, Validators.email])]);
+		this.EmailControl = new FormControl('', {validators: [Validators.compose([Validators.required, Validators.email])], updateOn:'blur' }, );
 		this.MessageControl = new FormControl('', [Validators.required]);
 		this.FormData = this.builder.group({
 			Fullname: this.FullnameControl,
