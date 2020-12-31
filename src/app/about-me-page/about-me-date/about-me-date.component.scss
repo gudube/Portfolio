@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: flex-start;
 	background-color: var(--background-softer-color);
+	background-image: linear-gradient(var(--background-softer-color) 99%, var(--background-color) 100%);
 }
 
 #sliderContainer {
@@ -117,7 +118,6 @@
 	font-size: larger;
 
 	img {
-		//background-color: white;
 		height: 30px; //todo: resize the images to all be the same size to not have to do that
 		width: 70px;
 		object-fit: scale-down;
