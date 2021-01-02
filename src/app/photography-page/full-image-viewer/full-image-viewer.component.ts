@@ -1,4 +1,9 @@
-import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, OnChanges, SimpleChanges } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+
+enum Resolution { UHD = 'uhd', HD = 'hd', SD = 'sd' }
 
 @Component({
 	selector: 'full-image-viewer',
@@ -8,16 +13,11 @@ import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostList
 export class FullImageViewerComponent { //TODO [3]: Add video support
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
-	@Input() public sdImgSrc: string;
-	private _hdImgSrc: string;
-	@Input() set hdImgSrc(value: string) {
-		this.loaded = false;
-		this._hdImgSrc = value;
-	}
-	get hdImgSrc(): string {
-		return this._hdImgSrc;
-	}
-	//TODO [2]: have some images only available in SD (like subway in russia)
+
+	public resolutions = Resolution;
+	public shownRes: Resolution = Resolution.SD;
+	public defaultRes: Resolution = Resolution.HD;
+
 	@Input() public hasPreviousImage: boolean;
 	@Input() public hasNextImage: boolean;
 
@@ -25,12 +25,68 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 
 	public zoomedWidthOverflow = false;
 	public zoomedHeightOverflow = false;
-	public hd = true;
 	public loaded = false;
+	public imgSrc: string;
+	public uhdAvailable = false;
+	public hdAvailable = false;
+	private imgName: string;
+	private albumName: string;
 
 	@ViewChild('fullImgContainer') public imageContainer: ElementRef;
 
-	constructor() { }
+	constructor(private httpClient: HttpClient) { }
+
+	public setImage(albumName: string, imgName: string): void {
+		this.loaded = false;
+		this.imgName = imgName;
+		this.albumName = albumName;
+		//this.shownRes = this.defaultRes;
+
+		//We wait to see which resolutions are available before changing the image
+		Promise.all([
+			this.fileExists(this.getImgSrc(Resolution.HD)).then((exists) => this.hdAvailable = exists),
+			this.fileExists(this.getImgSrc(Resolution.UHD)).then((exists) => this.uhdAvailable = exists),
+			//we suppose SD always exist
+		]).then(() => {
+			if(	this.defaultRes == Resolution.UHD && this.uhdAvailable ||
+					this.defaultRes == Resolution.HD && this.hdAvailable ||
+					this.defaultRes == Resolution.SD)
+				this.shownRes = this.defaultRes;
+			else
+				this.shownRes =  this.hdAvailable ? Resolution.HD : Resolution.SD;
+
+			this.imgSrc = this.getImgSrc();
+		});
+	}
+
+	public getImgSrc(resolution?: string): string {
+		if(!resolution)
+			resolution = this.shownRes;
+		return `assets/photography/${this.albumName}/${resolution}/${this.imgName}`;
+	}
+
+	public imageNotFound(): void {
+		// if(this.shownRes == Resolution.UHD){
+		// 	this.uhdAvailable = false;
+		// 	if(this.hdAvailable)
+		// 		this.shownRes = Resolution.HD;
+		// 	else
+		// 		this.shownRes = Resolution.SD;
+		// }else if(this.shownRes == Resolution.HD){
+		// 	this.hdAvailable = false;
+		// 	this.shownRes = Resolution.SD;
+		// }else if(this.shownRes == Resolution.SD){
+		console.error(`Image not found: ${this.imgSrc}`);
+		// return;
+		// }
+
+		// this.imgSrc = `assets/photography/${this.albumName}/${this.shownRes}/${this.imgName}`;
+	}
+
+	public fileExists(url: string): Promise<boolean> {
+		return this.httpClient.head(url).pipe(map(() => true), catchError(() => of(false))).toPromise();
+		//return this.httpClient.get(url).pipe(map(() => true), catchError(() => of(false)));
+	}
 
 	//TODO [2]: disable chrome back feature when image is zoomed with width overflow
 	public zoom(e: MouseEvent): void {
@@ -77,12 +133,14 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		document.body.style.overflow = 'auto';
 	}
 
-	public switchHd(): void {
-		if(this.hd){
+	public switchHd(resolution: Resolution): void {
+		if(resolution == Resolution.SD) {
 			this.zoomedHeightOverflow = false;
 			this.zoomedWidthOverflow = false;
 		}
-		this.hd = !this.hd;
+		this.shownRes = resolution;
+		this.defaultRes = resolution;
+		this.imgSrc = this.getImgSrc();
 	}
 
 	//TODO [1]: add swipe vertically for mobile too

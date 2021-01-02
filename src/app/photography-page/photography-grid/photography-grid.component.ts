@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 import { IAlbum } from '../models/album.model';
 import { PhotographyService } from '../photography.service';
 
@@ -9,11 +10,9 @@ import { PhotographyService } from '../photography.service';
 	styleUrls: ['./photography-grid.component.scss'],
 })
 export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy loading or at least loading from start
-	//@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
-	public album: IAlbum;
+	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
 
-	public selectedHdImg: string;
-	public selectedSdImg: string;
+	public album: IAlbum;
 	public showingFullImage = false;
 	public hasPreviousImage = false;
 	public hasNextImage = false;
@@ -29,10 +28,11 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 	}
 
 	private selectedFileName: string;
+
 	public selectImage(index: number): void{
 		this.selectedFileName = this.album.photoFileNames[index];
-		this.selectedSdImg = 'assets/photography/' + this.album.id + '/sd/' + this.selectedFileName;
-		this.selectedHdImg = 'assets/photography/' + this.album.id + '/hd/' + this.selectedFileName;
+		this.imageViewer.setImage(this.album.id, this.selectedFileName);
+
 		this.hasPreviousImage = index > 0;
 		this.hasNextImage = index < this.album.photoFileNames.length - 1;
 		this.showingFullImage = true;
@@ -43,6 +43,6 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 		const currentId = this.album.photoFileNames.indexOf(this.selectedFileName);
 		const newId = next ? currentId + 1 : currentId - 1;
 		if(newId >=0 && newId < this.album.photoFileNames.length)
-			this.selectImage(newId);
+			this.selectImage(newId, );
 	}
 }

@@ -1,10 +1,10 @@
 {
 	"albums": [
 		{
-			"id": "italia",
-			"title" : "Italia",
-			"subtitle" : "Capri, Amalfi Coast and Cinque Terre",
-			"photoFileNames" : []
+			"id": "capri",
+			"title" : "Capri",
+			"subtitle" : "Italia",
+			"photoFileNames" : ["capri-001.jpg","capri-002.jpg","capri-003.jpg","capri-004.jpg","capri-005.jpg","capri-006.jpg","capri-007.jpg","capri-008.jpg","capri-009.jpg","capri-010.jpg","capri-011.jpg","capri-012.jpg","capri-013.jpg","capri-014.jpg","capri-015.jpg","capri-016.jpg","capri-017.jpg","capri-018.jpg","capri-019.jpg","capri-020.jpg","capri-021.jpg","capri-022.jpg","capri-023.jpg","capri-024.jpg","capri-025.jpg","capri-026.jpg","capri-027.jpg","capri-028.jpg","capri-029.jpg","capri-030.jpg","capri-031.jpg","capri-032.jpg","capri-033.jpg","capri-034.jpg","capri-035.jpg","capri-036.jpg","capri-037.jpg","capri-038.jpg","capri-039.jpg","capri-040.jpg","capri-041.jpg","capri-042.jpg","capri-043.jpg","capri-044.jpg","capri-045.jpg","capri-046.jpg","capri-047.jpg","capri-048.jpg","capri-049.jpg","capri-050.jpg","capri-051.jpg","capri-052.jpg","capri-053.jpg","capri-054.jpg","capri-055.jpg","capri-056.jpg","capri-057.jpg","capri-058.jpg","capri-059.jpg","capri-060.jpg","capri-061.jpg","capri-062.jpg","capri-063.jpg","capri-064.jpg","capri-065.jpg","capri-066.jpg","capri-067.jpg","capri-068.jpg","capri-069.jpg","capri-070.jpg","capri-071.jpg","capri-072.jpg","capri-073.jpg","capri-074.jpg","capri-075.jpg","capri-076.jpg"]
 		},
 		{
 			"id" : "lapland",

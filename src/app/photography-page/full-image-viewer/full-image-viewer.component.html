@@ -1,7 +1,9 @@
 <div id="controls" *ngIf="visible">
-	<p (click)="switchHd()" 	style="text-align: right;">{{hd ? 'HD' : 'SD'}}</p>
+	<p (click)="switchHd(resolutions.UHD)"	style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.UHD}" *ngIf="this.uhdAvailable">UHD</p>
+	<p (click)="switchHd(resolutions.HD)"		style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.HD}" *ngIf="this.hdAvailable">HD</p>
+	<p (click)="switchHd(resolutions.SD)"		style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.SD}">SD</p>
 	<p (click)="zoom($event)" style="text-align: center;"
-			[style.visibility]="hd ? 'visible' : 'hidden'">{{(zoomedHeightOverflow || zoomedWidthOverflow) ? '-' : '+'}}</p>
+			[style.visibility]="shownRes == resolutions.SD ? 'hidden' : 'visible'">{{(zoomedHeightOverflow || zoomedWidthOverflow) ? '-' : '+'}}</p>
 	<p (click)="hide()"				style="text-align: left;">X</p>
 </div>
 <div class="arrowContainer" *ngIf="visible && hasPreviousImage" style="left: 0;" (click)="changeImage(false)">
@@ -32,7 +34,7 @@
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
 		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
 	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
-	<img src="{{hd ? hdImgSrc : sdImgSrc}}" (click)="zoom($event)" (load)="loaded = true"
+	<img src={{imgSrc}} (click)="zoom($event)" (load)="loaded = true" (error)="imageNotFound()"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Image">
 </div>
