@@ -1,1 +1,0 @@
-['naples-001.jpg','naples-002.jpg','naples-003.jpg','naples-004.jpg','naples-005.jpg','naples-006.jpg','naples-007.jpg','naples-008.jpg','naples-009.jpg','naples-010.jpg','naples-011.jpg','naples-012.jpg','naples-013.jpg']

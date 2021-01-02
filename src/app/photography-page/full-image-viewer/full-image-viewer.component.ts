@@ -90,6 +90,9 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 
 	//TODO [2]: disable chrome back feature when image is zoomed with width overflow
 	public zoom(e: MouseEvent): void {
+		if(this.shownRes == Resolution.SD)
+			return; //cant zoom on SD pictures
+
 		if (this.zoomedHeightOverflow) {
 			this.zoomedHeightOverflow = false;
 		} else if (this.zoomedWidthOverflow) {
@@ -140,7 +143,11 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		}
 		this.shownRes = resolution;
 		this.defaultRes = resolution;
-		this.imgSrc = this.getImgSrc();
+		const newImgSrc = this.getImgSrc();
+		if(newImgSrc !== this.imgSrc){
+			this.loaded = false;
+			this.imgSrc = newImgSrc;
+		}
 	}
 
 	//TODO [1]: add swipe vertically for mobile too
