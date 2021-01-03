@@ -1,5 +1,7 @@
 <div id="image-container" [routerLink]=route [ngClass]="{'small': smallItem}">
-	<h3 id="title" class="hoverable-text">{{ title }}</h3>
-	<h4 id="subtitle" class="hoverable-text">{{ subtitle }}</h4>
+	<div id="text-container" [ngClass]="{'with-subtitle': !!subtitle}">
+		<h3 id="title" class="hoverable-text">{{ title }}</h3>
+		<h4 id="subtitle" class="hoverable-text" *ngIf="!!subtitle">{{ subtitle }}</h4>
+	</div>
 	<img id="menu-image" src="{{ imgSrc }}" alt="Menu Item"/>
 </div>
