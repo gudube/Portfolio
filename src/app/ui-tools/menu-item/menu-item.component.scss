@@ -36,19 +36,28 @@
 }
 
 //Title on top of the item, centered
-#title {
-  font-size: min(4rem, 10vw);
+.hoverable-text{
   z-index: 2;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   //color: var(--accent-color);
   text-shadow: 1px 1px 2px rgba(0,0,0,1);
-
   -webkit-transition: text-shadow 0.1s ease;
 	transition: text-shadow 0.1s ease;
+
+	&#title {
+		font-size: min(4rem, 10vw);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&#subtitle {
+		font-size: min(2rem, 10vw);
+		left: 50%;
+		top: 80%;
+		transform: translate(-50%, -80%);
+	}
 }
 
 @media (hover: hover){
@@ -58,14 +67,14 @@
 	}
 
 	//Changes color of title when hovering item
-	#title {
+	.hoverable-text {
 		opacity: var(--hoverable-opacity);
 		color: var(--primary-text-color);
 		text-shadow: 2px 2px 4px rgba(0,0,0,1);
 	}
 
 	//Changes color of title when hovering item
-	#image-container:hover #title {
+	#image-container:hover .hoverable-text {
 		opacity: var(--hovered-opacity);
 		text-shadow: 2px 2px 7px rgba(0,0,0,1); //can remove if want better performance
 	}

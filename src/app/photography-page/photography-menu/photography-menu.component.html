@@ -4,6 +4,7 @@
 		*ngFor="let album of service.albums"
 		imgSrc="assets/photography/{{album.id}}/{{album.id}}-menu.jpg"
 		title={{album.title}}
+		subtitle={{album.subtitle}}
 		[route]="['/photography', album.id]"
 	></app-menu-item>
 </app-menu>
