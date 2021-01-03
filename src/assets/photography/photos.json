@@ -25,6 +25,12 @@
 			"photoFileNames" : ["stockholm-001.jpg","stockholm-002.jpg","stockholm-003.jpg","stockholm-004.jpg","stockholm-005.jpg","stockholm-006.jpg","stockholm-007.jpg","stockholm-008.jpg","stockholm-009.jpg","stockholm-010.jpg","stockholm-011.jpg","stockholm-012.jpg","stockholm-013.jpg","stockholm-014.jpg","stockholm-015.jpg","stockholm-016.jpg","stockholm-017.jpg","stockholm-018.jpg","stockholm-019.jpg","stockholm-020.jpg","stockholm-021.jpg","stockholm-022.jpg","stockholm-023.jpg","stockholm-024.jpg","stockholm-025.jpg","stockholm-026.jpg","stockholm-027.jpg","stockholm-028.jpg","stockholm-029.jpg","stockholm-030.jpg","stockholm-031.jpg","stockholm-032.jpg"]
 		},
 		{
+			"id" : "copenhagen",
+			"title" : "Copenhagen",
+			"subtitle" : "Denmark",
+			"photoFileNames" : ["copenhagen-001.jpg","copenhagen-002.jpg","copenhagen-003.jpg","copenhagen-004.jpg","copenhagen-005.jpg","copenhagen-006.jpg","copenhagen-007.jpg","copenhagen-008.jpg","copenhagen-009.jpg","copenhagen-010.jpg","copenhagen-011.jpg"]
+		},
+		{
 			"id" : "lapland",
 			"title" : "Lapland",
 			"subtitle" : "Northern Sweden and Norway",
