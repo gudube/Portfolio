@@ -10,7 +10,7 @@
 <div id="grid" [ngClass]="{'background-grid': showingFullImage}">
 	<div id="cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
 		<div id="squareImgContainer" (click)="selectImage(index)">
-			<img src="assets/photography/{{album.id}}/sd/{{imageFileName}}">
+			<img src="assets/photography/{{album.id}}/sd/{{imageFileName}}" alt="photo">
 		</div>
 	</div>
 </div>

@@ -26,6 +26,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	public zoomedWidthOverflow = false;
 	public zoomedHeightOverflow = false;
 	public loaded = false;
+	public showImage = false;
 	public imgSrc: string;
 	public uhdAvailable = false;
 	public hdAvailable = false;
@@ -56,6 +57,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 				this.shownRes =  this.hdAvailable ? Resolution.HD : Resolution.SD;
 
 			this.imgSrc = this.getImgSrc();
+			this.showImage = true;
 		});
 	}
 
@@ -132,6 +134,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 
 	public hide(): void {
 		this.visible = false;
+		this.showImage = false;
 		this.visibleChange.emit(this.visible);
 		document.body.style.overflow = 'auto';
 	}

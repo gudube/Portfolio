@@ -6,7 +6,7 @@
 			[style.visibility]="shownRes == resolutions.SD ? 'hidden' : 'visible'">{{(zoomedHeightOverflow || zoomedWidthOverflow) ? '-' : '+'}}</p>
 	<p (click)="hide()"				style="text-align: left;">X</p>
 </div>
-<div class="arrowContainer" *ngIf="visible && hasPreviousImage" style="left: 0;" (click)="changeImage(false)">
+<div class="arrowContainer" *ngIf="visible && hasPreviousImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="left: 0;" (click)="changeImage(false)">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">
 		<g>
@@ -33,12 +33,12 @@
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
 		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
 	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
-	<img src={{imgSrc}} (click)="zoom($event)" (load)="loaded = true" (error)="imageNotFound()"
+	<img src={{imgSrc}} (click)="zoom($event)" (load)="loaded = true" (error)="imageNotFound()" *ngIf="this.showImage"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Image">
 </div>
 <mat-spinner id="loadingSpinner" *ngIf="visible && !loaded" diameter="100" strokeWidth="5"></mat-spinner>
-<div class="arrowContainer" *ngIf="visible && hasNextImage" style="right: 0;" (click)="changeImage(true)">
+<div class="arrowContainer" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">
 		<g>

@@ -1,8 +1,16 @@
+:host{
+	-ms-user-select: none;
+	user-select: none;
+}
+
 #grid {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 50px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .background-grid {
@@ -12,8 +20,6 @@
 #cell {
 	height: 300px;
 	width: 300px;
-	min-width: 18vw;
-	min-height: 18vw;
 	margin: 20px;
 }
 
@@ -21,8 +27,6 @@
 	margin: 0 auto;
 	height: 300px;
 	width: 300px;
-	min-width: 18vw;
-	min-height: 18vw;
 
   overflow: hidden;
 	cursor: pointer;

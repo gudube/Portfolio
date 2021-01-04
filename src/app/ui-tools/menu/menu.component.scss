@@ -1,5 +1,7 @@
 .menu-container {
   margin: 0;
   background-color: var(--background-color);
-  height: auto;
+	height: auto;
+	-ms-user-select: none;
+	user-select: none;
 }

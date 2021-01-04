@@ -12,33 +12,38 @@
 	padding-left: 20px;
 	//padding: 40px;
 	box-sizing: border-box;
+
+	&.unzoomedContainer{
+		overflow-x: hidden;
+		overflow-y: hidden;
+		display: flex;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		padding-right: 50px;
+		padding-left: 50px;
 }
 
-.unzoomedContainer{
-	overflow-x: hidden;
-	overflow-y: hidden;
-	display: flex;
-	justify-content: center;
-	justify-items: center;
-	align-items: center;
-}
+	&.zoomedHeightOverflowContainer {
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
 
-.zoomedHeightOverflowContainer {
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
+	&.zoomedWidthOverflowContainer {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		touch-action: pan-x !important;
+	}
 
-.zoomedWidthOverflowContainer {
-	overflow-x: scroll;
-	overflow-y: hidden;
-	touch-action: pan-x !important;
+	@media only screen and (max-width: 800px) {
+		&.unzoomedContainer {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+	}
 }
-
 #fullImgContainer img {
 	object-position: center;
-	-webkit-box-shadow: 0 0 49px 20px rgba(0,0,0,1);
-	-moz-box-shadow: 0 0 49px 20px rgba(0,0,0,1);
-	box-shadow: 0 0 49px 20px rgba(0,0,0,1);
 }
 
 .zoomedHeightOverflowImg {
@@ -89,7 +94,7 @@
 }
 
 #loadingSpinner {
-	position: absolute;
+	position: fixed;
 	width: 10px;
 	top: 50vh;
 	left: 50vw;
@@ -99,34 +104,37 @@
 }
 
 .arrowContainer {
-	visibility: collapse;
-}
+	height: 90px;
+	width: 50px;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+	text-align: center;
+	background-color: rgba(0,0,0,0.35);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
 
-//todo: find a better way of using arrows on touchscreen
-@media (hover: hover){
-	.arrowContainer {
-		height: 90px;
-		width: 50px;
-		position: fixed;
-		top: 50%;
-		transform: translateY(-50%);
-		z-index: 9;
-		text-align: center;
-		background-color: rgba(0,0,0,0.35);
-		cursor: pointer;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		visibility: visible;
+	//todo: find a better way of using arrows on touchscreen
+	@media only screen and (max-width: 800px) {
+		& {
+			visibility: collapse;
+		}
 	}
 
-	.arrowContainer:hover svg {
-		fill: var(--hovered-color);
-	}
-
-	svg {
-		fill:var(--hoverable-color);
-		height: 40px;
-		width: 20px;
+	@media (hover: hover){
+		& {
+			.arrowContainer:hover svg {
+				fill: var(--hovered-color);
+			}
+		}
+		& svg {
+			fill:var(--hoverable-color);
+			height: 40px;
+			width: 20px;
+		}
 	}
 }
