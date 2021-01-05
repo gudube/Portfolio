@@ -11,6 +11,7 @@ import { ContactModule } from './contact/contact.module';
 import { PhotographyService } from './photography-page/photography.service';
 import * as Hammer from 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {
@@ -26,7 +27,7 @@ export class HammerConfig extends HammerGestureConfig {
 }
 
 @NgModule({
-	declarations: [AppComponent, TitlePageComponent],
+	declarations: [AppComponent, TitlePageComponent, ProjectPageComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
