@@ -3,7 +3,7 @@ Repository for my personal website.
 
 ## Deploy
 ng add angular-cli-ghpages
-ng deploy --cname="www.guilhemdubois.me"
+ng deploy --cname="www.guilhemdubois.com"
 <!--ng deploy --base-href=/Portfolio/-->
 
 ## Test on another device
