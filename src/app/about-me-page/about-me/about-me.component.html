@@ -1,23 +1,24 @@
 <div id="about-page-container">
 	<app-back-button></app-back-button>
-	<h1 id="title">
-		About Me
-	</h1>
-	<h2 id="subtitle">
-		My coding journey
-	</h2>
+	<!-- <h1 id="title">About Me</h1> -->
+	<!-- <h2 id="subtitle">My coding journey</h2> -->
 	<div id="about-type-chooser">
-		<div class="about-type-container" [ngClass]="{'selected': !showByDate}"
-			(click)="this.showByDate = false">
+		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.aboutMe}"
+			(click)="this.typeShown = aboutTypes.aboutMe">
+			<h4 class="about-type-text">About me</h4>
+		</div>
+		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.byCategory}"
+			(click)="this.typeShown = aboutTypes.byCategory">
 			<h4 class="about-type-text">By category</h4>
 		</div>
-			<div class="about-type-container" [ngClass]="{'selected': showByDate}"
-			(click)="this.showByDate = true">
+		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.byDate}"
+			(click)="this.typeShown = aboutTypes.byDate">
 			<h4 class="about-type-text">By date</h4>
 		</div>
 	</div>
 	<hr id="separator">
-	<app-about-me-type *ngIf="!showByDate"></app-about-me-type>
-	<app-about-me-date *ngIf="showByDate"></app-about-me-date>
+	<app-about-me-main *ngIf="typeShown == aboutTypes.aboutMe"></app-about-me-main>
+	<app-about-me-type *ngIf="typeShown == aboutTypes.byCategory"></app-about-me-type>
+	<app-about-me-date *ngIf="typeShown == aboutTypes.byDate"></app-about-me-date>
 </div>
 <app-footnotes></app-footnotes>

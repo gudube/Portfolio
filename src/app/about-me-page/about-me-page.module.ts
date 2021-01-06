@@ -5,9 +5,10 @@ import { UiToolsModule } from '../ui-tools/ui-tools.module';
 import { AboutMeDateComponent } from './about-me-date/about-me-date.component';
 import { AboutMeTypeComponent } from './about-me-type/about-me-type.component';
 import { MatSliderModule } from '@angular/material/slider';
+import { AboutMeMainComponent } from './about-me-main/about-me-main.component';
 
 @NgModule({
-	declarations: [AboutMeComponent, AboutMeDateComponent, AboutMeTypeComponent],
+	declarations: [AboutMeComponent, AboutMeDateComponent, AboutMeTypeComponent, AboutMeMainComponent],
 	imports: [CommonModule, UiToolsModule, MatSliderModule],
 	exports: [],
 })

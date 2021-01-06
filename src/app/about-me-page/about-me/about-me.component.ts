@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+enum AboutType { aboutMe, byDate, byCategory }
+
 @Component({
 	selector: 'app-about-me',
 	templateUrl: './about-me.component.html',
@@ -7,7 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
-	public showByDate = false;
+	public aboutTypes = AboutType;
+	public typeShown = AboutType.aboutMe;
 
 	constructor() {}
 }

@@ -5,6 +5,7 @@
 //Default variables
 :root {
   --primary-text-color: white;
+  --readable-text-color: #b3b3b3;
   --background-color: black;
   --background-soft-color: #0e1111;
   --background-softer-color: #191d1d;
@@ -26,7 +27,7 @@ body {
 h1, h2, h3, h4, a, p, span, div {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
-  line-height: 0.9em;
+  line-height: 0.9rem;
 }
 
 a, p, span {
