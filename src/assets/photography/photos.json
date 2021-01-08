@@ -19,6 +19,12 @@
 			"photoFileNames" : ["saint-petersburg-001.jpg","saint-petersburg-002.jpg","saint-petersburg-003.jpg","saint-petersburg-004.jpg","saint-petersburg-005.jpg","saint-petersburg-006.jpg","saint-petersburg-007.jpg","saint-petersburg-008.jpg","saint-petersburg-009.jpg","saint-petersburg-010.jpg","saint-petersburg-011.jpg","saint-petersburg-012.jpg","saint-petersburg-013.jpg","saint-petersburg-014.jpg","saint-petersburg-015.jpg","saint-petersburg-016.jpg","saint-petersburg-017.jpg","saint-petersburg-018.jpg","saint-petersburg-019.jpg","saint-petersburg-020.jpg","saint-petersburg-021.jpg","saint-petersburg-022.jpg","saint-petersburg-023.jpg","saint-petersburg-024.jpg","saint-petersburg-025.jpg","saint-petersburg-026.jpg","saint-petersburg-027.jpg","saint-petersburg-028.jpg","saint-petersburg-029.jpg","saint-petersburg-030.jpg","saint-petersburg-031.jpg","saint-petersburg-032.jpg","saint-petersburg-033.jpg","saint-petersburg-034.jpg","saint-petersburg-035.jpg","saint-petersburg-036.jpg","saint-petersburg-037.jpg","saint-petersburg-038.jpg","saint-petersburg-039.jpg","saint-petersburg-040.jpg","saint-petersburg-041.jpg","saint-petersburg-042.jpg","saint-petersburg-043.jpg","saint-petersburg-044.jpg","saint-petersburg-045.jpg"]
 		},
 		{
+			"id" : "ljubljana",
+			"title" : "Ljubljana",
+			"subtitle" : "Slovenia",
+			"photoFileNames" : ["ljubljana-001.jpg","ljubljana-002.jpg","ljubljana-003.jpg","ljubljana-004.jpg","ljubljana-005.jpg","ljubljana-006.jpg","ljubljana-007.jpg","ljubljana-008.jpg","ljubljana-009.jpg","ljubljana-010.jpg","ljubljana-011.jpg","ljubljana-012.jpg","ljubljana-013.jpg","ljubljana-014.jpg","ljubljana-015.jpg","ljubljana-016.jpg","ljubljana-017.jpg","ljubljana-018.jpg","ljubljana-019.jpg","ljubljana-020.jpg"]
+		},
+		{
 			"id": "naples",
 			"title" : "Naples",
 			"subtitle" : "Italia",
