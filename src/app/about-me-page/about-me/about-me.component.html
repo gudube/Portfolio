@@ -1,19 +1,18 @@
 <div id="about-page-container">
 	<app-back-button></app-back-button>
-	<!-- <h1 id="title">About Me</h1> -->
-	<!-- <h2 id="subtitle">My coding journey</h2> -->
+	<app-locale-selector></app-locale-selector>
 	<div id="about-type-chooser">
 		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.aboutMe}"
 			(click)="this.typeShown = aboutTypes.aboutMe">
-			<h4 class="about-type-text">About me</h4>
+			<h4 class="about-type-text" i18n>About me</h4>
 		</div>
 		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.byCategory}"
 			(click)="this.typeShown = aboutTypes.byCategory">
-			<h4 class="about-type-text">By category</h4>
+			<h4 class="about-type-text" i18n>By category</h4>
 		</div>
 		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.byDate}"
 			(click)="this.typeShown = aboutTypes.byDate">
-			<h4 class="about-type-text">By date</h4>
+			<h4 class="about-type-text" i18n>By date</h4>
 		</div>
 	</div>
 	<hr id="separator">

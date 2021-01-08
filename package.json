@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+		"e2e": "ng e2e",
+		"deploy": "ng deploy --cname='www.guilhemdubois.com'",
+		"extract": "ng xi18n --output-path=src/locale",
+		"serve": "ng serve --host 192.168.0.17 --disableHostCheck --configuration=fr"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +33,7 @@
     "@angular-devkit/build-angular": "^0.1002.1",
     "@angular/cli": "^10.2.1",
     "@angular/compiler-cli": "^10.2.4",
+    "@angular/localize": "^10.2.4",
     "@types/jasmine": "^3.6.2",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.19.12",

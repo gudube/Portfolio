@@ -1,41 +1,41 @@
 <div id="contact-page-container">
 	<app-back-button></app-back-button>
-	<h2 id="title">Contact Me</h2>
+	<h2 id="title" i18n>Contact Me</h2>
 	<hr id="separator">
 	<div id="form-container">
 		<form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
 			<div class="form-group">
 				<div class="label">
-					<label for="Fullname">Full Name</label>
+					<label for="Fullname" i18n>Full Name</label>
 					<p class="required">*</p>
 				</div>
 				<input type="text" class="form-control" name="Fullname" formControlName="Fullname">
 			</div>
 			<div class="form-group">
 				<div class="label">
-					<label for="Email">Email</label>
+					<label for="Email" i18n>Email</label>
 					<p class="required">*</p>
 				</div>
 				<input type="email" class="form-control" name="Email" aria-describedby="emailHelp" formControlName="Email">
 				<div *ngIf="EmailControl.invalid && (EmailControl.dirty || EmailControl.touched)" class="warning">
-					<div *ngIf="EmailControl.errors.email">Invalid email format.</div>
+					<div *ngIf="EmailControl.errors.email" i18n>Invalid email format.</div>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="label">
-					<label for="Message">Message</label>
+					<label for="Message" i18n>Message</label>
 					<p class="required">*</p>
 				</div>
 				<textarea class="form-control" formControlName="Message" name="Message">
 				</textarea>
 			</div>
-			<span id="pre-submit-message">Once submitted, you will be redirected to Google Captcha.</span>
+			<span id="pre-submit-message" i18n>Once submitted, you will be redirected to Google Captcha.</span>
 			<div id="button-container">
 				<button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
 			</div>
 		</form>
 		<div id="social-media-container">
-			<p id="social-media-message">You can also reach me through social media:</p>
+			<p id="social-media-message" i18n>You can also reach me through social media:</p>
 			<div id="icons-container">
 				<a class="image-container" href="https://www.instagram.com/guilhem.dubois/" target="_blank">
 					<img src="assets/icons/insta_white_64.png" alt="Instagram"/>

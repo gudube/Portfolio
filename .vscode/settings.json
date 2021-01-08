@@ -1,5 +1,6 @@
 {
 	"files.eol": "\r\n",
 	"editor.insertSpaces": false,
-	"editor.detectIndentation": false
+	"editor.detectIndentation": false,
+	"xliffSync.baseFile": "messages.xlf"
 }

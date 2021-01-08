@@ -1,0 +1,13 @@
+#locale-container {
+	position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+	p {
+		display: inline;
+
+		.language {
+			color: var(--hoverable-color);
+		}
+	}
+}

@@ -41,7 +41,8 @@
 						"aot": true,
 						"assets": ["src/favicon.ico", "src/assets"],
 						"styles": ["src/styles.scss", "src/material-style.scss"],
-						"scripts": []
+						"scripts": [],
+						"localize": true
 					},
 					"configurations": {
 						"production": {
@@ -71,6 +72,12 @@
 									"maximumError": "10kb"
 								}
 							]
+						},
+						"en": {
+							"localize": ["en-CA"]
+						},
+						"fr": {
+							"localize": ["fr-CA"]
 						}
 					}
 				},
@@ -82,6 +89,12 @@
 					"configurations": {
 						"production": {
 							"browserTarget": "gd-portfolio:build:production"
+						},
+						"en": {
+							"browserTarget": "gd-portfolio:build:en"
+						},
+						"fr": {
+							"browserTarget": "gd-portfolio:build:fr"
 						}
 					}
 				},
@@ -129,6 +142,12 @@
 				"deploy": {
 					"builder": "angular-cli-ghpages:deploy",
 					"options": {}
+				}
+			},
+			"i18n": {
+				"sourceLocale": "en-CA",
+				"locales": {
+					"fr-CA": "src/locale/messages.fr.xlf"
 				}
 			}
 		}

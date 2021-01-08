@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-CA" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="f15d71e375c722198504e904535b1bf37dc6806f" datatype="html">
+        <source>About Me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/title-page/title-page.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dabe4167d3e66580e364f247ca1b084552344179" datatype="html">
+        <source>Work In Progress...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/title-page/title-page.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c5bf458b0410a5ebc6b51265b808009839e3b70" datatype="html">
+        <source>Personal Project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/title-page/title-page.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0b5b056d2b1a9c51ee4529d7dbc7410593858780" datatype="html">
+        <source>Photography</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/title-page/title-page.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f3e393d5483be2d063bee208dbaa462793a59cd" datatype="html">
+        <source>About me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me/about-me.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22f431d82e42a929f1e711f25a7e827885ed5069" datatype="html">
+        <source>By category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me/about-me.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ab222e534abfb1251b2e05a64f93183001c1055c" datatype="html">
+        <source>By date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me/about-me.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6b69e1379c4d2954c1266f0f19bdb6f899e3e2b9" datatype="html">
+        <source>Contact Me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="484b0e541230d60ddb5fbd771a34a5c8d90e7a57" datatype="html">
+        <source>Full Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7543defc04586e3af92d636c9c0899b0027ab80" datatype="html">
+        <source>Invalid email format.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ccac601bf473fa28c9ac46794f1cd40542f74347" datatype="html">
+        <source>Message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b1eb214de924b3f36784624bc8baff2097129bde" datatype="html">
+        <source>Once submitted, you will be redirected to Google Captcha.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fd699c5f513c57cf38fbe82041fda4aa4312a48a" datatype="html">
+        <source>You can also reach me through social media:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact-page/contact-page.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="de93b415f6b78a3a0cc49020570fe17c8e320974" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Internship: Technology Part Time Analyst<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>September 2020 - December 2020<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2a00293479bd552b329606445cffde3d2d09443e" datatype="html">
+        <source>Morgan Stanley, Montreal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="281b2dc134dd4d142c7c78ae7b0d52ee3a6b2f4c" datatype="html">
+        <source>•	Make a Java project available on docker (from the image creation to the deployment)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d000c15768428c1dbae7a3a50b43fc7645e9371d" datatype="html">
+        <source>•	Index a database using Hibernate Search (Lucene indexes) to add typeahead to a search feature</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edec164c9284c4ca8c4be47d102a3cbc1d6a1b54" datatype="html">
+        <source>•	Implement other functionalities in an asynchronous team-based approach using the Kanban methodology</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11fd9f0fdb5cf6626dcab9e6e08f39dc8ec62f92" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/><x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/>
+					 <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_3" ctype="image" equiv-text="&lt;img/&gt;"/>
+					 <x id="TAG_IMG_4" ctype="image" equiv-text="&lt;img/&gt;"/> and other internal technologies...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c297cde8268d809c4c4ccaf87f96a904a6dbba9a" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Project: This website<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>August 2020 - Now<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="16329f310631cb1c80597a480be7054a456c1b92" datatype="html">
+        <source>Personal project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="972ae346830553b7e83d1affcc7b5cd463b8e0f8" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22c520502c3ba2ecca61cbfab4a0c18dc71644c8" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Internship: Technology Summer Analyst<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>June 2020 - August 2020<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="130fca55aeec81d9b93df56a3fe73b4228645445" datatype="html">
+        <source>•	Develop a Full Stack project using various DevOps tools and with an Agile approach</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="85db68377f52d802a6dfa88577255b7e8ffecea8" datatype="html">
+        <source>•	Create a REST API backend accessing a database using Spring Data JPA (with Hibernate)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dc36103e434261cb3bed1bc9f91d6f23582c347b" datatype="html">
+        <source>•	Create an Angular frontend with an ag-Grid to display the data retrieved from the REST service</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aa314b0da71684edb70a9c45269153744e5ffb7e" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_3" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_4" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_5" ctype="image" equiv-text="&lt;img/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d4d07f0f564d2a4e29dc0e331d77be767ec9b48f" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Project: SheetMusicOrganizer (WIP)<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>March 2020 - Now<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da5d27814c37eb51604fb980a3bbefb8fe018424" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9970caaf80f924d8542299b519b550763da00acf" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Bachelor&apos;s degree in Software Engineering<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>2017 - Expected Graduation December 2021<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52ddf2dadeaf8ee1493e96ecd3c79014260be80e" datatype="html">
+        <source>Polytechnique Montréal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="85811c9a78780bd25c3b0b47e6f0fc663f4c9f2c" datatype="html">
+        <source>70 credits accumulated, Grading and Grade Point Averages (GPA) of 3,77/4,00</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65076dbc676dcb4089162eb6637aa8b110c1370d" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Mention of excellence from the General Director<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>2020<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="328d446bb64b8e2dcb94ee0cfb48884df227c6d5" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>International exchange studies<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>August 2019 - January 2020<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c5b617db2440ee9f2ab69d6ca182aeb5a6f51a14" datatype="html">
+        <source>KTH Royal Institute of Technology, Stockholm (Sweden)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0b942db9ff11ab01ea0acd5edd277ca101330c66" datatype="html">
+        <source>Computer Science Master courses - English classes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b4672477f29faeaa4fefad27f3f4536a41c47ee3" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Internship: Software Development Intern<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>May 2019 - July 2019<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="63a41abb6bbc6495dcf71ff5422ed1f83f2285ba" datatype="html">
+        <source>OSSimTech, Montreal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2401ee95b804d5026889c2c00a0987865687293" datatype="html">
+        <source>•	Design a SQL database according to the requirements of the Research &amp; Development team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c96f8c3476beae8eb89b7cc04c75f1e2446760e8" datatype="html">
+        <source>•	Create the database and migrate data considering performance and long-term maintenance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ebe968d46e4b1de2b89a000ab8782bccbf5fb900" datatype="html">
+        <source>•	Transfer and refactor Unreal blueprints to c++</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3a916d996215ff35799b05c8be7401970aeb7488" datatype="html">
+        <source>Technologies:  <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_3" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18ead0f4c2b27148d1d0051e60465eff9e051b09" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Project: Web application with data management<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Winter 2019<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="741917e79cfccdd4c0c626bfbd14b8496d6ebf04" datatype="html">
+        <source>Second year team project at Polytechnique Montréal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b167e238b42b7e62c617f97b9e4af3e315b8c099" datatype="html">
+        <source>•	Design, develop and test an interactive web application (Front-end and Back-end)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1136ea7b8bd218f6cb1d386a2c51188c06bd79d6" datatype="html">
+        <source>•	Use basic computer graphics and UI knowledge to make the site user friendly</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="abc664485445f3be5a2de9056463092d57d8ff93" datatype="html">
+        <source>•	Save and recover user data from a NoSQL Database</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="122b6b067b60e065ebd3df2df1e5ce3db69d4c6b" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7cd01f5495a2eaa55d2adedd517eecd800791db" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Project: Embedded system<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Winter 2018<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="05e9f3f605ddee85b049da066287cdda65519259" datatype="html">
+        <source>First year team project at Polytechnique Montréal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e708b520fdd80d9289333f9fa5ca23f3485149a0" datatype="html">
+        <source>•	Build a system containing software and hardware components from a microcontroller card</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dbec08493a1eb6e347095a39c6c9575211232186" datatype="html">
+        <source>•	Produce a complete computer system with inputs/outputs and external peripherals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e339a8f111f945a1dbd70f27db386ff508c8d40" datatype="html">
+        <source>Technologies: AVR microcontroller and basic linux and shell scripting (Makefiles, GCC...)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b5e392e66c7d31aa3a56bcc9a0840390046fb32d" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Project: Development of a web chat application<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Autumn 2018<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d3452f3fe9796909f4ed059f2cd3450a4524c82b" datatype="html">
+        <source>Project at Polytechnique Montréal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6dbf5d1589bd2aa20026a1725d43493c93496566" datatype="html">
+        <source>•	Develop an application communicating to a server through “Web Sockets” in HTML and CSS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6bb22705922fe2820ab04cf0531d7ee6cc6308f6" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b710b83b5e9f5f5493b819597012278c8c64e75d" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Admission scholarship<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>2017-2018<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="44be6c330cc9e3d939e664474cd2f741e19bb1e5" datatype="html">
+        <source>Due to the academic level of excellence in college</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8435a8c8ba7b3258e23b68b76dc9cd567457cc87" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Internship: Tools Programmer Intern<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>June 2017 - July 2017<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a84160d17d369e294d9c153c3a9a20e89dc33bb" datatype="html">
+        <source>Ubisoft, Montreal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7a806ebfef694efec95b7085e06e9b98bf63782b" datatype="html">
+        <source>•	Create Smoke tests and unit tests in C# according to the needs of the Quality Assurance team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f2cb98f11a8dd7a25d091a5b2b24514580058da7" datatype="html">
+        <source>•	Implement new functionalities while respecting the deadlines (sprints of two weeks)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9d985feedfeccf9769cda716db86e53cf9ca0461" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>College diploma in Computer Science and Mathematics<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>2017<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f7dc39768b695cefafe9962b6f8d6274919d6d9e" datatype="html">
+        <source>Collège de Maisonneuve, Montreal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a49c9d9c3489f53d5c93884294f0272ce6f67576" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>First prize from the collegial Department of Mathematics<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>2017<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9c5cce978afdbb83e94dc6a30c5701e20ba1f8ab" datatype="html">
+        <source>Highest average score for all the courses in mathematics - Cohort of 2015-2017</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eba97af5bc03734566152346487f44289d52eed2" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Project: Rollercoaster simulation<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Winter 2017<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5909a94a4117fb0cd850c8137be90cd8083bc6fe" datatype="html">
+        <source>Collegial final integration project at Collège de Maisonneuve</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="550eb21381e3c6f7a6095889a9472f3588d72011" datatype="html">
+        <source>•	Analyze, implement, and present the mathematical aspects related to the project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b1ae0cdc83e94cda8c61bae977712a1a85c24f62" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68541418db869a21e1e1495fdb80a0820713c4e5" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Internship: Tools Tester<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>May 2016 - July 2016<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a32456335a6306b9526e481e516ede2323ed4e0" datatype="html">
+        <source>•	Find and communicate bug reproduction steps to the development team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d1f7b3e0ec8aa648a45efc0f36cad0551970b2b" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Internship: Data Collection Manager<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>June 2013 - August 2013<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adcc5fec0d21e780eea4340ab317a1eb392687af" datatype="html">
+        <source>Usine C, Montreal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ed3e5c9b50661c3a898f95ca035983e5cc1cf21" datatype="html">
+        <source>•	Generate different graphs and statistics from data collected on customer satisfaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-date/about-me-date.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e4b90e5420f0e805d8c1a3e0ecbae0f009fd8099" datatype="html">
+        <source>•	Knowledge of several programming languages (C#, Java…), frameworks (Spring, Angular…) and database management (SQL, Hibernate…)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="01c2e734891abd90c8e8d948f15cf1b3c320f31a" datatype="html">
+        <source>•	Work experience in different environments, international studies, and multiple team projects</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2dadf3bce4a4a33742aa272269407667b45bb351" datatype="html">
+        <source>•	Strong team spirit, open-minded and ability to easily communicate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="028863b94bc2c974b3f6d7fb54bdf01014fbd51c" datatype="html">
+        <source>•	Goal-driven, passion for technology and for learning!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6dc5d9966e45622ea45d78ef95c6b8b355f2b4bb" datatype="html">
+        <source>Languages / Frameworks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b78e4e182c145bdf8856b714c590836d1a970892" datatype="html">
+        <source>Tools / Software</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bf8b6b7877ac56e9b22097deb623c275399489d7" datatype="html">
+        <source>Programming practices</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c820d570d78bb8ce3faf2eb15319bf19a571b970" datatype="html">
+        <source>•	C++, C#, Java, Typescript</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="75c9599b585e50f17c2695a09d05975882012a34" datatype="html">
+        <source>•	Git, SVN (basic), Perforce (basic)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e69aec855f2ca95f615caf2a5429b52b97858ce0" datatype="html">
+        <source>•	Agile (Sprints, Scrums, Pull requests, Code reviews)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bd4f03630d9a801e02cb96dc901a4b700c1bfe5e" datatype="html">
+        <source>•	Spring, WPF (.NET), Angular, React (basic)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="77e0035ce31a0d4c8e71c0d30a3c23d39e1efe64" datatype="html">
+        <source>•	Jira, Bugzilla, Bitbucket, Gradle, Jenkins</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="249cdc3cb146e14a5b3318b9db50905f7a8bf427" datatype="html">
+        <source>•	Unit tests, Smoke tests, Integration tests</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62c541f40f92aece24fe490b48daad6903d54089" datatype="html">
+        <source>•	SQL, MongoDB, Sybase, Hibernate, Spring Data JPA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5cdf403dc482b32e9a47768fcabe3c16632c7f15" datatype="html">
+        <source>•	Unreal Engine (basic)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c96c12d0c6188459f4ee4549abc7c1c0d2b0f6a9" datatype="html">
+        <source>•	Test Driven Development</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e78d67a9a3733f7945e6e663e530944efe6e3f0" datatype="html">
+        <source>•	Basic Linux and Shell scripting knowledge</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="807ec66f6c9e1487305ca5a5e725f073e62d14b6" datatype="html">
+        <source>•	Visual Studio, Eclipse, IntelliJ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ce59103699449f2c0d78c9cec2bc9bc5927f2de6" datatype="html">
+        <source>•	Documentation (JavaDoc, Swagger UI, Markdown)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddb23021acde0ce82888106f550fdcd3b8cccea8" datatype="html">
+        <source>Education</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d11a9bad5359e7c316abd8d23d48bda6fbade20f" datatype="html">
+        <source>Internships</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="472cbe9afb345f75c3f70818e8c971535eb5fc46" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Technology Part Time Analyst<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>September 2020 - December 2020<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c8b3dcbc631abebf80555621b4d7f52aefac57e7" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/><x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_3" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_4" ctype="image" equiv-text="&lt;img/&gt;"/> and other internal technologies...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b4d06ece88b5baeacbb0abec6905fce267d7ea7f" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Technology Summer Analyst<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>June 2020 - August 2020<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8583a4a827d1603736f5d855e34beede448f825d" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_3" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_4" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_5" ctype="image" equiv-text="&lt;img/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28515a43ecb81db77171b28aa6dfae821420f189" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Software Development Intern<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>May 2019 - July 2019<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="44404018f07b7e8acb7f2669b32cd5e1d57c8350" datatype="html">
+        <source>Technologies:  <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_3" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="706b773e893a418444a4e5b359c34cd0333dbe57" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Tools Programmer Intern<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>June 2017 - July 2017<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f7c8a21b28d9dcc0bb7d3c0f93258cb3636aa17d" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ab89a1794bc0f2f0867b7d84eb67c1804fbfe133" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Tools Tester<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>May 2016 - July 2016<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bcdb12efbca95e83cb84b73c9c6f1a903bbc99e5" datatype="html">
+        <source>Awards</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d2a7deb7096cada2c3177157652680fe7e6de0ed" datatype="html">
+        <source>Projects</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b88c15a13b6d16e93d74ff258c68b847d483d27" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>This website<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>August 2020 - Now<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="89b164dc99c38a5fad4db012c026849ecca3abda" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>SheetMusicOrganizer (WIP)<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>March 2020 - Now<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12fa9e93a7d467a3f2a312b0144407976a07557d" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Web application with data management<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Winter 2019<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a43fbb4cd41cf9d23be8fc8d7a9daff6099e7acc" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_2" ctype="image" equiv-text="&lt;img/&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4304a98024a2dde24a8ea4fc890212f169bb200" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Embedded system<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Winter 2018<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ef8e12ca9159869a1913b7cb30bc1207a223363b" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Development of a web chat application<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Autumn 2018<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33d368eb6d2f814fa2d2ad6010fd2ab4f3893dfd" datatype="html">
+        <source><x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>Rollercoaster simulation<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Winter 2017<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34f2bfc3765284b81ff1906ce93d40795157e75c" datatype="html">
+        <source>Technologies: <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
+						<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-type/about-me-type.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9bdabe2914083a50ae8d8486f12329a2ff9e662d" datatype="html">
+        <source>HI THERE!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2676de6070af78130de308cc5e9464662d3a6b57" datatype="html">
+        <source>I&apos;M </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fc868fbb4a3774e0a20d88a80f84a483fe3ac444" datatype="html">
+        <source>GUILHEM DUBOIS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c6d64668c0c9c13439f73c519f1ea8040b18a12" datatype="html">
+        <source>
+				I&apos;m currently in my final year of Software Enginnering at Polytechnique Montreal.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+				Although I&apos;m still at the start of my career, I&apos;ve already had the chance of working amongst multiple really talented teams at Morgan Stanley, Ubisoft and other companies.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+				I also had the great opportunity of studying abroad for a semester (at KTH Royal Institute of Technology in Stockholm, Sweden).<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+				I&apos;m always looking to make more contacts and make new experiences, be it software related or not.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+				BlaBlaBla this will change anyway.
+			</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="852f80e7d7b082b905b318001e299e021b210561" datatype="html">
+        <source>
+			You can download my CV here or look through the other tabs to see it organised in categories or chronologically.
+			It&apos;s mostly the same information, simply different formats.
+		</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="99e39381fc0d31d9315794190c0239d0e05a3a85" datatype="html">
+        <source><x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>DOWNLOAD CV</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9f7dc1b1794e7d885bc28dceda5869737cf94ece" datatype="html">
+        <source>
+		Don&apos;t hesitate to contact me for any reason using the link given below or on any of my social medias!
+	</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-me-page/about-me-main/about-me-main.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
