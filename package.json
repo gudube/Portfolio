@@ -9,7 +9,7 @@
     "lint": "ng lint",
 		"e2e": "ng e2e",
 		"deploy": "ng deploy --cname='www.guilhemdubois.com'",
-		"extract": "ng xi18n --output-path=src/locale",
+		"extract": "ng xi18n --output-path=src/locale --format=xlf2",
 		"serve": "ng serve --host 192.168.0.17 --disableHostCheck --configuration=fr"
   },
   "private": true,
