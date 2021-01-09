@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-CA">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-CA" trgLang="fr-CA">
   <file original="ng.template" id="ngi18n">
     <unit id="6018686961415145811">
       <notes>
         <note category="location">src/app/title-page/title-page.component.html:8</note>
       </notes>
-      <segment>
+      <segment state="translated" subState="poedit:fuzzy">
         <source>About Me</source>
-        <target state="initial"/>
+        <target state="initial">À propos</target>
       </segment>
     </unit>
     <unit id="2494518349154087553">
       <notes>
         <note category="location">src/app/title-page/title-page.component.html:13</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Work In Progress...</source>
-        <target state="initial"/>
+        <target state="initial">Bientôt Disponible...</target>
       </segment>
     </unit>
     <unit id="5333163929142634799">
       <notes>
         <note category="location">src/app/title-page/title-page.component.html:14</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Personal Project</source>
-        <target state="initial"/>
+        <target state="initial">Projet Personnel</target>
       </segment>
     </unit>
     <unit id="3177401316999940772">
       <notes>
         <note category="location">src/app/title-page/title-page.component.html:19</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Photography</source>
-        <target state="initial"/>
+        <target state="initial">Photographie</target>
       </segment>
     </unit>
     <unit id="3562199946446423606">
       <notes>
         <note category="location">src/app/about-me-page/about-me/about-me.component.html:7</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>About me</source>
-        <target state="initial"/>
+        <target state="initial">À propos</target>
       </segment>
     </unit>
     <unit id="342370157201175752">
       <notes>
         <note category="location">src/app/about-me-page/about-me/about-me.component.html:11</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>By category</source>
-        <target state="initial"/>
+        <target state="initial">Par catégorie</target>
       </segment>
     </unit>
     <unit id="108273660500271246">
       <notes>
         <note category="location">src/app/about-me-page/about-me/about-me.component.html:15</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>By date</source>
-        <target state="initial"/>
+        <target state="initial">Par date</target>
       </segment>
     </unit>
     <unit id="5669462994581337154">
       <notes>
         <note category="location">src/app/contact/contact-page/contact-page.component.html:3</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Contact Me</source>
-        <target state="initial"/>
+        <target state="initial">Contactez-moi</target>
       </segment>
     </unit>
     <unit id="6959497441009812685">
       <notes>
         <note category="location">src/app/contact/contact-page/contact-page.component.html:9</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Full Name</source>
-        <target state="initial"/>
+        <target state="initial">Nom complet</target>
       </segment>
     </unit>
     <unit id="4768749765465246664">
       <notes>
         <note category="location">src/app/contact/contact-page/contact-page.component.html:16</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Email</source>
-        <target state="initial"/>
+        <target state="initial">E-mail</target>
       </segment>
     </unit>
     <unit id="3174495843910953299">
       <notes>
         <note category="location">src/app/contact/contact-page/contact-page.component.html:21</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Invalid email format.</source>
-        <target state="initial"/>
+        <target state="initial">Format d'e-mail invalide.</target>
       </segment>
     </unit>
     <unit id="8066608938393600549">
       <notes>
         <note category="location">src/app/contact/contact-page/contact-page.component.html:26</note>
       </notes>
-      <segment>
+      <segment state="translated">
         <source>Message</source>
-        <target state="initial"/>
+        <target state="initial">Message</target>
       </segment>
     </unit>
     <unit id="534322451880834715">
       <notes>
         <note category="location">src/app/contact/contact-page/contact-page.component.html:32</note>
       </notes>
-      <segment>
+      <segment state="translated" subState="poedit:fuzzy">
         <source>Once submitted, you will be redirected to Google Captcha.</source>
-        <target state="initial"/>
+        <target state="initial">Une fois confirmé, vous serez redirigés vers Google Captcha.</target>
       </segment>
     </unit>
     <unit id="6284326538107029819">
@@ -193,9 +193,9 @@
         <note category="location">src/app/about-me-page/about-me-date/about-me-date.component.html:19,21</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/><ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/>
-					 <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/> <ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/&gt;"/>
-					 <ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/&gt;"/> and other internal technologies...</source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/><ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/>
+					 <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/> <ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/>"/>
+					 <ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/>"/> and other internal technologies...</source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -236,7 +236,7 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:97</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/></source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/></source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -294,10 +294,10 @@
         <note category="location">src/app/about-me-page/about-me-date/about-me-date.component.html:30,33</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/>
-					<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/&gt;"/> <ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/&gt;"/>
-					<ph id="5" equiv="TAG_IMG_5" type="image" disp="&lt;img/&gt;"/></source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/>
+					<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/>"/> <ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/>"/>
+					<ph id="5" equiv="TAG_IMG_5" type="image" disp="&lt;img/>"/></source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -326,8 +326,8 @@
         <note category="location">src/app/about-me-page/about-me-date/about-me-date.component.html:86,87</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -499,9 +499,9 @@
         <note category="location">src/app/about-me-page/about-me-date/about-me-date.component.html:54,56</note>
       </notes>
       <segment>
-        <source>Technologies:  <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/>
-					<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies:  <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/>
+					<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -569,8 +569,8 @@
         <note category="location">src/app/about-me-page/about-me-date/about-me-date.component.html:62,63</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/> <ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/>
-					<ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/> <ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/>
+					<ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -678,7 +678,7 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:117</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -861,8 +861,8 @@
         <note category="location">src/app/about-me-page/about-me-date/about-me-date.component.html:96,97</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/></source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+					<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/></source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1134,9 +1134,9 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:54,56</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/><ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/>
-						<ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/> <ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/&gt;"/>
-						<ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/&gt;"/> and other internal technologies...</source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/><ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/>
+						<ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/> <ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/>"/>
+						<ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/>"/> and other internal technologies...</source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1154,10 +1154,10 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:62,65</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/>
-						<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/&gt;"/> <ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/&gt;"/>
-						<ph id="5" equiv="TAG_IMG_5" type="image" disp="&lt;img/&gt;"/></source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/>
+						<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/>"/> <ph id="4" equiv="TAG_IMG_4" type="image" disp="&lt;img/>"/>
+						<ph id="5" equiv="TAG_IMG_5" type="image" disp="&lt;img/>"/></source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1175,9 +1175,9 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:71,73</note>
       </notes>
       <segment>
-        <source>Technologies:  <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/>
-						<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies:  <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/>
+						<ph id="3" equiv="TAG_IMG_3" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1196,8 +1196,8 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:100,101</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/> <ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1260,8 +1260,8 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:107,108</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/> <ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/>
-						<ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/&gt;"/> </source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/> <ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/>
+						<ph id="2" equiv="TAG_IMG_2" type="image" disp="&lt;img/>"/> </source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1297,8 +1297,8 @@
         <note category="location">src/app/about-me-page/about-me-type/about-me-type.component.html:121,122</note>
       </notes>
       <segment>
-        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>
-						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/&gt;"/></source>
+        <source>Technologies: <ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>
+						<ph id="1" equiv="TAG_IMG_1" type="image" disp="&lt;img/>"/></source>
         <target state="initial"/>
       </segment>
     </unit>
@@ -1335,10 +1335,10 @@
       </notes>
       <segment>
         <source>
-				I'm currently in my final year of Software Enginnering at Polytechnique Montreal.<ph id="0" equiv="LINE_BREAK" type="fmt" disp="&lt;br/&gt;"/>
-				Although I'm still at the start of my career, I've already had the chance of working amongst multiple really talented teams at Morgan Stanley, Ubisoft and other companies.<ph id="1" equiv="LINE_BREAK" type="fmt" disp="&lt;br/&gt;"/>
-				I also had the great opportunity of studying abroad for a semester (at KTH Royal Institute of Technology in Stockholm, Sweden).<ph id="2" equiv="LINE_BREAK" type="fmt" disp="&lt;br/&gt;"/>
-				I'm always looking to make more contacts and make new experiences, be it software related or not.<ph id="3" equiv="LINE_BREAK" type="fmt" disp="&lt;br/&gt;"/>
+				I'm currently in my final year of Software Enginnering at Polytechnique Montreal.<ph id="0" equiv="LINE_BREAK" type="fmt" disp="&lt;br/>"/>
+				Although I'm still at the start of my career, I've already had the chance of working amongst multiple really talented teams at Morgan Stanley, Ubisoft and other companies.<ph id="1" equiv="LINE_BREAK" type="fmt" disp="&lt;br/>"/>
+				I also had the great opportunity of studying abroad for a semester (at KTH Royal Institute of Technology in Stockholm, Sweden).<ph id="2" equiv="LINE_BREAK" type="fmt" disp="&lt;br/>"/>
+				I'm always looking to make more contacts and make new experiences, be it software related or not.<ph id="3" equiv="LINE_BREAK" type="fmt" disp="&lt;br/>"/>
 				BlaBlaBla this will change anyway.
 			</source>
         <target state="initial"/>
@@ -1361,7 +1361,7 @@
         <note category="location">src/app/about-me-page/about-me-main/about-me-main.component.html:26</note>
       </notes>
       <segment>
-        <source><ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/&gt;"/>DOWNLOAD CV</source>
+        <source><ph id="0" equiv="TAG_IMG" type="image" disp="&lt;img/>"/>DOWNLOAD CV</source>
         <target state="initial"/>
       </segment>
     </unit>
