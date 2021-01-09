@@ -19,66 +19,108 @@ table {
 	align-items: flex-start;
 	background-color: var(--background-softer-color);
 	background-image: linear-gradient(var(--background-softer-color) 99%, var(--background-color) 100%);
-}
 
-#labelContainer {
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-
-#textContainer {
-	display: inline-block;
-	flex-grow: 1;
-	margin-right: 15px;
-	margin-left: 15px;
-}
-
-.title {
-	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: 55px;
-	h4{
-		margin-left: 0;
-	}
-	span{
+	#textContainer {
+		display: inline-block;
 		flex-grow: 1;
-		text-align: right;
-	}
-}
+		margin-right: 15px;
+		margin-left: 15px;
 
-.subtitle {
-	margin-left: 12px;
-	margin-top: 10px;
+		.category {
+			margin-left: 0;
+			text-align: center;
+			margin-top: 65px;
+			margin-bottom: 0;
+			font-size: 3rem;
+			text-shadow: 2px 2px 5px var(--accent-color);
 
-	img {
-		//background-color: white;
-		height: 30px; //todo: resize the images to all be the same size to not have to do that
-		width: 70px;
-		object-fit: scale-down;
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-}
+			& + .title {
+				margin-top: 10px;
+			}
 
-.category {
-	margin-left: 0;
-	text-align: center;
-	margin-top: 65px;
-	margin-bottom: 0;
-	font-size: 3rem;
+			& + .subtitle {
+				margin-top: 20px;
+			}
+		}
 
-	& + .title {
+		.title {
+			display: flex;
+			align-items: baseline;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 55px;
+			margin-bottom: 15px;
+			.job {
+				margin-bottom: 5px;
+				h4{
+					padding-bottom: 12px;
+					padding-left: 0;
+					margin-left: 0;
+					font-size: 1.5em;
+					font-weight: 500;
+				}
+				span{
+					font-weight: 100;
+					margin-top: 0;
+					margin-left: 0;
+					margin-bottom: 5px;
+				}
+			}
+			.date{
+				line-height: 1.3;
+				font-weight: 100;
+				flex-grow: 1;
+				text-align: right;
+			}
+		}
+
+		.subtitle {
+		margin-left: 15px;
 		margin-top: 10px;
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 1.3em;
+
+			img {
+				height: 30px;
+				margin-left: 7px;
+				margin-right: 7px;
+				vertical-align: middle;
+			}
+		}
+
+		#lastItem {
+			margin: 40px 0;
+			padding-left: 0;
+		}
 	}
 
-	& + .subtitle {
-		margin-top: 20px;
-	}
-}
+	@media only screen and (max-width: 800px) {
+		#textContainer {
+			.category {
+				font-size: 1.8em;
+				margin-top: 45px;
+				padding-bottom: 0;
+			}
 
-#lastItem {
-	margin: 40px 0;
+			.title {
+				margin-top: 25px;
+				margin-bottom: 10px;
+				.job	h4 {
+					font-size: 1em;
+					padding-bottom: 5px;
+				}
+			}
+
+			.subtitle, td, th {
+				font-size: 0.7em;
+				font-weight: 100;
+			}
+
+			h4, span {
+				font-size: 1em;
+				line-height: 1.1em;
+			}
+		}
+	}
 }
