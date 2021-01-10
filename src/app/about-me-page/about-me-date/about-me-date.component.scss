@@ -60,6 +60,7 @@
 			font-weight: 300;
 			font-size: 1em;
 			line-height: 1.3em;
+			color: var(--readable-text-color);
 
 			img {
 				height: 30px;
@@ -72,6 +73,8 @@
 		#lastItem {
 			margin: 40px 0;
 			padding-left: 0;
+			font-size: 1.5em;
+			color: var(--readable-text-color);
 		}
 	}
 
@@ -91,21 +94,29 @@
 			margin-top: 7px;
 			margin-bottom: 10px;
 			pointer-events: none;
-		}
 
-		#dateSlider ::ng-deep .mat-slider-thumb-container,
-		#dateSlider ::ng-deep .mat-slider-track-background,
-		#dateSlider ::ng-deep .mat-slider-track-fill {
-			transition: none !important;
-		}
+			& ::ng-deep .mat-slider-thumb-container,
+			& ::ng-deep .mat-slider-track-background,
+			& ::ng-deep .mat-slider-track-fill {
+				transition: none !important;
+			}
 
-		#dateSlider.mat-slider-disabled ::ng-deep .mat-slider-track-fill,
-		#dateSlider ::ng-deep .mat-slider-track-background {
-			transform: translateY(0) !important;
-		}
+			& ::ng-deep .mat-slider-track-fill {
+				background-color: var(--accent-color);
+			}
+			&.mat-slider-disabled ::ng-deep .mat-slider-track-fill {
+				background-color: transparent;
+			}
 
-		#dateSlider ::ng-deep .mat-slider-thumb {
-			visibility: hidden;
+
+			&.mat-slider-disabled ::ng-deep .mat-slider-track-fill,
+			& ::ng-deep .mat-slider-track-background {
+				transform: translateY(0) !important;
+			}
+
+			& ::ng-deep .mat-slider-thumb {
+				visibility: hidden;
+			}
 		}
 
 		#labelContainer {

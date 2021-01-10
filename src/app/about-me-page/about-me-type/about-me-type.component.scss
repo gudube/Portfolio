@@ -7,6 +7,7 @@ table {
 	}
 
 	td {
+	color: var(--readable-text-color);
 	padding: 10px 10px;
 		& + td {
 			border-left: 2px solid var(--accent-color);
@@ -80,6 +81,7 @@ table {
 		font-weight: 300;
 		font-size: 1em;
 		line-height: 1.3em;
+		color: var(--readable-text-color);
 
 			img {
 				height: 30px;
@@ -92,6 +94,8 @@ table {
 		#lastItem {
 			margin: 40px 0;
 			padding-left: 0;
+			font-size: 1.5em;
+			color: var(--readable-text-color);
 		}
 	}
 

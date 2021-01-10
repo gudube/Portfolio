@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
 		"e2e": "ng e2e",
-		"deploy": "ng deploy --cname='www.guilhemdubois.com'",
+		"deploy": "ng deploy --cname=www.guilhemdubois.com",
 		"serve": "ng serve --host 192.168.0.17 --disableHostCheck"
   },
   "private": true,

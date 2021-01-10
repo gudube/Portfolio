@@ -1,12 +1,25 @@
 #about-me-container {
-	background-color: var(--background-softer-color);
-	background-image: linear-gradient(var(--background-softer-color) 95%, var(--background-color) 100%);
+	background-color: var(--background-soft-color);
+	background-image: linear-gradient(var(--background-soft-color) 90%, var(--background-color) 100%);
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 60px;
 	padding-bottom: 70px;
+	position: relative;
+
+	#background-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 500px;
+		height: 500px;
+		opacity: 0.3;
+		z-index: 1;
+	}
 
 	#intro-container {
+		position: relative;
+		z-index: 2;
 		display: flex;
 
 		#portrait {
@@ -109,7 +122,7 @@
 				}
 				&:hover {
 					p{
-						font-size: 1.1rem;
+						font-size: 1rem;
 					}
 				}
 			}
