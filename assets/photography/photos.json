@@ -25,6 +25,18 @@
 			"photoFileNames" : ["ljubljana-001.jpg","ljubljana-002.jpg","ljubljana-003.jpg","ljubljana-004.jpg","ljubljana-005.jpg","ljubljana-006.jpg","ljubljana-007.jpg","ljubljana-008.jpg","ljubljana-009.jpg","ljubljana-010.jpg","ljubljana-011.jpg","ljubljana-012.jpg","ljubljana-013.jpg","ljubljana-014.jpg","ljubljana-015.jpg","ljubljana-016.jpg","ljubljana-017.jpg","ljubljana-018.jpg","ljubljana-019.jpg","ljubljana-020.jpg"]
 		},
 		{
+			"id" : "tallinn",
+			"title" : "Tallinn",
+			"subtitle" : "Estonia",
+			"photoFileNames" : ["tallinn-001.jpg","tallinn-002.jpg","tallinn-003.jpg","tallinn-004.jpg","tallinn-005.jpg","tallinn-006.jpg","tallinn-007.jpg","tallinn-008.jpg","tallinn-009.jpg","tallinn-010.jpg","tallinn-011.jpg","tallinn-012.jpg","tallinn-013.jpg","tallinn-014.jpg","tallinn-015.jpg","tallinn-016.jpg","tallinn-017.jpg"]
+		},
+		{
+			"id" : "berlin",
+			"title" : "Berlin",
+			"subtitle" : "Germany",
+			"photoFileNames" : ["berlin-001.jpg","berlin-002.jpg","berlin-003.jpg","berlin-004.jpg","berlin-005.jpg"]
+		},
+		{
 			"id": "naples",
 			"title" : "Naples",
 			"subtitle" : "Italia",
@@ -41,18 +53,6 @@
 			"title" : "Copenhagen",
 			"subtitle" : "Denmark",
 			"photoFileNames" : ["copenhagen-001.jpg","copenhagen-002.jpg","copenhagen-003.jpg","copenhagen-004.jpg","copenhagen-005.jpg","copenhagen-006.jpg","copenhagen-007.jpg","copenhagen-008.jpg","copenhagen-009.jpg","copenhagen-010.jpg","copenhagen-011.jpg"]
-		},
-		{
-			"id" : "lapland",
-			"title" : "Lapland",
-			"subtitle" : "Northern Sweden and Norway",
-			"photoFileNames" : []
-		},
-		{
-			"id" : "estonia",
-			"title" : "Estonia",
-			"subtitle" : "Tallinn",
-			"photoFileNames" : []
 		}
 	]
 }
