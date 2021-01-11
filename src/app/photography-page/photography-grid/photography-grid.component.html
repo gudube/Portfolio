@@ -7,11 +7,23 @@
 
 <app-back-button route='/photography'></app-back-button>
 
-<div id="grid" [ngClass]="{'background-grid': showingFullImage}">
-	<div id="cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
-		<div id="squareImgContainer" (click)="selectImage(index)">
-			<img src="assets/photography/{{album.id}}/sd/{{imageFileName}}" alt="photo">
+<div id="view-selection">
+	<span class="option" [ngClass]="{'selected': gridView}" (click)="gridView = true">Grid View</span>
+	<span> / </span>
+	<span class="option" [ngClass]="{'selected': !gridView}" (click)="gridView = false">List View</span>
+</div>
+
+<div id="grid-view" *ngIf="gridView" [ngClass]="{'background-grid': showingFullImage}">
+	<div class="grid-cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
+		<div class="square-img-container" (click)="selectImage(index)">
+			<img src="assets/photography/{{album.id}}/sd/{{imageFileName}}" alt="photo: {{imageFileName}}">
 		</div>
+	</div>
+</div>
+
+<div id="list-view" *ngIf="!gridView" [ngClass]="{'background-list': showingFullImage}">
+	<div class="list-element" *ngFor="let imageFileName of album.photoFileNames; let index = index">
+		<img src="assets/photography/{{album.id}}/hd/{{imageFileName}}" alt="photo: {{imageFileName}}" (click)="selectImage(index)">
 	</div>
 </div>
 

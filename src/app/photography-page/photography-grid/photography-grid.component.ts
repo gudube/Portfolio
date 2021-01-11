@@ -16,6 +16,7 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 	public showingFullImage = false;
 	public hasPreviousImage = false;
 	public hasNextImage = false;
+	public gridView = true;
 
 	constructor(private route: ActivatedRoute, private service: PhotographyService) {}
 
