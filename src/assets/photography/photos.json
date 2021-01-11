@@ -43,6 +43,12 @@
 			"photoFileNames" : ["copenhagen-001.jpg","copenhagen-002.jpg","copenhagen-003.jpg","copenhagen-004.jpg","copenhagen-005.jpg","copenhagen-006.jpg","copenhagen-007.jpg","copenhagen-008.jpg","copenhagen-009.jpg","copenhagen-010.jpg","copenhagen-011.jpg"]
 		},
 		{
+			"id" : "berlin",
+			"title" : "Berlin",
+			"subtitle" : "Germany",
+			"photoFileNames" : ["berlin-001.jpg","berlin-002.jpg","berlin-003.jpg","berlin-004.jpg","berlin-005.jpg"]
+		},
+		{
 			"id" : "lapland",
 			"title" : "Lapland",
 			"subtitle" : "Northern Sweden and Norway",
