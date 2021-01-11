@@ -49,15 +49,15 @@
 			"photoFileNames" : ["berlin-001.jpg","berlin-002.jpg","berlin-003.jpg","berlin-004.jpg","berlin-005.jpg"]
 		},
 		{
+			"id" : "tallinn",
+			"title" : "Tallinn",
+			"subtitle" : "Estonia",
+			"photoFileNames" : ["tallinn-001.jpg","tallinn-002.jpg","tallinn-003.jpg","tallinn-004.jpg","tallinn-005.jpg","tallinn-006.jpg","tallinn-007.jpg","tallinn-008.jpg","tallinn-009.jpg","tallinn-010.jpg","tallinn-011.jpg","tallinn-012.jpg","tallinn-013.jpg","tallinn-014.jpg","tallinn-015.jpg","tallinn-016.jpg","tallinn-017.jpg"]
+		},
+		{
 			"id" : "lapland",
 			"title" : "Lapland",
 			"subtitle" : "Northern Sweden and Norway",
-			"photoFileNames" : []
-		},
-		{
-			"id" : "estonia",
-			"title" : "Estonia",
-			"subtitle" : "Tallinn",
 			"photoFileNames" : []
 		}
 	]
