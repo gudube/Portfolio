@@ -1,4 +1,4 @@
-:host{
+:host {
 	-ms-user-select: none;
 	user-select: none;
 }
@@ -11,30 +11,47 @@
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-}
 
-.background-grid {
-	overflow: hidden;
-}
+	&.background-grid {
+		overflow: hidden;
+	}
 
-#cell {
-	height: 300px;
-	width: 300px;
-	margin: 20px;
-}
+	#cell {
+		height: 300px;
+		width: 300px;
+		margin: 20px;
 
-#squareImgContainer {
-	margin: 0 auto;
-	height: 300px;
-	width: 300px;
+		#squareImgContainer {
+			margin: 0 auto;
+			height: 300px;
+			width: 300px;
 
-  overflow: hidden;
-	cursor: pointer;
-}
+			overflow: hidden;
+			cursor: pointer;
 
-#squareImgContainer img {
-	width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+
+		@media (hover: hover) {
+			#squareImgContainer img {
+				transition: width 0.2s, height 0.2s, margin-left 0.2s, margin-top 0.2s;
+			}
+			&:hover {
+				#squareImgContainer {
+					box-shadow: 0 0 35px 5px rgba(white, 0.1);
+					img {
+						width: 102%;
+						height: 102%;
+						margin-left: -1%;
+						margin-top: -1%;
+					}
+				}
+			}
+		}
+	}
 }

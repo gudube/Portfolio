@@ -10,6 +10,7 @@
   --background-soft-color: #0f1214;
   --background-softer-color: #191c1d;
 	--accent-color: #00BCD4;
+	--accent-color-rgb: 0, 188, 212; //can do rgba(var(--accent-color-rgb), 0.2) for example
 	--hoverable-color: #BDBDBD;
 	--hovered-color: white;
 	--disabled-color: rgba(255, 255, 255, 0.3);
