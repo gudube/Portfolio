@@ -9,7 +9,8 @@
     "lint": "ng lint",
 		"e2e": "ng e2e",
 		"deploy": "ng deploy --cname=www.guilhemdubois.com",
-		"serve": "ng serve --host 192.168.0.17 --disableHostCheck"
+		"serve": "ng serve --host 192.168.0.17 --disableHostCheck",
+		"serve-prod": "ng serve --prod --host 192.168.0.17 --disable-host-check"
   },
   "private": true,
   "dependencies": {
