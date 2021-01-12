@@ -12,6 +12,7 @@ import { PhotographyService } from './photography-page/photography.service';
 import * as Hammer from 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectPageComponent } from './project-page/project-page.component';
+import { SeoService } from './seo-service.service';
 
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {
@@ -43,10 +44,12 @@ export class HammerConfig extends HammerGestureConfig {
 		useFactory: ConfigurationServiceFactory,
 		deps: [PhotographyService],
 		multi: true
-	}, {
+	},
+	{
 		provide: HAMMER_GESTURE_CONFIG,
 		useClass: HammerConfig
-	}],
+	},
+	SeoService ],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
