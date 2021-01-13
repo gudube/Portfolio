@@ -8,7 +8,7 @@ import { ContactModel } from './contact-model';
 	providedIn: 'root',
 })
 export class ContactService {
-	private api = 'https://mailthis.to/alias';
+	private api = 'https://mailthis.to/guilhemdubois';
 
 	constructor(private httpClient: HttpClient) { }
 
