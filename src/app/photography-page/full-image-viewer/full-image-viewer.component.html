@@ -35,7 +35,7 @@
 	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
 	<img src={{imgSrc}} (click)="zoom($event)" (load)="loaded = true" (error)="imageNotFound()" *ngIf="this.showImage"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
-		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Image">
+		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Full Size Photograph">
 </div>
 <mat-spinner id="loadingSpinner" *ngIf="visible && !loaded" diameter="100" strokeWidth="5"></mat-spinner>
 <div class="arrowContainer" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">
