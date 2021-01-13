@@ -33,7 +33,7 @@ table {
 			margin-top: 65px;
 			margin-bottom: 0;
 			font-size: 3rem;
-			text-shadow: 2px 2px 5px var(--accent-color);
+			text-shadow: 2px 2px 5px rgba(var(--accent-color-rgb), 0.6);
 
 			& + .title {
 				margin-top: 10px;
