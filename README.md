@@ -1,3 +1,8 @@
+https://www.guilhemdubois.com
+https://guilhemdubois.com
+http://www.guilhemdubois.com
+http://guilhemdubois.com
+
 # GuilhemDuboisPortfolio
 Repository for my personal website.
 
