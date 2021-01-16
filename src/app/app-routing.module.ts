@@ -7,6 +7,7 @@ import { PhotographyGridComponent } from './photography-page/photography-grid/ph
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { environment } from 'src/environments/environment';
+import { ErrorMainComponent } from './error-page/error-main/error-main.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo:'home', pathMatch:'full'},
@@ -100,7 +101,7 @@ const routes: Routes = [
 			}
 		}
 	},
-	{ path: '**', redirectTo: 'home'}
+	{ path: '**', component: ErrorMainComponent}
 ];
 
 @NgModule({

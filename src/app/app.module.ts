@@ -13,6 +13,7 @@ import * as Hammer from 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { SeoService } from './seo-service.service';
+import { ErrorPageModule } from './error-page/error-page.module';
 
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {
@@ -35,6 +36,7 @@ export class HammerConfig extends HammerGestureConfig {
 		UiToolsModule,
 		PhotographyPageModule,
 		AboutMePageModule,
+		ErrorPageModule,
 		HammerModule,
 		BrowserAnimationsModule,
 		ContactModule
