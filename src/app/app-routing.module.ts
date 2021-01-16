@@ -16,9 +16,9 @@ const routes: Routes = [
 			seo: {
 				title: 'Guilhem Dubois | Developer Portfolio',
 				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developper, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ name: 'description', content: 'I\'m Guilhem Dubois, Developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
 					{ property: 'og:title', content: 'Guilhem Dubois | Developer Portfolio' },
-					{ proprety: 'og:description', content: 'I\'m Guilhem Dubois, developper, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ proprety: 'og:description', content: 'I\'m Guilhem Dubois, Developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
 					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 					{ property: 'og:url', content: environment.baseUrl + 'home' }
 					//{ name: 'twitter:card', content: 'summary_large_image' },
@@ -31,9 +31,9 @@ const routes: Routes = [
 			seo: {
 				title: 'Guilhem Dubois | About Me',
 				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developper, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ name: 'description', content: 'I\'m Guilhem Dubois, Developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
 					{ property: 'og:title', content: 'Guilhem Dubois | About Me' },
-					{ proprety: 'og:description', content: 'I\'m Guilhem Dubois, developper, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ proprety: 'og:description', content: 'I\'m Guilhem Dubois, Developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
 					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 					{ property: 'og:url', content: environment.baseUrl + 'about-me' },
 					//{ name: 'twitter:card', content: 'summary_large_image' },
@@ -91,9 +91,9 @@ const routes: Routes = [
 			seo: {
 				title: 'Guilhem Dubois | Contact Me',
 				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developper, future software engineer and travel lover. Feel free to contact me here or through any of my social media!' },
+					{ name: 'description', content: 'I\'m Guilhem Dubois, Developer, future software engineer and travel lover. Feel free to contact me here or through any of my social media!' },
 					{ property: 'og:title', content: 'Guilhem Dubois | Contact Me' },
-					{ proprety: 'og:description', content: 'I\'m Guilhem Dubois, developper, future software engineer and travel lover. Feel free to contact me here or through any of my social media!' },
+					{ proprety: 'og:description', content: 'I\'m Guilhem Dubois, Developer, future software engineer and travel lover. Feel free to contact me here or through any of my social media!' },
 					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 					{ property: 'og:url', content: environment.baseUrl + 'contact-me' },
 					//{ name: 'twitter:card', content: 'summary_large_image' },
