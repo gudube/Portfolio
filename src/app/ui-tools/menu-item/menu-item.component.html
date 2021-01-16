@@ -3,5 +3,9 @@
 		<h3 id="title" class="hoverable-text">{{ title }}</h3>
 		<h4 id="subtitle" class="hoverable-text" *ngIf="!!subtitle">{{ subtitle }}</h4>
 	</div>
-	<img id="menu-image" src="{{ imgSrc }}" alt="Menu Item"/>
+	<picture>
+		<source srcset="{{ imgSrc }}.webp" type="image/webp">
+		<source srcset="{{ imgSrc }}.jpg" type="image/jpeg">
+		<img id="menu-image" src="{{ imgSrc }}.jpg" alt="Menu Item">
+	</picture>
 </div>
