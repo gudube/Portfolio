@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 enum Resolution { UHD = 'uhd', HD = 'hd', SD = 'sd' }
@@ -92,6 +92,12 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		//return this.httpClient.get(url).pipe(map(() => true), catchError(() => of(false)));
 	}
 
+	@HostListener('window:resize')
+	private onResize(): void {
+		this.zoomedHeightOverflow = false;
+		this.zoomedWidthOverflow = false;
+	}
+
 	//TODO [2]: disable chrome back feature when image is zoomed with width overflow
 	public zoom(e: MouseEvent): void {
 		if(this.shownRes == Resolution.SD)
@@ -104,7 +110,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		} else {
 			const nativeContainer = this.imageContainer.nativeElement;
 			const image = nativeContainer.querySelector('img') as HTMLImageElement;
-			const bounds = image.getBoundingClientRect();
+			const bounds: DOMRect = image.getBoundingClientRect();
 
 			//size of the real image (image file itself)
 			const naturalRatio = image.naturalWidth / image.naturalHeight;
