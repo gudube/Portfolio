@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 import { IAlbum } from '../models/album.model';
@@ -13,7 +13,19 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
 
 	public album: IAlbum;
-	public showingFullImage = false;
+	private _showingFullImage = false;
+	public get showingFullImage(): boolean {
+		return this._showingFullImage;
+	}
+
+	@Input()
+	public set showingFullImage(newValue: boolean) {
+		if(newValue)
+			document.body.style.overflow = 'hidden';
+		else
+			document.body.style.overflow = 'auto';
+		this._showingFullImage = newValue;
+	}
 	public hasPreviousImage = false;
 	public hasNextImage = false;
 	public gridView = true;
@@ -28,6 +40,10 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 		});
 	}
 
+	ngOnDestroy(): void {
+		document.body.style.overflow = 'auto';
+	}
+
 	private selectedFileName: string;
 
 	public selectImage(index: number): void{
@@ -37,7 +53,6 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 		this.hasPreviousImage = index > 0;
 		this.hasNextImage = index < this.album.photoFileNames.length - 1;
 		this.showingFullImage = true;
-		document.body.style.overflow = 'hidden';
 	}
 
 	public nextImage(next: boolean): void{

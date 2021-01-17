@@ -10,8 +10,9 @@ Repository for my personal website.
 ng add angular-cli-ghpages
 
 1. ng build --prod
-1. delete all files and ASSETS folder from portfolio-deploy/Portfolio
+1. delete all files except index.html and 404.html and delete the assets folder ONLY.
 1. copy folders from dist to portfolio-deploy/Portfolio EXCEPT index.html
+1. copy content of index.html to the new index.html
 IF CHANGED index.html:
 1. copy index.html to 404.html
 1. (re)create symlink to index.html in each folder?

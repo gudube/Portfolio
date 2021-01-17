@@ -56,6 +56,8 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 			else
 				this.shownRes =  this.hdAvailable ? Resolution.HD : Resolution.SD;
 
+			this.zoomedHeightOverflow = false;
+			this.zoomedWidthOverflow = false;
 			this.imgSrc = this.getImgSrc();
 			this.showImage = true;
 		});
@@ -136,7 +138,6 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		this.visible = false;
 		this.showImage = false;
 		this.visibleChange.emit(this.visible);
-		document.body.style.overflow = 'auto';
 	}
 
 	public switchHd(resolution: Resolution): void {
