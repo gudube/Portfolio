@@ -94,10 +94,6 @@ form {
 			img {
 				box-sizing: border-box;
 				height: 32px;
-				opacity: var(--hoverable-opacity);
-				&:hover{
-					opacity: var(--hovered-opacity);
-				}
 			}
 		}
 	}

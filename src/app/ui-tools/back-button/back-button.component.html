@@ -1,3 +1,11 @@
-<div id="back-button" routerLink="{{ route }}">
-	<p id="back-text">← back</p>
+<div id="menu-container">
+	<div id="menu-button-container" (click)="opened = !opened">
+		<em class="material-icons hoverable smooth-hover" *ngIf="opened">close</em>
+		<em class="material-icons hoverable smooth-hover" *ngIf="!opened">menu</em>
+	</div>
+	<div id="menu" *ngIf="opened">
+		<div *ngFor="let route of routes" class="route-container hoverable" routerLink="/{{route.path}}">
+			<p [ngClass]="{'current-route': ('/' + route.path) == currentRoute, 'sub-level': route.data.personal.level > 1}">{{route.data.personal.title}}</p>
+		</div>
+	</div>
 </div>

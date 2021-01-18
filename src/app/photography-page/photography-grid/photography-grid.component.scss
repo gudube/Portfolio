@@ -9,12 +9,8 @@
 	right: 0;
 	margin: 10px;
 	font-size: 0.8rem;
-	.option {
-		color: var(--hoverable-color);
-		&.selected {
-			color: var(--hovered-color);
-		}
-		cursor: pointer;
+	.option.selected {
+		color: var(--hovered-color);
 	}
 }
 

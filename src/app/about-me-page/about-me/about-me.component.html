@@ -1,15 +1,15 @@
 <div id="about-page-container">
 	<app-back-button></app-back-button>
 	<div id="about-type-chooser">
-		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.aboutMe}"
+		<div class="about-type-container hoverable smooth-hover" [ngClass]="{'selected': typeShown == aboutTypes.aboutMe}"
 			(click)="this.typeShown = aboutTypes.aboutMe">
 			<h4 class="about-type-text">About me</h4>
 		</div>
-		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.byCategory}"
+		<div class="about-type-container hoverable smooth-hover" [ngClass]="{'selected': typeShown == aboutTypes.byCategory}"
 			(click)="this.typeShown = aboutTypes.byCategory">
 			<h4 class="about-type-text">By category</h4>
 		</div>
-		<div class="about-type-container" [ngClass]="{'selected': typeShown == aboutTypes.byDate}"
+		<div class="about-type-container hoverable smooth-hover" [ngClass]="{'selected': typeShown == aboutTypes.byDate}"
 			(click)="this.typeShown = aboutTypes.byDate">
 			<h4 class="about-type-text">By date</h4>
 		</div>

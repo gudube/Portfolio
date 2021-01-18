@@ -14,12 +14,6 @@
 	#contact-me {
 		text-decoration: none;
 		font-size: 1.4rem;
-		opacity: var(--hoverable-opacity);
-		@media (hover: hover) {
-			&:hover{
-				opacity: var(--hovered-opacity);
-			}
-		}
 	}
 
 	#copyright, #copyright span {
@@ -37,12 +31,6 @@
 			img {
 				box-sizing: border-box;
 				height: 32px;
-				opacity: var(--hoverable-opacity);
-				@media (hover: hover) {
-					&:hover{
-						opacity: var(--hovered-opacity);
-					}
-				}
 			}
 		}
 	}

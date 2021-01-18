@@ -26,7 +26,7 @@ export class AppComponent {
 			filter((route) => route.outlet === 'primary'),
 			mergeMap((route) => route.data),
 		).subscribe(data => {
-			if(data ){
+			if(data){
 				const seoData = data['seo'];
 				if(seoData){
 					this.seoService.updateTitle(seoData['title']);

@@ -1,12 +1,12 @@
 <div id="controls" *ngIf="visible">
-	<p (click)="switchHd(resolutions.UHD)"	style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.UHD}" *ngIf="this.uhdAvailable">UHD</p>
-	<p (click)="switchHd(resolutions.HD)"		style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.HD}" *ngIf="this.hdAvailable">HD</p>
-	<p (click)="switchHd(resolutions.SD)"		style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.SD}">SD</p>
-	<p (click)="zoom($event)" style="text-align: center;"
+	<p (click)="switchHd(resolutions.UHD)" class="hoverable" style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.UHD}" *ngIf="this.uhdAvailable">UHD</p>
+	<p (click)="switchHd(resolutions.HD)"	class="hoverable"	style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.HD}" *ngIf="this.hdAvailable">HD</p>
+	<p (click)="switchHd(resolutions.SD)"	class="hoverable"	style="text-align: right;" [ngClass]="{'selectedRes': this.shownRes == resolutions.SD}">SD</p>
+	<p (click)="zoom($event)" class="hoverable" style="text-align: center;"
 			[style.visibility]="shownRes == resolutions.SD ? 'hidden' : 'visible'">{{(zoomedHeightOverflow || zoomedWidthOverflow) ? '-' : '+'}}</p>
-	<p (click)="hide()"				style="text-align: left;">X</p>
+	<p (click)="hide()" class="hoverable" style="text-align: left;">X</p>
 </div>
-<div class="arrowContainer" *ngIf="visible && hasPreviousImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="left: 0;" (click)="changeImage(false)">
+<div class="arrowContainer hoverable" *ngIf="visible && hasPreviousImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="left: 0;" (click)="changeImage(false)">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">
 		<g>
@@ -38,7 +38,7 @@
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Full Size Photograph">
 </div>
 <mat-spinner id="loadingSpinner" *ngIf="visible && !loaded" diameter="100" strokeWidth="5"></mat-spinner>
-<div class="arrowContainer" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">
+<div class="arrowContainer hoverable" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">
 		<g>

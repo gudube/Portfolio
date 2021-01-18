@@ -1,23 +1,30 @@
-#back-button {
+#menu-container {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
-
-  cursor: pointer;
+  z-index: 100;
   padding: 10px 15px 12px 10px;
-  background-color: var(--background-color);
+  background-color: var(--background-soft-color);
   border-radius: 0 0 10px 0;
   border-color: grey;
   border-width: 0 1px 1px 0;
   border-style: dashed;
-}
 
-#back-text {
-	font-size: 1.3rem;
-	color: var(--hoverable-color);
-}
+	#menu-button-container {
+		cursor: pointer;
+	}
 
-#back-button:hover #back-text {
-	color: var(--hovered-color);
+	#menu {
+		.route-container {
+			cursor: pointer;
+			font-size: 0.8em;
+			margin: 15px;
+			.current-route {
+				color: var(--accent-color)
+			}
+			.sub-level {
+				margin-left: 15px;
+			}
+		}
+	}
 }

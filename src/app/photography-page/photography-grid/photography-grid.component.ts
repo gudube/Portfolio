@@ -33,9 +33,8 @@ export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy l
 	constructor(private route: ActivatedRoute, private service: PhotographyService) {}
 
 	ngOnInit(): void {
-		this.route.params.subscribe(params => {
-			//TODO [2]: Add guard to make sure the albumId is valid in the router itself and fo to 404 otherwise
-			const albumId: string = params['albumId'];
+		this.route.url.subscribe(url => {
+			const albumId: string = url[1].path;
 			this.album = this.service.albums.find(x => x.id == albumId);
 		});
 	}

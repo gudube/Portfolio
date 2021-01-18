@@ -75,7 +75,7 @@
 		//}
 
 		//when hovering
-		&:hover, &:active {
+		&:hover {
 			&:after {
 				opacity: 0; //Removes the shadow when hovering over item
 			}

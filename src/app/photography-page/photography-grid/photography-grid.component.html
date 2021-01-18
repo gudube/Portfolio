@@ -8,9 +8,9 @@
 <app-back-button route='/photography'></app-back-button>
 
 <div id="view-selection">
-	<span class="option" [ngClass]="{'selected': gridView}" (click)="gridView = true">Grid View</span>
+	<span class="option hoverable" [ngClass]="{'selected': gridView}" (click)="gridView = true">Grid View</span>
 	<span> / </span>
-	<span class="option" [ngClass]="{'selected': !gridView}" (click)="gridView = false">List View</span>
+	<span class="option hoverable" [ngClass]="{'selected': !gridView}" (click)="gridView = false">List View</span>
 </div>
 
 <div id="grid-view" *ngIf="gridView" [ngClass]="{'background-grid': showingFullImage}">

@@ -62,3 +62,61 @@ h4 {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Material icons
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons { color: var(--hovered-color); }
+.material-icons.md-inactive { color: var(--disabled-color) }
+
+.hoverable {
+	cursor: pointer;
+	color: var(--hovered-color);
+	p, h2, h3, h4, span {
+		color: inherit;
+	}
+	svg {
+		fill: var(--hovered-color);
+	}
+	img {
+		opacity: var(--hovered-opacity);
+	}
+	@media (hover: hover) {
+		color: var(--hoverable-color);
+		p, h2, h3, h4, span {
+			color: inherit;
+		}
+		svg {
+			fill: var(--hoverable-color);
+		}
+		img {
+			opacity: var(--hoverable-opacity);
+		}
+		&:hover {
+			color: var(--hovered-color);
+			svg {
+				fill: var(--hovered-color)
+			}
+			img {
+				opacity: var(--hovered-opacity);
+			}
+		}
+	}
+}
+
+.smooth-hover {
+	@media (hover: hover) {
+		&.hoverable{
+			p, h2, h3, h4{
+				transition: color 0.3s;
+			}
+		}
+		&.hoverable-opacity {
+			transition: opacity 0.3s;
+		}
+	}
+}

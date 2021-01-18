@@ -29,7 +29,6 @@ export class ContactPageComponent implements OnInit {
 	}
 
 	public onSubmit(formData: ContactModel): void {
-		console.log(formData);
 		this.contactService.sendMail(formData)
 			.subscribe(response => {
 				location.href = 'https://mailthis.to/confirm';

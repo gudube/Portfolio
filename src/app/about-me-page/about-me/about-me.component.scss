@@ -43,15 +43,6 @@
 //  	box-shadow:         inset 0 -15px 10px -15px var(--accent-color), 0 6px 2px -4px var(--accent-color);
 // }
 
-.about-type-text {
-	color: var(--hoverable-color);
-	transition: color 0.3s;
-}
-
-.about-type-container:hover .about-type-text {
-	color: var(--hovered-color);
-}
-
 .about-type-container.selected .about-type-text {
 	color: var(--accent-color);
 	text-shadow: 1px 1px 3px var(--accent-color);
