@@ -12,7 +12,7 @@
 .header h1{
   position: absolute;
   top: 0;
-  font-size: min(9.5vh, 13vw);
+	font-size: min(9.5vh, 13vw);
 }
 
 .header h2{
@@ -20,4 +20,5 @@
   bottom: 0;
   right:0;
   font-size: 9.5vh;
+	color: var(--accent-color)
 }
