@@ -24,7 +24,7 @@ export class HammerConfig extends HammerGestureConfig {
 		doubletap: { enable: false },
 		press: { enable: false },
 		pan: { enable: false },
-		swipe: { enable: true, direction: Hammer.DIRECTION_HORIZONTAL },
+		swipe: { enable: true, direction: Hammer.DIRECTION_ALL },
 	}
 }
 

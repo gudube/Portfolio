@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, } from '@angular/core';
+import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, OnInit, } from '@angular/core';
 import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
@@ -30,6 +30,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	public imgSrc: string;
 	public uhdAvailable = false;
 	public hdAvailable = false;
+	public showSwipeMessage = false;
 	private imgName: string;
 	private albumName: string;
 
@@ -60,6 +61,15 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 			this.zoomedWidthOverflow = false;
 			this.imgSrc = this.getImgSrc();
 			this.showImage = true;
+			if (sessionStorage.getItem('imageOpenedBefore')) {
+				// doesn't need to show the message again
+				this.showSwipeMessage = false;
+			} else {
+				sessionStorage.setItem('imageOpenedBefore', 'yes');
+				// show navigation message
+				if(matchMedia('(hover: none), (pointer: coarse)').matches)
+					this.showSwipeMessage = true;
+			}
 		});
 	}
 
@@ -143,6 +153,7 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	public hide(): void {
 		this.visible = false;
 		this.showImage = false;
+		this.showSwipeMessage = false;
 		this.visibleChange.emit(this.visible);
 	}
 
@@ -162,14 +173,15 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 
 	//TODO [1]: add swipe vertically for mobile too
 	//TODO [1]: add arrow that is either on the side or on the top/bottom depending on the calculation made in zoom()
-	public swipe(nextImage: boolean): void{
-		if(!this.zoomedWidthOverflow)
+	public swipe(nextImage: boolean, horizontally: boolean): void{
+		if(!this.zoomedWidthOverflow && !this.zoomedHeightOverflow)
 			this.changeImage(nextImage);
 	}
 
 	@HostListener('window:keydown.arrowright', ['true'])
 	@HostListener('window:keydown.arrowleft', ['false'])
 	public changeImage(nextImage: boolean): void{
+		this.showSwipeMessage = false;
 		this.nextImage.emit(nextImage);
 		//TODO [2]: load one image before
 	}

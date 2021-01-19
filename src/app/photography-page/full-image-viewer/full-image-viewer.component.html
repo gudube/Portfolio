@@ -32,7 +32,7 @@
 <div #fullImgContainer id="fullImgContainer" (click)="hide()" *ngIf="visible"
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
 		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
-	(swipeLeft)="swipe(true)" (swipeRight)="swipe(false)">
+	(swipeLeft)="swipe(true, true)" (swipeRight)="swipe(false, true)" (swipeUp)="swipe(true, false)" (swipeDown)="swipe(false, false)">
 	<img src={{imgSrc}} (click)="zoom($event)" (load)="loaded = true" (error)="imageNotFound()" *ngIf="this.showImage"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Full Size Photograph">
@@ -61,3 +61,4 @@
 		</g>
 	</svg>
 </div>
+<div id="message" *ngIf="visible && showSwipeMessage">Swipe to navigate</div>
