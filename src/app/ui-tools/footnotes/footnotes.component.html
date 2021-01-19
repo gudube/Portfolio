@@ -1,4 +1,4 @@
-<div id="footnotes">
+<div id="footnotes" *ngIf="this.location.path() !== '/contact-me'">
 	<a id="contact-me" class="hoverable" routerLink="/contact-me">Contact Me</a>
 	<p id="copyright"><span>Copyright </span>© 2020 - 2021<span> Guilhem Dubois</span></p>
 	<div id="icons-container">

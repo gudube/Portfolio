@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-footnotes',
-  templateUrl: './footnotes.component.html',
-  styleUrls: ['./footnotes.component.scss']
+	selector: 'app-footnotes',
+	templateUrl: './footnotes.component.html',
+	styleUrls: ['./footnotes.component.scss']
 })
-export class FootnotesComponent implements OnInit {
+export class FootnotesComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+	constructor(public location: Location) { }
 
 }
