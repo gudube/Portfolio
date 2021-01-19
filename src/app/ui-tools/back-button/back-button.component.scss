@@ -12,6 +12,10 @@
 
 	#menu-button-container {
 		cursor: pointer;
+		&:focus {
+			outline: 0;
+			text-shadow: 1px 1px 5px var(--readable-text-color);
+		}
 	}
 
 	#menu {
@@ -25,6 +29,27 @@
 			.sub-level {
 				margin-left: 15px;
 			}
+			&:focus {
+				outline: 0;
+				text-shadow: 1px 1px 5px var(--readable-text-color);
+			}
 		}
+	}
+}
+
+#up-arrow-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	padding: 10px;
+	visibility: collapse;
+	opacity: 0;
+	transition: visibility 0s 0.5s, opacity 0.5s 0s;
+
+	&.visible{
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0s, opacity 0.5s;
 	}
 }

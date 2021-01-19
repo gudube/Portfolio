@@ -111,9 +111,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .smooth-hover {
 	@media (hover: hover) {
 		&.hoverable{
-			p, h2, h3, h4{
-				transition: color 0.3s;
-			}
+			transition: color 0.3s;
 		}
 		&.hoverable-opacity {
 			transition: opacity 0.3s;
