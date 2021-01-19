@@ -75,15 +75,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .hoverable {
 	cursor: pointer;
-	color: var(--hovered-color);
+	color: var(--hoverable-color);
 	p, h2, h3, h4, span {
 		color: inherit;
 	}
 	svg {
-		fill: var(--hovered-color);
+		fill: var(--hoverable-color);
 	}
 	img {
-		opacity: var(--hovered-opacity);
+		opacity: var(--hoverable-opacity);
 	}
 	@media (hover: hover) {
 		color: var(--hoverable-color);
