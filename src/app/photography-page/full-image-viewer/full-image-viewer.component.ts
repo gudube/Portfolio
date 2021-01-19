@@ -10,7 +10,7 @@ enum Resolution { UHD = 'uhd', HD = 'hd', SD = 'sd' }
 	templateUrl: './full-image-viewer.component.html',
 	styleUrls: ['./full-image-viewer.component.scss'],
 })
-export class FullImageViewerComponent { //TODO [3]: Add video support
+export class FullImageViewerComponent {
 	@Input() public visible = false;
 	@Output() visibleChange = new EventEmitter<boolean>();
 
@@ -108,7 +108,6 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		this.zoomedWidthOverflow = false;
 	}
 
-	//TODO [2]: disable chrome back feature when image is zoomed with width overflow
 	public zoom(e: MouseEvent): void {
 		if(this.shownRes == Resolution.SD)
 			return; //cant zoom on SD pictures
@@ -171,8 +170,6 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 		}
 	}
 
-	//TODO [1]: add swipe vertically for mobile too
-	//TODO [1]: add arrow that is either on the side or on the top/bottom depending on the calculation made in zoom()
 	public swipe(nextImage: boolean, horizontally: boolean): void{
 		if(!this.zoomedWidthOverflow && !this.zoomedHeightOverflow)
 			this.changeImage(nextImage);
@@ -183,6 +180,5 @@ export class FullImageViewerComponent { //TODO [3]: Add video support
 	public changeImage(nextImage: boolean): void{
 		this.showSwipeMessage = false;
 		this.nextImage.emit(nextImage);
-		//TODO [2]: load one image before
 	}
 }

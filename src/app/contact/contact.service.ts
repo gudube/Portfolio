@@ -21,7 +21,7 @@ export class ContactService {
 					}
 				},
 				(error: any) => {
-					return error;//todo: handle error (show it to the user)
+					return error; //todo: handle error (show it to the user)
 				}
 			)
 		);

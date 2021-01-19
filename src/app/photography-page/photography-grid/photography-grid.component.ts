@@ -9,7 +9,7 @@ import { PhotographyService } from '../photography.service';
 	templateUrl: './photography-grid.component.html',
 	styleUrls: ['./photography-grid.component.scss'],
 })
-export class PhotographyGridComponent implements OnInit { //TODO [2]: add lazy loading or at least loading from start
+export class PhotographyGridComponent implements OnInit {
 	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
 
 	public album: IAlbum;
