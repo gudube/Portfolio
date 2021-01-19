@@ -35,6 +35,10 @@
 .about-type-container {
 	display: inline-block;
 	cursor: pointer;
+	&:focus{
+		outline: 0;
+		text-shadow: 1px 1px 5px var(--primary-text-color);
+	}
 }
 
 // .about-type-container.selected {

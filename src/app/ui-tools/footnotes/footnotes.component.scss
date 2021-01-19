@@ -14,6 +14,10 @@
 	#contact-me {
 		text-decoration: none;
 		font-size: 1.4rem;
+		&:focus {
+			outline: 0;
+			text-shadow: 1px 1px 3px var(--readable-text-color);
+		}
 	}
 
 	#copyright, #copyright span {
@@ -31,6 +35,12 @@
 			img {
 				box-sizing: border-box;
 				height: 32px;
+			}
+			&:focus {
+				outline: 0;
+				img {
+					filter: drop-shadow(2px 2px 3px var(--readable-text-color));
+				}
 			}
 		}
 	}

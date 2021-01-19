@@ -63,6 +63,19 @@
 		}
 	}
 
+	&:focus {
+		outline: 0;
+		&:after {
+			opacity: 0; //Removes the shadow when hovering over item
+		}
+
+		#text-container {
+			//Changes title opacity when hovering item
+			opacity: var(--hovered-opacity);
+			text-shadow: 0 0 4px rgba(0,0,0), 2px 2px 4px rgba(0,0,0); //can remove if want better performance
+		}
+	}
+
 	@media(hover: hover){
 		#text-container{
 			text-shadow: 2px 2px 4px rgba(0,0,0);

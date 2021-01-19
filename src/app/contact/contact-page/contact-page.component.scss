@@ -95,6 +95,12 @@ form {
 				box-sizing: border-box;
 				height: 32px;
 			}
+			&:focus {
+				outline: 0;
+				img {
+					filter: drop-shadow(2px 2px 3px var(--readable-text-color));
+				}
+			}
 		}
 	}
 }

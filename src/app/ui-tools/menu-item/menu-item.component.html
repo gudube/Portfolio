@@ -1,4 +1,4 @@
-<div id="image-container" [routerLink]=route [ngClass]="{'small': smallItem}">
+<button id="image-container" [routerLink]=route [ngClass]="{'small': smallItem}" class="transparent-button">
 	<div id="text-container" [ngClass]="{'with-subtitle': !!subtitle}" class="hoverable">
 		<h3 id="title">{{ title }}</h3>
 		<h4 id="subtitle" *ngIf="!!subtitle">{{ subtitle }}</h4>
@@ -8,4 +8,4 @@
 		<source srcset="{{ imgSrc }}.jpg" type="image/jpeg">
 		<img id="menu-image" src="{{ imgSrc }}.jpg" alt="Menu Item">
 	</picture>
-</div>
+</button>

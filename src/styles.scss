@@ -73,6 +73,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .material-icons { color: var(--hovered-color); }
 .material-icons.md-inactive { color: var(--disabled-color) }
 
+.transparent-button {
+	background: transparent;
+	border: none;
+	padding: 0;
+	display: block;
+}
+
 .hoverable {
 	cursor: pointer;
 	color: var(--hoverable-color);
