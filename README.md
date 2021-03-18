@@ -9,7 +9,7 @@ Repository for my personal website.
 ## Deploy
 ng add angular-cli-ghpages
 
-1. ng build --prod
+1. npm run deploy (ng build --prod)
 1. delete all files except index.html, 404.html and CNAME and delete the assets folder ONLY.
 1. copy folders from dist to portfolio-deploy/Portfolio EXCEPT index.html
 1. copy content of index.html to the new index.html and 404.html

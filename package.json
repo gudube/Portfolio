@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng build --prod",
-    "serve": "ng serve --host 192.168.0.17 --disableHostCheck",
-    "serve-prod": "ng serve --prod --host 192.168.0.17 --disable-host-check"
+    "serve": "ng serve --host 192.168.0.199 --disableHostCheck",
+    "serve-prod": "ng serve --prod --host 192.168.0.199 --disable-host-check"
   },
   "private": true,
   "dependencies": {
