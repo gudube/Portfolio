@@ -12,7 +12,7 @@ export class MenuItemComponent {
 
 	@Input() public readonly subtitle: string;
 
-	@Input() public readonly route: string;
+	@Input() public readonly route: string[] | string;
 
 	@Input() public readonly smallItem: boolean = false;
 
