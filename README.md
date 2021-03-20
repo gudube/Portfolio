@@ -7,32 +7,19 @@ http://guilhemdubois.com
 Repository for my personal website.
 
 ## Deploy
-ng add angular-cli-ghpages
+1. npm run deploy (ng build --prod)
+1. in gh-pages, delete all files except 404.html and CNAME and delete the assets folder ONLY.
+1. copy folders from dist to portfolio-deploy/Portfolio
+1. copy content of index.html to 404.html
+1. Commit and push gh-pages
 
-1. ng build --prod
-1. delete all files except index.html, 404.html and CNAME and delete the assets folder ONLY.
-1. copy folders from dist to portfolio-deploy/Portfolio EXCEPT index.html
-1. copy content of index.html to the new index.html and 404.html
-
+(old way: ng add angular-cli-ghpages)
 ## Routing:
 When adding a new route:
 1. add it in app-routing.module.ts
 1. add it in sitemap.xml
 2. add it in portfolio-deploy/Portfolio
-1. add symlink index.html in the created folder
+1. add symlink index.html in the created folder (or see github for format)
 
 ## Test on another device
 ng serve --host 10.0.0.17 --disableHostCheck
-
-## Images
-### Adding images (photography section):
-
-### Menu Items
-Let's do images around 4:11
-width: 1920
-
-### SD
-dimensions: 1280x720
-
-### HD
-dimensions: 1920x1080

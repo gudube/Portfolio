@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng build --prod",
-    "serve": "ng serve --host 192.168.0.17 --disableHostCheck",
-    "serve-prod": "ng serve --prod --host 192.168.0.17 --disable-host-check"
+    "serve": "ng serve --host 192.168.0.199 --disableHostCheck",
+    "serve-prod": "ng serve --prod --host 192.168.0.199 --disable-host-check"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +33,7 @@
     "@angular-devkit/build-angular": "^0.1100.7",
     "@angular/cli": "^11.0.7",
     "@angular/compiler-cli": "^11.0.9",
-    "@types/jasmine": "~3.6.0",
+    "@types/jasmine": "^3.6.7",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.19.14",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
@@ -54,6 +54,6 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.5"
+    "typescript": "^4.0.7"
   }
 }
