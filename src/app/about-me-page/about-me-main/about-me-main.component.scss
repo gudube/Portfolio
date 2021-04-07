@@ -23,6 +23,7 @@
 		position: relative;
 		z-index: 2;
 		display: flex;
+		max-width: 1300px;
 
 		#portrait {
 			text-align: right;
@@ -87,6 +88,7 @@
 		align-items: center;
 		margin-top: 20px;
 		margin-bottom: 40px;
+		max-width: 1300px;
 
 		p {
 			display: inline-block;
