@@ -18,8 +18,8 @@ Repository for my personal website.
 When adding a new route:
 1. add it in app-routing.module.ts
 1. add it in sitemap.xml
-2. add it in portfolio-deploy/Portfolio
-1. add symlink index.html in the created folder (or see github for format)
+2. add folder in portfolio-deploy/Portfolio
+1. add symlink index.html in the created folder (or see github for format), or just point to the real index.html (../../index.html)
 
 ## Test on another device
 ng serve --host 10.0.0.17 --disableHostCheck
