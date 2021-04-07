@@ -8,7 +8,7 @@ Repository for my personal website.
 
 ## Deploy
 1. npm run deploy (ng build --prod)
-1. in gh-pages, delete all files except CNAME and delete the assets folder ONLY.
+1. in gh-pages, delete all files except 404.html and CNAME and delete the assets folder ONLY.
 1. copy folders from dist to portfolio-deploy/Portfolio
 1. copy content of index.html to 404.html
 1. Commit and push gh-pages
