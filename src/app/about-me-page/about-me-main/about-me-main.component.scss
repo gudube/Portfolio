@@ -20,18 +20,18 @@
 	}
 
 	#intro-container {
-		position: relative;
 		z-index: 2;
 		display: flex;
-		max-width: 1300px;
 
 		#portrait {
 			text-align: right;
 			display: inline-block;
+			align-self: flex-start;
+			position: sticky;
+			top: 20px;
 			padding-right: 20px;
-			align-self: center;
-			flex-grow: 2;
-			max-height: 850px;
+			max-height: 750px;
+			margin-bottom: 40px;
 
 			img {
 				max-height: inherit;
@@ -41,7 +41,7 @@
 			}
 		}
 
-		#empty-space {
+		#empty-space-separator {
 			width: 40px;
 			flex-shrink: 4;
 		}
@@ -54,7 +54,9 @@
 			overflow: hidden;
 			flex-shrink: 2;
 			flex-grow: 1;
-			min-width: 400px;
+			min-width: 450px;
+			max-width: 1300px;
+			padding-bottom: 40px;
 
 			h4 {
 				padding: 0;
@@ -81,13 +83,18 @@
 				margin-bottom: 10px;
 			}
 		}
+
+		#empty-space-right {
+			width: 40px;
+			flex-grow: 1;
+			flex-shrink: 4;
+		}
 	}
 
 	#contact-container {
 		display: flex;
 		align-items: center;
-		margin-top: 20px;
-		margin-bottom: 40px;
+		margin-top: 40px;
 		max-width: 1300px;
 
 		p {
@@ -95,10 +102,7 @@
 		}
 
 		div{
-			//flex-shrink: 2;
-			padding-left: 10px;
-			padding-right: 10px;
-			width: 500px;
+			margin-right: 20px;
 		}
 
 		a {
@@ -155,6 +159,9 @@
 				height: 50vh;
 				max-height: 400px;
 				padding: 0;
+				align-self: center;
+				position: static;
+
 				img {
 					max-width: none;
 					height: 100%;
@@ -162,7 +169,6 @@
 			}
 
 			#description {
-				margin-top: 40px;
 				min-width: 0;
 				padding-left: 0;
 				padding-right: 0;
@@ -185,6 +191,10 @@
 	margin-top: 20px;
 	display: block;
 	font-size: 1.2em;
+	color: var(--readable-text-color);
+}
+
+.end-text {
 	color: var(--readable-text-color);
 }
 
