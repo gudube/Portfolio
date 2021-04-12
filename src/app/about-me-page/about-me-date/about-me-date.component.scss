@@ -26,7 +26,7 @@
 
 		.title {
 			display: flex;
-			align-items: baseline;
+			align-items: end;
 			flex-wrap: wrap;
 			justify-content: flex-start;
 			margin-top: 55px;
@@ -56,6 +56,7 @@
 			.job {
 				margin-bottom: 5px;
 				h4{
+					padding-top: 7px;
 					padding-bottom: 12px;
 					padding-left: 0;
 					margin-left: 0;
@@ -71,6 +72,7 @@
 			}
 
 			.date{
+				padding-top: 7px;
 				font-weight: 100;
 				flex-grow: 1;
 				text-align: right;
