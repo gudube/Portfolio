@@ -1,10 +1,7 @@
 #about-me-container {
-	background-color: var(--background-soft-color);
-	background-image: linear-gradient(var(--background-soft-color) 90%, var(--background-color) 100%);
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 60px;
-	padding-bottom: 70px;
 	position: relative;
 
 	#background-image {
@@ -32,6 +29,7 @@
 			padding-right: 20px;
 			max-height: 750px;
 			margin-bottom: 40px;
+			flex-grow: 2;
 
 			img {
 				max-height: inherit;
@@ -55,7 +53,7 @@
 			flex-shrink: 5;
 			flex-grow: 1;
 			min-width: 450px;
-			max-width: 1300px;
+			max-width: 1200px;
 			padding-bottom: 40px;
 
 			h4 {

@@ -1,9 +1,11 @@
 #about-page-container {
 	background-color: var(--background-color);
 	//margin-top: 25px;
-	padding-top: 10px;
 	margin-bottom: 10px;
 	width: auto;
+	background-color: var(--background-soft-color);
+	background-image: linear-gradient(to top, var(--background-color) 0px, var(--background-soft-color) 40px);
+	padding-bottom: 40px;
 }
 
 #title {
@@ -31,6 +33,8 @@
 
 #about-type-chooser {
 	text-align: center;
+	background-color: var(--background-color);
+	padding-top: 10px;
 }
 
 .about-type-container {
