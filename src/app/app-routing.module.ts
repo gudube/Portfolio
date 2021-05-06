@@ -7,6 +7,7 @@ import { PhotographyGridComponent } from './photography-page/photography-grid/ph
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 import { environment } from 'src/environments/environment';
 import { ErrorMainComponent } from './error-page/error-main/error-main.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 type TypedRoutes = TypedRoute[]
 
@@ -111,6 +112,24 @@ export const ROUTES: TypedRoutes = [
 			},
 			personal: {
 				title: 'About Me',
+				level: 1,
+			}
+		}
+	},
+	{ path: 'project', component: ProjectPageComponent, // todo: update title and SEO
+		data: {
+			seo: {
+				title: 'Guilhem Dubois | About Me',
+				metaTags: [
+					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ property: 'og:title', content: 'Guilhem Dubois | About Me' },
+					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
+					{ property: 'og:url', content: environment.baseUrl + 'about-me' },
+				]
+			},
+			personal: {
+				title: 'Project', // todo: change title
 				level: 1,
 			}
 		}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 import { IAlbum } from '../models/album.model';
@@ -9,7 +9,7 @@ import { PhotographyService } from '../photography.service';
 	templateUrl: './photography-grid.component.html',
 	styleUrls: ['./photography-grid.component.scss'],
 })
-export class PhotographyGridComponent implements OnInit {
+export class PhotographyGridComponent implements OnInit, OnDestroy {
 	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
 
 	public album: IAlbum;
