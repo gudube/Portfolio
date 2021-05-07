@@ -2,8 +2,13 @@
 	//margin-top: 25px;
 	margin-bottom: 10px;
 	width: auto;
+	// background-image: linear-gradient(to top, var(--background-color) 0px, var(--background-softer-color) 10px),
 	background-color: var(--background-softer-color);
-	background-image: linear-gradient(to top, var(--background-color) 0px, var(--background-softer-color) 10px);
+	background-image: url("/assets/about-me/background-code.png");
+	background-image: linear-gradient(rgba(var(--background-softer-color-rgb), 0.5) 100%, rgba(var(--background-softer-color-rgb), 0.5) 100%), url("/assets/about-me/background-code.png"), linear-gradient(to top, var(--background-color) 0px, var(--background-softer-color) 10px);
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover, 500px 500px, cover;
 	height: 100%;
 	position: relative;
 }
@@ -46,7 +51,7 @@
 
 #about-type-chooser {
 	text-align: center;
-	background-color: var(--background-softer-color);
+	// background-color: var(--background-softer-color);
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -71,18 +76,32 @@
 	text-shadow: 0 0 3px var(--primary-text-color);
 }
 
-@media only screen and (max-width: 360px) {
-	#about-type-chooser {
-		padding-top: 50px;
+@media only screen and (max-width: 900px) {
+	#about-page-container {
+		background-size: cover, 350px 350px, cover;
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	#about-page-container {
+		background-position: right 64px;
+	}
 	#separator {
 		width: 300px;
 	}
 
 	h4 {
 		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#about-type-chooser {
+		padding-top: 50px;
+		background-size: cover, 250px 250px, cover;
+	}
+
+	#about-page-container {
+		background-position: right 99px;
 	}
 }
