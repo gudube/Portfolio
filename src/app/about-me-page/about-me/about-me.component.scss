@@ -2,10 +2,8 @@
 	//margin-top: 25px;
 	margin-bottom: 10px;
 	width: auto;
-	// background-image: linear-gradient(to top, var(--background-color) 0px, var(--background-softer-color) 10px),
 	background-color: var(--background-softer-color);
-	background-image: url("/assets/about-me/background-code.png");
-	background-image: linear-gradient(rgba(var(--background-softer-color-rgb), 0.5) 100%, rgba(var(--background-softer-color-rgb), 0.5) 100%), url("/assets/about-me/background-code.png"), linear-gradient(to top, var(--background-color) 0px, var(--background-softer-color) 10px);
+	background-image: linear-gradient(rgba(var(--background-softer-color-rgb), 0.5) 100%, rgba(var(--background-softer-color-rgb), 0.5) 100%), url("/assets/about-me/background-code.png");
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-size: cover, 500px 500px, cover;
