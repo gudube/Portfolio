@@ -25,8 +25,18 @@
 		<p [ngClass]="{'visible': !libraryView}"><span class="accent">Practice</span> with the partition synced to the song</p>
 	</div>
 	<div id="screenshots-container">
-		<img [ngClass]="{'visible': libraryView}" src="/assets/project/library-view.png" srcset="/assets/project/library-view.svg"/>
-		<img [ngClass]="{'visible': !libraryView}" src="/assets/project/partition-view.png" srcset="/assets/project/partition-view.svg"/>
+		<picture [ngClass]="{'visible': libraryView}">
+			<source media="(max-width: 900px)" type="image/svg+xml" srcset="/assets/project/library-view-mobile.svg"/>
+			<source media="(max-width: 900px)" srcset="/assets/project/library-view-mobile.png"/>
+			<source srcset="/assets/project/library-view.svg"/>
+			<img src="/assets/project/library-view.png" alt="Library view"/>
+		</picture>
+		<picture [ngClass]="{'visible': !libraryView}">
+			<source media="(max-width: 900px)" type="image/svg+xml" srcset="/assets/project/partition-view-mobile.svg"/>
+			<source media="(max-width: 900px)" srcset="/assets/project/partition-view-mobile.png"/>
+			<source srcset="/assets/project/partition-view.svg"/>
+			<img src="/assets/project/partition-view.png" alt="Partition view"/>
+		</picture>
 	</div>
 	<h3 id="download-message">Available late 2021</h3>
 </div>
