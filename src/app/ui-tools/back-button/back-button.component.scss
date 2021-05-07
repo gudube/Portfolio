@@ -9,6 +9,10 @@
   border-color: var(--foreground-softer-color);
   border-width: 0 2px 2px 0;
   border-style:solid;
+  &.light {
+  	background-color: var(--foreground-softer-color);
+  	border-color: var(--background-color);
+  }
 
 	#menu-button-container {
 		cursor: pointer;

@@ -1,4 +1,4 @@
-<div id="menu-container">
+<div id="menu-container" [ngClass]="{'light': light}">
 	<button id="menu-button-container" class="transparent-button" (click)="opened = !opened">
 		<em class="material-icons hoverable smooth-hover" *ngIf="opened">close</em>
 		<em class="material-icons hoverable smooth-hover" *ngIf="!opened">menu</em>

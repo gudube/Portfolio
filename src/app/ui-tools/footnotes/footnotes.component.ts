@@ -8,7 +8,5 @@ import { Location } from '@angular/common';
 })
 export class FootnotesComponent {
 
-	@Input() public readonly light: boolean = false;
-
 	constructor(public location: Location) { }
 }
