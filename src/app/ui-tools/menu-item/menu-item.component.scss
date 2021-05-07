@@ -1,7 +1,10 @@
 #image-container {
 	height: 29vh;
 	&.small {
-		height: calc((80vh - 70px)/3);
+		height: calc((80vh - 75px)/3);
+		// flex-grow: 1;
+		// flex-shrink: 1;
+		// box-sizing: border-box;
 	}
 	min-height: 100px;
 	width: 100%;
@@ -9,7 +12,7 @@
   text-align: center;
   position: relative;
 	cursor: pointer;
-	margin-bottom: 10px;
+
 
 	&:after {
 		//Adds a shadow over the image

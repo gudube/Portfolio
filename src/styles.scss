@@ -6,8 +6,8 @@
 	--readable-text-color: #c9c9c9;
 	--background-color: black;
 	--background-soft-color: #0f1214;
-	--background-softer-color: rgb(31,34,37);
-	--foreground-softer-color: rgb(40,42,46);
+	--background-softer-color: rgb(32,33,36);
+	--foreground-softer-color: rgb(41,42,45);
 	--accent-color: #00BCD4;
 	--accent-color-rgb: 0, 188, 212; //can do rgba(var(--accent-color-rgb), 0.2) for example
 	--hoverable-color: #BDBDBD;
@@ -34,6 +34,10 @@
 
 ::-webkit-scrollbar-corner {
     background: #000;
+}
+
+html, body {
+    height:100%;
 }
 
 body {

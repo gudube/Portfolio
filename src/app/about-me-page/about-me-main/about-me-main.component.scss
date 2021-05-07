@@ -4,18 +4,6 @@
 	padding-top: 60px;
 	position: relative;
 
-	#background-image {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 500px;
-		height: 500px;
-		min-width: 40vh;
-		min-height: 40vh;
-		opacity: 0.3;
-		z-index: 1;
-	}
-
 	#intro-container {
 		position: relative;
 		z-index: 2;
@@ -39,6 +27,7 @@
 				max-width: 100%;
 				border-radius: 4%;
 				box-shadow: 2px 2px 10px 2px black;
+				aspect-ratio: auto 720 / 900;
 			}
 		}
 
