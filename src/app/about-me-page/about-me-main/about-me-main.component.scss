@@ -8,6 +8,7 @@
 		position: relative;
 		z-index: 2;
 		display: flex;
+		max-width: 1300px;
 
 		#portrait {
 			text-align: right;
@@ -87,6 +88,7 @@
 	#contact-container {
 		display: flex;
 		align-items: center;
+<<<<<<< HEAD
 		margin-top: 40px;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -105,6 +107,28 @@
 			width: 270px;
 			height: 60px;
 			// background-color: rgba(0,0,0,0.5);
+=======
+		margin-top: 20px;
+		margin-bottom: 40px;
+		max-width: 1300px;
+
+		p {
+			display: inline-block;
+		}
+
+		div{
+			//flex-shrink: 2;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 500px;
+		}
+
+		a {
+			display: block;
+			width: 210px;
+			height: 50px;
+			background-color: var(--accent-color);
+>>>>>>> master
 			border-radius: 10px;
 			border-width: 2px;
 			border-color: white;
