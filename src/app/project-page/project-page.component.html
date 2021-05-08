@@ -4,7 +4,7 @@
 	<!-- <img id="background-image" src="assets/project/hd/background75.jpg"> -->
 	<div id="title-container">
 		<h2 id="title">Sheet Music Organizer</h2>
-		<h3 id="subtitle">The music player that sync with your sheet music!</h3>
+		<h3 id="subtitle">The music player that lets you follow along the sheet music!</h3>
 		<div id="buttons-container">
 			<div id="download-button" class="button disabled">
 				<a><p>v0.1b AVAILABLE SOON!</p></a>
@@ -21,9 +21,9 @@
 		<span> / </span>
 		<span class="option hoverable" [ngClass]="{'selected': !libraryView}" (click)="libraryView = false">Partition View</span>
 	</div>
-	<div id="subtitles-container">
-		<p [ngClass]="{'visible': libraryView}"><span class="accent">Organize</span> your songs</p>
-		<p [ngClass]="{'visible': !libraryView}"><span class="accent">Practice</span> with the partition synced to the song</p>
+	<div id="view-description">
+		<p [ngClass]="{'visible': libraryView}"><span class="accent">Organize</span> your songs.</p>
+		<p [ngClass]="{'visible': !libraryView}"><span class="accent">Practice</span> with the sheet music following along the song.</p>
 	</div>
 	<div id="screenshots-container">
 		<picture [ngClass]="{'visible': libraryView}">
