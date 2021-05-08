@@ -115,12 +115,13 @@
 @media only screen and (max-width: 360px) {
 	#about-type-chooser {
 		padding-top: 50px;
-		&::before {
-			background-size: 250px 250px;
-		}
+		
 	}
 
 	#about-page-container {
-		background-position: right 99px;
+		&::before {
+			background-size: 250px 250px;
+			background-position: right 99px;
+		}
 	}
 }
