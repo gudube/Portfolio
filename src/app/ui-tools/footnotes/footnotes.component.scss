@@ -36,6 +36,9 @@
 		.image-container {
 			&:not(:first-child){
 				margin-left: 20px;
+				@media only screen and (max-width: 350px) {
+					margin-left: 10px;
+				}
 			}
 			img {
 				box-sizing: border-box;
@@ -70,6 +73,12 @@
 	@media only screen and (max-width: 450px) {
 		#copyright {
 			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 350px) {
+		#icons-container .image-container img {
+			height: 26px;
 		}
 	}
 }
