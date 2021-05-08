@@ -5,12 +5,17 @@
 	--primary-text-color: white;
 	--readable-text-color: #c9c9c9;
 	--background-color: black;
-	--background-soft-color: #0f1214;
-	--background-softer-color: rgb(32,33,36);
-	--foreground-softer-color: rgb(41,42,45);
-	--accent-color: #00BCD4;
-	--background-softer-color-rgb: 32,33,36; //can do rgba(var(--accent-color-rgb), 0.2) for example
-	--accent-color-rgb: 0, 188, 212; //can do rgba(var(--accent-color-rgb), 0.2) for example
+
+	--background-soft-color-rgb: 26,26,29; //can do rgba(var(--accent-color-rgb), 0.2) for example
+	--background-softer-color-rgb: 32,33,36;
+	--foreground-softer-color-rgb: 41,42,45; 
+	--accent-color-rgb: 0, 188, 212;
+
+	--background-soft-color: rgb(var(--background-soft-color-rgb));
+	--background-softer-color: rgb(var(--background-softer-color-rgb));
+	--foreground-softer-color: rgb(var(--foreground-softer-color-rgb));
+	--accent-color: rgb(var(--accent-color-rgb));
+
 	--hoverable-color: #BDBDBD;
 	--hovered-color: white;
 	--disabled-color: rgba(255, 255, 255, 0.3);
