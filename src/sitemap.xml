@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://www.guilhemdubois.com/</loc><priority>1</priority></url>
-<url><loc>https://www.guilhemdubois.com/about-me</loc><priority>0.5</priority></url>
+<url><loc>https://www.guilhemdubois.com/about-me</loc><priority>0.6</priority></url>
+<url><loc>https://www.guilhemdubois.com/project</loc><priority>0.5</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography</loc><priority>0.5</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/triglav</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/capri</loc><priority>0.2</priority></url>
@@ -13,5 +14,5 @@
 <url><loc>https://www.guilhemdubois.com/photography/naples</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/stockholm</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/copenhagen</loc><priority>0.2</priority></url>
-<url><loc>https://www.guilhemdubois.com/contact-me</loc><priority>0.5</priority></url>
+<url><loc>https://www.guilhemdubois.com/contact-me</loc><priority>0.4</priority></url>
 </urlset>

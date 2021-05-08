@@ -116,20 +116,20 @@ export const ROUTES: TypedRoutes = [
 			}
 		}
 	},
-	{ path: 'project', component: ProjectPageComponent, // todo: update title and SEO
+	{ path: 'project', component: ProjectPageComponent,
 		data: {
 			seo: {
-				title: 'Guilhem Dubois | About Me',
+				title: 'Sheet Music Organizer | Personal Project',
 				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
-					{ property: 'og:title', content: 'Guilhem Dubois | About Me' },
-					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
-					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
-					{ property: 'og:url', content: environment.baseUrl + 'about-me' },
+					{ name: 'description', content: 'Sheet Music Organizer is a music player that allows you to follow along the sheet music. It\'s a personal project still in progress by Guilhem Dubois.'},
+					{ property: 'og:title', content: 'Sheet Music Organizer | Personal Project' },
+					{ property: 'og:description', content: 'Sheet Music Organizer is a music player that allows you to follow along the sheet music. It\'s a personal project still in progress by Guilhem Dubois.' },
+					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' }, // todo: change the image
+					{ property: 'og:url', content: environment.baseUrl + 'project' },
 				]
 			},
 			personal: {
-				title: 'Project', // todo: change title
+				title: 'Personal Project',
 				level: 1,
 			}
 		}
