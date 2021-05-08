@@ -9,6 +9,7 @@ import { ROUTES } from '../../app-routing.module';
 })
 export class BackButtonComponent implements OnInit {
 	//@Input() public route = '';
+	// unused for now. is only true in about-me
 	@Input() public readonly light: boolean = false;
 
 	public opened = false;

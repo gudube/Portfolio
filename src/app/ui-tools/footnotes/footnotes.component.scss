@@ -9,9 +9,9 @@
 	padding: 10px;
 	box-sizing: border-box;
 	&.light {
-		background-color: var(--foreground-softer-color);
+		background-color: var(--background-softer-color);
 		z-index: 1;
-		border: var(--background-soft-color);
+		border: var(--background-color);
 		border-width: 2px 0 0 0;
 		border-style: solid;
 	}
