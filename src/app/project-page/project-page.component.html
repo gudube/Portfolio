@@ -1,6 +1,44 @@
 <app-back-button></app-back-button>
-<div id="header">
-	<img id="background-image" src="assets/project/header.jpg" alt="application screenshot"/>
-	<img id="foreground-image"  src="assets/project/monitor.png" alt="application presentation"/>
-	<h2 id="title">Sheet Music Organizer</h2>
+<div id="page-content">
+<div id="header" #header>
+	<!-- <img id="background-image" src="assets/project/hd/background75.jpg"> -->
+	<div id="title-container">
+		<h2 id="title">Sheet Music Organizer</h2>
+		<h3 id="subtitle">The music player that allows you to follow along the sheet music!</h3>
+		<div id="buttons-container">
+			<div id="download-button" class="button disabled">
+				<a><p>v0.1b AVAILABLE SOON!</p></a>
+			</div>
+			<div class="button" (click)="scrollToBottom(header)">
+				<a><p>EXPLORE FEATURES</p></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content" #content>
+	<div id="view-selection">
+		<span class="option hoverable" [ngClass]="{'selected': libraryView}" (click)="libraryView = true">Library View</span>
+		<span> / </span>
+		<span class="option hoverable" [ngClass]="{'selected': !libraryView}" (click)="libraryView = false">Partition View</span>
+	</div>
+	<div id="view-description">
+		<p [ngClass]="{'visible': libraryView}"><span class="accent">Organize</span> your songs.</p>
+		<p [ngClass]="{'visible': !libraryView}"><span class="accent">Practice</span> with the sheet music following along the song.</p>
+	</div>
+	<div id="screenshots-container">
+		<picture [ngClass]="{'visible': libraryView}">
+			<source media="(max-width: 900px)" type="image/svg+xml" srcset="/assets/project/library-view-mobile.svg"/>
+			<source media="(max-width: 900px)" srcset="/assets/project/library-view-mobile.png"/>
+			<source srcset="/assets/project/library-view.svg"/>
+			<img src="/assets/project/library-view.png" alt="Library view"/>
+		</picture>
+		<picture [ngClass]="{'visible': !libraryView}">
+			<source media="(max-width: 900px)" type="image/svg+xml" srcset="/assets/project/partition-view-mobile.svg"/>
+			<source media="(max-width: 900px)" srcset="/assets/project/partition-view-mobile.png"/>
+			<source srcset="/assets/project/partition-view.svg"/>
+			<img src="/assets/project/partition-view.png" alt="Partition view"/>
+		</picture>
+	</div>
+	<h3 id="download-message">Available late 2021</h3>
+</div>
 </div>

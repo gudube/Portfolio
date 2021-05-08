@@ -6,9 +6,13 @@
   padding: 10px 15px 12px 10px;
   background-color: var(--background-soft-color);
   border-radius: 0 0 10px 0;
-  border-color: grey;
-  border-width: 0 1px 1px 0;
-  border-style: dashed;
+  border-color: var(--foreground-softer-color);
+  border-width: 0 2px 2px 0;
+  border-style:solid;
+
+  &.light {
+	  border-color: var(--background-color);
+  }
 
 	#menu-button-container {
 		cursor: pointer;
@@ -26,8 +30,11 @@
 			.current-route {
 				color: var(--accent-color)
 			}
-			.sub-level {
+			.sub-level1 {
 				margin-left: 15px;
+			}
+			.sub-level2 {
+				margin-left: 30px;
 			}
 			&:focus {
 				outline: 0;

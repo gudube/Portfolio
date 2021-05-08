@@ -1,9 +1,41 @@
 #about-page-container {
-	background-color: var(--background-color);
 	//margin-top: 25px;
-	padding-top: 10px;
 	margin-bottom: 10px;
 	width: auto;
+	background-color: var(--background-softer-color);
+	// background-image: linear-gradient(var(--background-softer-color) 10%, var(--background-soft-color) 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	z-index: 0;
+
+	&::before {
+		content: "";
+		background-image: url("/assets/about-me/background-code.png");
+		background-position: right top;
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		z-index: -1;
+		opacity: 0.5;
+	}
+}
+
+#background-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 700px;
+	height: 700px;
+	max-width: 80vw;
+	max-height: 80vw;
+	opacity: 0.3;
+	z-index: 1;
 }
 
 #title {
@@ -21,16 +53,23 @@
 }
 
 #separator {
-	margin: 0 0;
+	width: 500px;
+	margin: 0 auto;
 	border-color: var(--accent-color);
 	box-shadow: 0 2px 20px 1px var(--accent-color);
-	position: relative;
 	z-index: 5;
 	background-color: var(--accent-color);
+<<<<<<< HEAD
+	max-width: 90%;
+=======
+>>>>>>> master
 }
 
 #about-type-chooser {
 	text-align: center;
+	// background-color: var(--background-softer-color);
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .about-type-container {
@@ -53,14 +92,39 @@
 	text-shadow: 0 0 3px var(--primary-text-color);
 }
 
-@media only screen and (max-width: 700px) {
-	#about-type-chooser {
-		margin-top: 30px;
+@media only screen and (max-width: 900px) {
+	#about-page-container {
+		&::before {
+			background-size: 350px 350px;
+		}
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	#about-page-container {
+		&::before {
+			background-position: right 64px;
+		}
+	}
+	#separator {
+		width: 300px;
+	}
+
 	h4 {
 		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#about-type-chooser {
+		padding-top: 50px;
+		
+	}
+
+	#about-page-container {
+		&::before {
+			background-size: 250px 250px;
+			background-position: right 99px;
+		}
 	}
 }

@@ -1,7 +1,10 @@
 #image-container {
 	height: 29vh;
 	&.small {
-		height: calc((80vh - 70px)/3);
+		height: calc((80vh - 75px)/3);
+		// flex-grow: 1;
+		// flex-shrink: 1;
+		// box-sizing: border-box;
 	}
 	min-height: 100px;
 	width: 100%;
@@ -9,7 +12,7 @@
   text-align: center;
   position: relative;
 	cursor: pointer;
-	margin-bottom: 10px;
+
 
 	&:after {
 		//Adds a shadow over the image
@@ -50,16 +53,23 @@
 		transition: text-shadow 0.1s ease;
 
 		&.with-subtitle{
-			top: 60%;
-		}
+		 	top: 45%;
+		 }
 
 		#title {
 			font-size: max(2rem, 7vh);
 		}
 
 		#subtitle {
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
 			font-size: max(1.3rem, 4vh);
 			margin-top: 0;
+			padding: 10px;
+			padding-top: 0;
 		}
 	}
 

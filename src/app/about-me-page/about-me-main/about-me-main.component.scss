@@ -1,23 +1,8 @@
 #about-me-container {
-	background-color: var(--background-soft-color);
-	background-image: linear-gradient(var(--background-soft-color) 90%, var(--background-color) 100%);
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 60px;
-	padding-bottom: 70px;
 	position: relative;
-
-	#background-image {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 500px;
-		height: 500px;
-		min-width: 40vh;
-		min-height: 40vh;
-		opacity: 0.3;
-		z-index: 1;
-	}
 
 	#intro-container {
 		position: relative;
@@ -28,20 +13,26 @@
 		#portrait {
 			text-align: right;
 			display: inline-block;
+			align-self: flex-start;
+			position: sticky;
+			top: 20px;
 			padding-right: 20px;
-			align-self: center;
+			max-height: 750px;
+			margin-bottom: 40px;
 			flex-grow: 2;
-			max-height: 850px;
 
 			img {
+				height: auto;
 				max-height: inherit;
+				width: auto;
 				max-width: 100%;
 				border-radius: 4%;
 				box-shadow: 2px 2px 10px 2px black;
+				aspect-ratio: auto 720 / 900;
 			}
 		}
 
-		#empty-space {
+		#empty-space-separator {
 			width: 40px;
 			flex-shrink: 4;
 		}
@@ -52,9 +43,11 @@
 			align-self: center;
 			display: inline-block;
 			overflow: hidden;
-			flex-shrink: 2;
+			flex-shrink: 5;
 			flex-grow: 1;
-			min-width: 400px;
+			min-width: 450px;
+			max-width: 1200px;
+			padding-bottom: 40px;
 
 			h4 {
 				padding: 0;
@@ -77,15 +70,44 @@
 				color: var(--readable-text-color);
 			}
 
-			p {
+			.readable-text {
+				margin-top: 20px;
+				display: block;
+				font-size: 1.2em;
 				margin-bottom: 10px;
 			}
+		}
+
+		#empty-space-right {
+			width: 400px;
+			flex-grow: 1;
+			flex-shrink: 5;
 		}
 	}
 
 	#contact-container {
 		display: flex;
 		align-items: center;
+<<<<<<< HEAD
+		margin-top: 40px;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		// p {
+		// 	display: inline-block;
+		// 	flex-grow: 1;
+		// 	flex-shrink: 1;
+		// 	flex-basis: 500px;
+		// 	margin: 0;
+		// }
+
+		.button {
+			user-select: none;
+			margin: 10px 20px;
+			width: 270px;
+			height: 60px;
+			// background-color: rgba(0,0,0,0.5);
+=======
 		margin-top: 20px;
 		margin-bottom: 40px;
 		max-width: 1300px;
@@ -106,42 +128,45 @@
 			width: 210px;
 			height: 50px;
 			background-color: var(--accent-color);
+>>>>>>> master
 			border-radius: 10px;
-			border-width: 0;
-			margin-left: auto;
+			border-width: 2px;
+			border-color: white;
+			border-style: solid;
 			//margin-right: auto;
-			&:focus{
-				outline: 0;
-				p{
-					font-size: 1rem;
-				}
+			background-color: var(--background-soft-color);
+			text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+			cursor: pointer;
+
+			&.main-button {
+				background-color: rgba(var(--accent-color-rgb), 0.4);
+				border-color: var(--accent-color);
 			}
 
+			a { // todo: update style to look more like the /project buttons
+				text-decoration: none;
+			}
 			p {
 				width: 100%;
 				text-align: center;
-				line-height: 50px;
-				font-size: 0.6em;
-
-				img {
-					display: inline;
-					height: 15px;
-					margin-right: 10px;
-				}
+				line-height: 60px;
+				font-size: 0.8em;
+				position: relative;
 			}
 
 			@media (hover: hover) {
 				p {
-					transition: font-size 0.2s;
+					transition: color 0.2s;
+					color: var(--hoverable-color);
 				}
 				&:hover {
 					p{
-						font-size: 1rem;
+						// font-size: 0.9em;
+						color: var(--hovered-color);
 					}
 				}
 			}
 		}
-
 	}
 	@media only screen and (max-width: 800px) {
 		&{
@@ -155,6 +180,9 @@
 				height: 50vh;
 				max-height: 400px;
 				padding: 0;
+				align-self: center;
+				position: static;
+
 				img {
 					max-width: none;
 					height: 100%;
@@ -162,16 +190,9 @@
 			}
 
 			#description {
-				margin-top: 40px;
 				min-width: 0;
 				padding-left: 0;
 				padding-right: 0;
-			}
-		}
-		#contact-container {
-			flex-direction: column-reverse;
-			div{
-				width: auto;
 			}
 		}
 
@@ -181,11 +202,9 @@
 	}
 }
 
-.text {
-	margin-top: 20px;
-	display: block;
-	font-size: 1.2em;
+.readable-text {
 	color: var(--readable-text-color);
+	text-align: justify;
 }
 
 p {

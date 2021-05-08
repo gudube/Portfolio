@@ -1,11 +1,11 @@
-<div id="menu-container">
+<div id="menu-container" [ngClass]="{'light': light}">
 	<button id="menu-button-container" class="transparent-button" (click)="opened = !opened">
 		<em class="material-icons hoverable smooth-hover" *ngIf="opened">close</em>
 		<em class="material-icons hoverable smooth-hover" *ngIf="!opened">menu</em>
 	</button>
 	<div id="menu" *ngIf="opened">
 		<button *ngFor="let route of routes" class="route-container hoverable transparent-button" routerLink="/{{route.path}}">
-			<p [ngClass]="{'current-route': ('/' + route.path) == currentRoute, 'sub-level': route.data.personal.level > 1}">{{route.data.personal.title}}</p>
+			<p [ngClass]="{'current-route': ('/' + route.path) == currentRoute, 'sub-level1': route.data.personal.level == 1, 'sub-level2': route.data.personal.level > 1}">{{route.data.personal.title}}</p>
 		</button>
 	</div>
 </div>

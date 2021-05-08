@@ -22,3 +22,8 @@
   font-size: 9.5vh;
 	color: var(--accent-color)
 }
+
+app-menu-item:not(:last-child) {
+	display: block;
+	margin-bottom: 10px;
+}

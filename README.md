@@ -8,9 +8,9 @@ Repository for my personal website.
 
 ## Deploy
 1. npm run deploy (ng build --prod)
-1. in gh-pages, delete all files except 404.html and CNAME and delete the assets folder ONLY.
+1. in gh-pages, delete all files except CNAME and delete the assets folder ONLY.
 1. copy folders from dist to portfolio-deploy/Portfolio
-1. copy content of index.html to 404.html
+1. copy index.html to 404.html
 1. Commit and push gh-pages
 
 (old way: ng add angular-cli-ghpages)
@@ -22,4 +22,4 @@ When adding a new route:
 1. add symlink index.html in the created folder (or see github for format), or just point to the real index.html (../../index.html)
 
 ## Test on another device
-ng serve --host 10.0.0.17 --disableHostCheck
+ng serve --host 192.168.0.199 --disableHostCheck

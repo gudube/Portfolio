@@ -7,6 +7,7 @@ import { PhotographyGridComponent } from './photography-page/photography-grid/ph
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 import { environment } from 'src/environments/environment';
 import { ErrorMainComponent } from './error-page/error-main/error-main.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 type TypedRoutes = TypedRoute[]
 
@@ -115,6 +116,24 @@ export const ROUTES: TypedRoutes = [
 			}
 		}
 	},
+	{ path: 'project', component: ProjectPageComponent,
+		data: {
+			seo: {
+				title: 'Sheet Music Organizer | Personal Project',
+				metaTags: [
+					{ name: 'description', content: 'Sheet Music Organizer is a music player that allows you to follow along the sheet music. It\'s a personal project still in progress by Guilhem Dubois.'},
+					{ property: 'og:title', content: 'Sheet Music Organizer | Personal Project' },
+					{ property: 'og:description', content: 'Sheet Music Organizer is a music player that allows you to follow along the sheet music. It\'s a personal project still in progress by Guilhem Dubois.' },
+					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' }, // todo: change the image
+					{ property: 'og:url', content: environment.baseUrl + 'project' },
+				]
+			},
+			personal: {
+				title: 'Personal Project',
+				level: 1,
+			}
+		}
+	},
 	{ path: 'photography', component: PhotographyMenuComponent,
 		data: {
 			seo: {
@@ -173,7 +192,7 @@ export const ROUTES: TypedRoutes = [
 			},
 			personal: {
 				title: 'Contact Me',
-				level: 1
+				level: 0
 			}
 		}
 	},

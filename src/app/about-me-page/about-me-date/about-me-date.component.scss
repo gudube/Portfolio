@@ -1,8 +1,9 @@
 #aboutDateContainer {
 	display: flex;
 	align-items: flex-start;
-	background-color: var(--background-softer-color);
-	background-image: linear-gradient(var(--background-softer-color) 99%, var(--background-color) 100%);
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1700px;
 
 	#sliderContainer {
 		display: none;
@@ -25,14 +26,36 @@
 
 		.title {
 			display: flex;
-			align-items: baseline;
 			flex-wrap: wrap;
-			justify-content: space-between;
+			justify-content: flex-start;
 			margin-top: 55px;
 			margin-bottom: 15px;
+			padding: 10px 15px;
+			border-radius: 10px;
+			background-color: var(--foreground-softer-color);
+			box-shadow: var(--background-color) 2px 2px 10px -3px;
+			
+			.job-container {
+				display: flex;
+			}
+
+			em {
+				align-self: center;
+				margin-right: 10px;
+				width: 60px;
+				text-align: center;
+			}
+
+			.title-logo {
+				align-self: center;
+				margin-right: 10px;
+				width: 60px;
+			}
+
 			.job {
 				margin-bottom: 5px;
 				h4{
+					padding-top: 7px;
 					padding-bottom: 12px;
 					padding-left: 0;
 					margin-left: 0;
@@ -48,6 +71,7 @@
 			}
 
 			.date{
+				padding-top: 7px;
 				font-weight: 100;
 				flex-grow: 1;
 				text-align: right;
@@ -171,6 +195,15 @@
 			.title {
 				margin-top: 25px;
 				margin-bottom: 10px;
+
+				.title-logo {
+					width: 40px;
+				}
+	
+				em {
+					width: 40px;
+				}
+
 				.job	h4 {
 					font-size: 1em;
 					padding-bottom: 5px;
