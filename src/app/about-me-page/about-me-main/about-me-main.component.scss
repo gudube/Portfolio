@@ -127,12 +127,7 @@
 				text-align: center;
 				line-height: 60px;
 				font-size: 0.8em;
-
-				img {
-					display: inline;
-					height: 15px;
-					margin-right: 10px;
-				}
+				position: relative;
 			}
 
 			@media (hover: hover) {
@@ -143,7 +138,7 @@
 				&:hover {
 					p{
 						// font-size: 0.9em;
-						color: var(--hovered-color)
+						color: var(--hovered-color);
 					}
 				}
 			}
