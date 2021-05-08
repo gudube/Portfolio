@@ -53,16 +53,23 @@
 		transition: text-shadow 0.1s ease;
 
 		&.with-subtitle{
-			top: 60%;
-		}
+		 	top: 45%;
+		 }
 
 		#title {
 			font-size: max(2rem, 7vh);
 		}
 
 		#subtitle {
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
 			font-size: max(1.3rem, 4vh);
 			margin-top: 0;
+			padding: 10px;
+			padding-top: 0;
 		}
 	}
 
