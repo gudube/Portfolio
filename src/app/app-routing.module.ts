@@ -192,7 +192,7 @@ export const ROUTES: TypedRoutes = [
 			},
 			personal: {
 				title: 'Contact Me',
-				level: 1
+				level: 0
 			}
 		}
 	},

@@ -10,6 +10,10 @@
   border-width: 0 2px 2px 0;
   border-style:solid;
 
+  &.light {
+	  border-color: var(--background-color);
+  }
+
 	#menu-button-container {
 		cursor: pointer;
 		&:focus {
@@ -26,8 +30,11 @@
 			.current-route {
 				color: var(--accent-color)
 			}
-			.sub-level {
+			.sub-level1 {
 				margin-left: 15px;
+			}
+			.sub-level2 {
+				margin-left: 30px;
 			}
 			&:focus {
 				outline: 0;
