@@ -38,10 +38,15 @@
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.app.json",
-						"aot": true,
 						"assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
 						"styles": ["src/styles.scss", "src/material-style.scss"],
-						"scripts": []
+						"scripts": [],
+						"vendorChunk": true,
+						"extractLicenses": false,
+						"buildOptimizer": false,
+						"sourceMap": true,
+						"optimization": false,
+						"namedChunks": true
 					},
 					"configurations": {
 						"production": {
@@ -70,19 +75,24 @@
 									"maximumError": "10kb"
 								}
 							]
-						}
-					}
+						},
+						"development": {}
+					},
+					"defaultConfiguration": "production"
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"options": {
-						"browserTarget": "gd-portfolio:build"
 					},
 					"configurations": {
 						"production": {
 							"browserTarget": "gd-portfolio:build:production"
+						},
+						"development": {
+							"browserTarget": "gd-portfolio:build:development"
 						}
-					}
+					},
+					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
@@ -116,14 +126,17 @@
 				"e2e": {
 					"builder": "@angular-devkit/build-angular:protractor",
 					"options": {
-						"protractorConfig": "e2e/protractor.conf.js",
-						"devServerTarget": "gd-portfolio:serve"
+						"protractorConfig": "e2e/protractor.conf.js"
 					},
 					"configurations": {
 						"production": {
 							"devServerTarget": "gd-portfolio:serve:production"
+						},
+						"development": {
+							"devServerTarget": "gd-portfolio:serve:development"
 						}
-					}
+					},
+					"defaultConfiguration": "development"
 				},
 				"deploy": {
 					"builder": "angular-cli-ghpages:deploy",
