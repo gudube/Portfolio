@@ -1,0 +1,13 @@
+{
+	"home": {
+		"portfolio": "Portfolio",
+		"about": "About Me",
+		"project": "Personal Project",
+		"project-name": "Sheet Music Organizer",
+		"photo": "Photography"
+	},
+	"footer": {
+		"copyright-long": "Copyright © 2020 - 2021 Guilhem Dubois",
+		"contact": "Contact Me"
+	}
+}
