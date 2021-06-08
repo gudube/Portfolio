@@ -1,13 +1,42 @@
 {
+	"footer": {
+		"contact": "Contact Me",
+		"copyright": "Copyright",
+		"copyright-date": "© 2020 - 2021"
+	},
 	"home": {
-		"portfolio": "Portfolio",
 		"about": "About Me",
+		"photo": "Photography",
+		"portfolio": "Portfolio",
 		"project": "Personal Project",
 		"project-name": "Sheet Music Organizer",
-		"photo": "Photography"
+		"title": "Home"
 	},
-	"footer": {
-		"copyright-long": "Copyright © 2020 - 2021 Guilhem Dubois",
-		"contact": "Contact Me"
+	"others": {
+		"invalid": "Invalid Page"
+	},
+	"photos": {
+		"abisko": "Abisko",
+		"berlin": "Berlin",
+		"capri": "Capri",
+		"cinque-terre": "Cinque Terre",
+		"copenhagen": "Copenhagen",
+		"denmark": "Denmark",
+		"estonia": "Estonia",
+		"germany": "Germany",
+		"grid-view": "Grid View",
+		"italy": "Italy",
+		"lapland": "Lapland",
+		"list-view": "List View",
+		"ljubljana": "Ljubljana",
+		"naples": "Naples",
+		"russia": "Russia",
+		"saint-petersburg": "Saint Petersburg",
+		"slovenia": "Slovenia",
+		"stockholm": "Stockholm",
+		"sweden": "Sweden",
+		"swipe-message": "Swipe to navigate",
+		"tallinn": "Tallinn",
+		"triglav": "Triglav National Park"
 	}
 }

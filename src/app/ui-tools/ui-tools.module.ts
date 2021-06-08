@@ -5,10 +5,11 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FootnotesComponent } from './footnotes/footnotes.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
 	declarations: [BackButtonComponent, MenuComponent, MenuItemComponent, FootnotesComponent],
-	imports: [CommonModule, AppRoutingModule],
+	imports: [CommonModule, AppRoutingModule, TranslateModule],
 	exports: [BackButtonComponent, MenuComponent, MenuItemComponent, FootnotesComponent],
 })
 export class UiToolsModule {}

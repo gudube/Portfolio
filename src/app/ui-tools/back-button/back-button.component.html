@@ -5,7 +5,7 @@
 	</button>
 	<div id="menu" *ngIf="opened">
 		<button *ngFor="let route of routes" class="route-container hoverable transparent-button" routerLink="/{{route.path}}">
-			<p [ngClass]="{'current-route': ('/' + route.path) == currentRoute, 'sub-level1': route.data.personal.level == 1, 'sub-level2': route.data.personal.level > 1}">{{route.data.personal.title}}</p>
+			<p [ngClass]="{'current-route': ('/' + route.path) == currentRoute, 'sub-level1': route.data.personal.level == 1, 'sub-level2': route.data.personal.level > 1}">{{route.data.personal.titleId | translate}}</p>
 		</button>
 	</div>
 </div>
