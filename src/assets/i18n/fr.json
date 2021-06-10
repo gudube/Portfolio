@@ -1,4 +1,191 @@
 {
+	"about": {
+		"2016": {
+			"end": "std::cout << “The End!” << std::endl;",
+			"ubi1": {
+				"company": "Ubisoft, Montréal",
+				"dates": "Mai 2016 - Juillet 2016",
+				"job": "Stage : Testeur outils",
+				"sub1": "Trouver et communiquer les étapes de reproduction des bogues à l'équipe de développement"
+			},
+			"usine": {
+				"company": "Usine C, Montréal",
+				"dates": "Juin 2013 - Août 2013",
+				"job": "Stage : Responsable de la collecte de données",
+				"sub1": "Générer différents graphiques et statistiques à partir des données collectées sur la satisfaction client"
+			},
+			"year": "2016 et avant"
+		},
+		"2017": {
+			"dec": {
+				"company": "Collège de Maisonneuve, Montréal",
+				"dates": "2017",
+				"job": "Diplôme d'études collégiales en informatique et mathématiques"
+			},
+			"math-prize": {
+				"company": "Collège de Maisonneuve, Montréal",
+				"dates": "2017",
+				"job": "Premier prix du département collégial de mathématiques",
+				"sub1": "Moyenne la plus élevée pour tous les cours de mathématiques - Cohorte 2015-2017"
+			},
+			"poly-admission": {
+				"company": "Polytechnique Montréal",
+				"dates": "2017-2018",
+				"job": "Bourse d'admission",
+				"sub1": "En raison du niveau d'excellence académique au collège"
+			},
+			"roller": {
+				"company": "Projet intégrateur de fin d'études collégiales au Collège de Maisonneuve",
+				"dates": "Hiver 2017",
+				"job": "Projet : Simulation de montagnes russes",
+				"sub1": "Analyser, mettre en œuvre et présenter les aspects mathématiques liés au projet"
+			},
+			"ubi2": {
+				"company": "Ubisoft, Montréal",
+				"dates": "Juin 2017 - Juillet 2017",
+				"job": "Stage : Stagiaire programmeur outils",
+				"sub1": "Créer des Smoke Tests et des Unit Tests en C# selon les besoins de l'équipe d'assurance qualité",
+				"sub2": "Mettre en place de nouvelles fonctionnalités tout en respectant les délais (sprints de deux semaines)"
+			},
+			"year": "2017"
+		},
+		"2018": {
+			"poly-chat": {
+				"company": "Projet à Polytechnique Montréal",
+				"dates": "Automne 2018",
+				"job": "Projet : Développement d'une application de clavardage web",
+				"sub1": "Développer une application web communiquant avec un serveur via des « Web Sockets »"
+			},
+			"poly-proj1": {
+				"company": "Projet intégrateur de première année à Polytechnique Montréal",
+				"dates": "Hiver 2018",
+				"job": "Projet : Système embarqué",
+				"sub1": "Construire un système de composants logiciels et matériels à partir d'une carte à microcontrôleur",
+				"sub2": "Produire un système informatique complet avec entrées/sorties et périphériques externes",
+				"sub3": "Technologies : Microcontrôleur AVR et scripts linux de base (Makefiles, GCC...)"
+			},
+			"year": "2018"
+		},
+		"2019": {
+			"kth": {
+				"company": "KTH Royal Institute of Technology, Stockholm (Suède)",
+				"dates": "Août 2019 - Janvier 2020",
+				"job": "Études à l'international",
+				"sub1": "Cours de Master en informatique (en anglais)"
+			},
+			"ossim": {
+				"company": "Symgery (OSSimTech), Montréal",
+				"dates": "Mai 2019 - Juillet 2019",
+				"job": "Stage : Stagiaire en développement logiciel",
+				"sub1": "Concevoir une base de données SQL selon les exigences de l'équipe de Recherche & Développement",
+				"sub2": "Créer la base de données et migrer les données en tenant compte de la performance et maintenance à long terme",
+				"sub3": "Transférer et refactoriser les blueprints Unreal en c++"
+			},
+			"poly-proj2": {
+				"company": "Projet intégrateur de deuxième année à Polytechnique Montréal",
+				"dates": "Hiver 2019",
+				"job": "Projet : Application Web avec gestion des données",
+				"sub1": "Concevoir, développer et tester une application web interactive (frontend et backend)",
+				"sub2": "Rendre le site 'user friendly' à l'aide de techniques d'infographie et d'interface utilisateur",
+				"sub3": "Enregistrez et récupérez des données utilisateur à partir d'une base de données NoSQL"
+			},
+			"year": "2019"
+		},
+		"2020": {
+			"bachelor": {
+				"company": "Polytechnique Montréal",
+				"dates": "2017 - Remise des diplômes prévue en décembre 2021",
+				"job": "Baccalauréat en génie logiciel",
+				"sub1": "70 crédits accumulés, moyenne pondérée cumulative (GPA) de 3.77/4.00"
+			},
+			"excellence": {
+				"company": "Polytechnique Montréal",
+				"dates": "2020",
+				"job": "Mention d'excellence du directeur général"
+			},
+			"mpfd": {
+				"company": "Projet personnel",
+				"dates": "Mars 2020 - Maintenant",
+				"job": "Projet : SheetMusicOrganizer (WIP)"
+			},
+			"ms-1": {
+				"company": "Morgan Stanley, Montréal",
+				"dates": "Juin 2020 - Août 2020",
+				"job": "Stage : Analyste d'été en technologie",
+				"sub1": "Développer un projet Full Stack en utilisant divers outils DevOps et avec une approche Agile",
+				"sub2": "Créer un backend REST API accédant à une base de données avec Spring Data JPA",
+				"sub3": "Créer une interface Angular avec un ag-Grid pour afficher les données récupérées du service REST"
+			},
+			"ms-2": {
+				"company": "Morgan Stanley, Montréal",
+				"dates": "Septembre 2020 - Décembre 2020",
+				"job": "Stage : Analyste en technologie à temps partiel",
+				"sub1": "Rendre un projet Java disponible sur Docker (de la création de l'image au déploiement)",
+				"sub2": "Indexer une base de données à l'aide de Hibernate Search afin d'ajouter une fonction d'auto-complétion",
+				"sub3": "Mettre en œuvre d'autres fonctionnalités dans une approche d'équipe asynchrone en utilisant la méthodologie Kanban"
+			},
+			"perso-site": {
+				"company": "Projet personnel",
+				"dates": "Août 2020 - Maintenant",
+				"job": "Projet : Ce site"
+			},
+			"year": "2020"
+		},
+		"categories": {
+			"awards": "Prix",
+			"education": "",
+			"internships": "Stages",
+			"knowledge": {
+				"header-language": "Langages / Frameworks",
+				"header-practices": "Pratiques de programmation",
+				"header-tools": "Outils / Logiciels",
+				"language1": "C#, Java, Typescript, C++, Scala (basique), Kotlin (basique)",
+				"language2": "Spring, WPF (.NET), Angular, React (basique)",
+				"language3": "SQL, MongoDB, Sybase, Hibernate, Spring Data JPA",
+				"language4": "Connaissance de base des scripts Linux et Shell",
+				"practices1": "Agile (Sprints, Scrums, Pull requests, Revue de code)",
+				"practices2": "Tests unitaires, Smoke tests, Tests d'intégration",
+				"practices3": "Développement \"Test Driven\"",
+				"practices4": "Documentation (JavaDoc, Swagger UI, Markdown)",
+				"title": "Connaissances informatiques",
+				"tools1": "Git, SVN (de base), Perforce (de base)",
+				"tools2": "Jira, Gradle, Jenkins, Artifactory",
+				"tools3": "Visual Studio, Eclipse, IntelliJ",
+				"tools4": "Unreal Engine (de base)"
+			},
+			"projects": "Projets",
+			"summary": {
+				"sum1": "Connaissance de plusieurs langages de programmation (C#, Java…), de frameworks (Spring, Angular…) et de gestion de bases de données (SQL, Hibernate…)",
+				"sum2": "Expérience de travail dans différents environnements, études internationales et plusieurs projets d'équipe",
+				"sum3": "Fort esprit d'équipe, ouverture d'esprit et capacité à communiquer facilement",
+				"sum4": "Axé sur les objectifs, passion pour la technologie et pour l'apprentissage !",
+				"title": ""
+			}
+		},
+		"category-tab": "Par catégorie",
+		"date-tab": "Par date",
+		"main": {
+			"contact-me": "ME CONTACTER",
+			"download-cv": "TÉLÉCHARGER CV",
+			"hi": "BONJOUR!",
+			"i-am": "JE SUIS",
+			"parag1": "Je suis un développeur et futur ingénieur logiciel basé à Montréal - actuellement en dernière année de génie logiciel à Polytechnique Montréal.",
+			"parag2": "Bien que je ne sois encore qu'au début de ma carrière, j'ai déjà eu la chance de travailler parmi de multiples équipes talentueuses chez <em>Morgan Stanley</em>, <em>Ubisoft</em> et d'autres entreprises. J'ai également eu l'opportunité d'étudier à l'étranger pendant un semestre (au <em>KTH Royal Institute of Technology</em> à Stockholm, en Suède).",
+			"parag3": "Sur une note personnelle, je suis un grand cinéphile et un amoureux des voyages! J'aime être stable, mais pas passif, donc je m'efforce toujours à apprendre davantage et à faire de nouvelles expériences de vie. Je suis toujours ouvert à rencontrer de nouvelles personnes et à travailler sur différents projets, qu'ils soient liés à l'informatique ou non."
+		},
+		"main-tab": "Introduction",
+		"other-techs": " et autres technologies internes...",
+		"techs": "Technologies: "
+	},
+	"contact": {
+		"captcha": "Une fois soumis, vous pourriez être redirigé vers un Google Captcha.",
+		"email-placeholder": "Votre email",
+		"message-placeholder": "Votre message",
+		"name-placeholder": "Votre nom",
+		"social-medias": "Vous pouvez également me joindre via les réseaux sociaux : ",
+		"submit": "Envoyer",
+		"title": "Contactez moi"
+	},
 	"footer": {
 		"contact": "Contact",
 		"copyright": "Copyright",
@@ -13,7 +200,10 @@
 		"title": "Accueil"
 	},
 	"others": {
-		"invalid": "Page invalide"
+		"back-home": "pour revenir à la page d'accueil.",
+		"click-here": "Cliquez ici",
+		"invalid": "Page invalide",
+		"invalid-long": "Oops! On dirait que cette page n'existe pas."
 	},
 	"photos": {
 		"abisko": "Abisko",
@@ -38,5 +228,18 @@
 		"swipe-message": "Faites défiler pour naviguer",
 		"tallinn": "Tallinn",
 		"triglav": "Parc national du Triglav"
+	},
+	"project": {
+		"availability": "Disponible fin 2021",
+		"download": "v0.1b BIENTÔT DISPONIBLE",
+		"features": "EXPLORER LES FONCTIONNALITÉS",
+		"library-view": "Vue Bibliothèque",
+		"organize1": "Organisez",
+		"organize2": " vos chansons.",
+		"partition-view": "Vue Partition",
+		"practice1": "Entrainez vous",
+		"practice2": " avec la partition suivant au rythme de la chanson.",
+		"subtitle": "Le lecteur de musique qui vous permet de jouer en suivant la partition !",
+		"title": "Sheet Music Organizer"
 	}
 }

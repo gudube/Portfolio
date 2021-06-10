@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UiToolsModule } from '../ui-tools/ui-tools.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
 	declarations: [ContactPageComponent],
@@ -13,7 +14,8 @@ import { UiToolsModule } from '../ui-tools/ui-tools.module';
 		HttpClientModule,
 		FormsModule,
 		ReactiveFormsModule,
-		UiToolsModule
+		UiToolsModule,
+		TranslateModule
 	],
 	providers: [ContactService]
 })

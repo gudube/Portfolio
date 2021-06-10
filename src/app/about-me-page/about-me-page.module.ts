@@ -7,10 +7,11 @@ import { AboutMeTypeComponent } from './about-me-type/about-me-type.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { AboutMeMainComponent } from './about-me-main/about-me-main.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
 	declarations: [AboutMeComponent, AboutMeDateComponent, AboutMeTypeComponent, AboutMeMainComponent],
-	imports: [CommonModule, UiToolsModule, MatSliderModule, AppRoutingModule],
+	imports: [CommonModule, UiToolsModule, MatSliderModule, AppRoutingModule, TranslateModule],
 	exports: [],
 })
 export class AboutMePageModule {}

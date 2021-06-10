@@ -3,27 +3,27 @@
 <div id="header" #header>
 	<!-- <img id="background-image" src="assets/project/hd/background75.jpg"> -->
 	<div id="title-container">
-		<h2 id="title">Sheet Music Organizer</h2>
-		<h3 id="subtitle">The music player that allows you to follow along the sheet music!</h3>
+		<h2 id="title">{{'project.title' | translate}}</h2>
+		<h3 id="subtitle">{{'project.subtitle' | translate}}</h3>
 		<div id="buttons-container">
 			<div id="download-button" class="button disabled">
-				<a><p>v0.1b AVAILABLE SOON!</p></a>
+				<a><p>{{'project.download' | translate}}</p></a>
 			</div>
 			<div class="button" (click)="scrollToBottom(header)">
-				<a><p>EXPLORE FEATURES</p></a>
+				<a><p>{{'project.features' | translate}}</p></a>
 			</div>
 		</div>
 	</div>
 </div>
 <div id="content" #content>
 	<div id="view-selection">
-		<span class="option hoverable" [ngClass]="{'selected': libraryView}" (click)="libraryView = true">Library View</span>
+		<span class="option hoverable" [ngClass]="{'selected': libraryView}" (click)="libraryView = true">{{'project.library-view' | translate}}</span>
 		<span> / </span>
-		<span class="option hoverable" [ngClass]="{'selected': !libraryView}" (click)="libraryView = false">Partition View</span>
+		<span class="option hoverable" [ngClass]="{'selected': !libraryView}" (click)="libraryView = false">{{'project.partition-view' | translate}}</span>
 	</div>
 	<div id="view-description">
-		<p [ngClass]="{'visible': libraryView}"><span class="accent">Organize</span> your songs.</p>
-		<p [ngClass]="{'visible': !libraryView}"><span class="accent">Practice</span> with the sheet music following along the song.</p>
+		<p [ngClass]="{'visible': libraryView}"><span class="accent">{{'project.organize1' | translate}}</span>{{'project.organize2' | translate}}</p>
+		<p [ngClass]="{'visible': !libraryView}"><span class="accent">{{'project.practice1' | translate}}</span>{{'project.practice2' | translate}}</p>
 	</div>
 	<div id="screenshots-container">
 		<picture [ngClass]="{'visible': libraryView}">
@@ -39,6 +39,6 @@
 			<img src="/assets/project/partition-view.png" alt="Partition view"/>
 		</picture>
 	</div>
-	<h3 id="download-message">Available late 2021</h3>
+	<h3 id="download-message">{{'project.availability' | translate}}</h3>
 </div>
 </div>
