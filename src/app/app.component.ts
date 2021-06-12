@@ -14,10 +14,16 @@ export class AppComponent {
 
 	constructor(private router: Router, private activatedRoute: ActivatedRoute, private seoService: SeoService, private translate: TranslateService){
 		// this language will be used as a fallback when a translation isn't found in the current language
-		translate.setDefaultLang('en');
-
-		// the lang to use, if the lang isn't available, it will use the current loader to get them
-		translate.use('en'); //todo: replace with chrome/windows language if possible and is en/fr
+		this.translate.addLangs(['en', 'fr']);
+		this.translate.setDefaultLang('en');
+		const savedLang = localStorage.getItem('language');
+		if(savedLang) {
+			// the lang to use, if the lang isn't available, it will use the current loader to get them
+			this.translate.use(savedLang);
+		} else {
+			this.translate.use('en'); //todo: replace with chrome/windows language if possible and is en/fr
+			localStorage.setItem('language', 'en');
+		}
 	}
 
 	ngOnInit(): void {

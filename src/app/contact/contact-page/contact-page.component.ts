@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from '../contact.service';
 import { ContactModel } from '../contact-model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-contact-page',
@@ -15,7 +16,7 @@ export class ContactPageComponent implements OnInit {
 	public EmailControl: FormControl;
 	public MessageControl: FormControl;
 
-	constructor(private builder: FormBuilder, private contactService: ContactService) { }
+	constructor(private builder: FormBuilder, private contactService: ContactService, private translate: TranslateService) { }
 
 	ngOnInit(): void {
 		this.FullnameControl = new FormControl('', [Validators.required]);
@@ -37,4 +38,11 @@ export class ContactPageComponent implements OnInit {
 			});
 	}
 
+	public switchLanguage(): void {
+		const langs = this.translate.getLangs();
+		const index = langs.findIndex(x => x === this.translate.currentLang);
+		const newLang = langs[(index + 1) % langs.length];
+		this.translate.use(newLang);
+		localStorage.setItem('language', newLang);
+	}
 }

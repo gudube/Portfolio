@@ -133,6 +133,7 @@
 			padding-left: 0;
 			font-size: 1.5em;
 			color: var(--readable-text-color);
+			text-align: center;
 		}
 	}
 
@@ -170,6 +171,19 @@
 				font-size: 1em;
 				line-height: 1.1em;
 			}
+			#lastItem {
+				font-size: 1em;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 370px) {
+		#table-title {
+			display: none;
+		}
+
+		.table-container {
+			display: none;
 		}
 	}
 }
