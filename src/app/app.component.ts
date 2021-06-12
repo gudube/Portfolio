@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { filter, map, mergeMap } from 'rxjs/operators';
 import { SeoService } from './seo-service.service';
 
@@ -11,8 +12,18 @@ import { SeoService } from './seo-service.service';
 export class AppComponent {
 	title = 'Guilhem Dubois Portfolio';
 
-	constructor(private router: Router, private activatedRoute: ActivatedRoute, private seoService: SeoService){
-
+	constructor(private router: Router, private activatedRoute: ActivatedRoute, private seoService: SeoService, private translate: TranslateService){
+		// this language will be used as a fallback when a translation isn't found in the current language
+		this.translate.addLangs(['en', 'fr']);
+		this.translate.setDefaultLang('en');
+		const savedLang = localStorage.getItem('language');
+		if(savedLang) {
+			// the lang to use, if the lang isn't available, it will use the current loader to get them
+			this.translate.use(savedLang);
+		} else {
+			this.translate.use('en'); //todo: replace with chrome/windows language if possible and is en/fr
+			localStorage.setItem('language', 'en');
+		}
 	}
 
 	ngOnInit(): void {

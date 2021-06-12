@@ -12,6 +12,15 @@
 	height: 100%;
 	padding-top: 10px;
 	background-color: var(--background-softer-color);
+	position: relative;
+	padding-bottom: 40px;
+
+	#lang-selector {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 20px 20px;
+	}
 }
 
 form {
@@ -60,7 +69,10 @@ form {
 	display: flex;
 	flex-direction: row;
 	min-width: fit-content;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	@media only screen and (max-width: 500px) {
+		flex-wrap: wrap;
+	}
 
 	&.invalid {
 		input, textarea {
@@ -77,8 +89,10 @@ form {
 	input {
 		font-size: 0.9rem;
 		padding: 10px;
-		flex: 1 1 auto;
+		flex: 1 1 270px;
 		box-sizing: border-box;
+		min-width: 0;
+		max-width: 100%;
 	}
 	textarea {
 		font-size: 0.9rem;
@@ -86,8 +100,10 @@ form {
 		resize: none;
 		box-sizing: border-box;
 		height: 200px;
-		flex: 1 1 auto;
+		flex: 1 1 270px;
 		padding: 10px;
+		max-width: 100%;
+		min-width: 0;
 	}
 }
 
@@ -109,6 +125,10 @@ form {
 	#social-media-message {
 		display: inline-block;
 		vertical-align: super;
+		margin: 5px 10px;
+		@media only screen and (max-width: 700px) {
+			font-size: 1em;
+		}
 	}
 
 	#icons-container {

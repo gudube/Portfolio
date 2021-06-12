@@ -1,6 +1,6 @@
 <div id="contact-page-container">
 	<app-back-button></app-back-button>
-	<h2 id="title">Contact Me</h2>
+	<h2 id="title">{{'contact.title' | translate}}</h2>
 	<hr id="separator">
 	<div id="form-container">
 		<form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
@@ -9,29 +9,29 @@
 					<div class="label">
 						<em class="material-icons md-36">person</em>
 					</div>
-					<input id="Fullname" type="text" class="form-control" name="Fullname" placeholder="Your name" formControlName="Fullname">
+					<input id="Fullname" type="text" class="form-control" name="Fullname" placeholder="{{'contact.name-placeholder' | translate}}" formControlName="Fullname">
 				</div>
 				<div class="form-group" [ngClass]="{'invalid': EmailControl.invalid && (EmailControl.dirty || EmailControl.touched)}">
 					<div class="label">
 						<em class="material-icons md-36">email</em>
 					</div>
-					<input id="Email" type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Your email" formControlName="Email">
+					<input id="Email" type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="{{'contact.email-placeholder' | translate}}" formControlName="Email">
 				</div>
 			</div>
 			<div class="form-group" [ngClass]="{'invalid': MessageControl.invalid && (MessageControl.dirty || MessageControl.touched)}">
 				<div class="label">
 					<em class="material-icons md-36">message</em>
 				</div>
-				<textarea id="Message" class="form-control" formControlName="Message" name="Message" placeholder="Your message">
+				<textarea id="Message" class="form-control" formControlName="Message" name="Message" placeholder="{{'contact.message-placeholder' | translate}}">
 				</textarea>
 			</div>
-			<span id="pre-submit-message">Once submitted, you will be redirected to a Google Captcha.</span>
+			<span id="pre-submit-message">{{'contact.captcha' | translate}}</span>
 			<div id="button-container">
-				<button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
+				<button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">{{'contact.submit' | translate}}</button>
 			</div>
 		</form>
 		<div id="social-media-container">
-			<p id="social-media-message">You can also reach me through social media:</p>
+			<p id="social-media-message">{{'contact.social-medias' | translate}}</p>
 			<div id="icons-container">
 				<a class="image-container hoverable" href="https://www.instagram.com/guilhem.dubois/" target="_blank" rel="noopener" aria-label="Instagram">
 					<img src="assets/icons/insta_white_64.png" alt="Instagram"/>
@@ -46,6 +46,9 @@
 					<img src="assets/icons/fb_white_64.png" alt="Facebook"/>
 				</a>
 			</div>
+		</div>
+		<div id="lang-selector" >
+			<a class="hoverable" (click)="switchLanguage()">{{ 'lang-name' | translate }}</a>
 		</div>
 	</div>
 </div>

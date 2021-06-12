@@ -99,6 +99,7 @@
 			padding-left: 0;
 			font-size: 1.5em;
 			color: var(--readable-text-color);
+			text-align: center;
 		}
 	}
 
@@ -218,6 +219,9 @@
 			h4, span {
 				font-size: 1em;
 				line-height: 1.1em;
+			}
+			#lastItem {
+				font-size: 1em;
 			}
 		}
 	}

@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Location } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-footnotes',
@@ -8,5 +9,13 @@ import { Location } from '@angular/common';
 })
 export class FootnotesComponent {
 
-	constructor(public location: Location) { }
+	constructor(public location: Location, private translate: TranslateService) { }
+
+	public switchLanguage(): void {
+		const langs = this.translate.getLangs();
+		const index = langs.findIndex(x => x === this.translate.currentLang);
+		const newLang = langs[(index + 1) % langs.length];
+		this.translate.use(newLang);
+		localStorage.setItem('language', newLang);
+	}
 }

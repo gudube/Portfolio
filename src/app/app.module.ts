@@ -15,6 +15,10 @@ import { ProjectPageComponent } from './project-page/project-page.component';
 import { SeoService } from './seo-service.service';
 import { ErrorPageModule } from './error-page/error-page.module';
 
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {
 	overrides = <any> {
@@ -39,7 +43,16 @@ export class HammerConfig extends HammerGestureConfig {
 		ErrorPageModule,
 		HammerModule,
 		BrowserAnimationsModule,
-		ContactModule
+		ContactModule,
+		HttpClientModule,
+		TranslateModule.forRoot({
+			loader: {
+				provide: TranslateLoader,
+				useFactory: HttpLoaderFactory,
+				deps: [HttpClient]
+			},
+			defaultLanguage: 'en'
+		})
 	],
 	providers: [{
 		provide: APP_INITIALIZER,
@@ -58,4 +71,9 @@ export class AppModule {}
 
 export function ConfigurationServiceFactory(photoService: PhotographyService){
 	return (): void => photoService.loadAlbums();
+}
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+	return new TranslateHttpLoader(http);
 }

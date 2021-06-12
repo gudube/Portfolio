@@ -1,22 +1,22 @@
 <div class="header">
 	<h1>Guilhem Dubois</h1>
-	<h2>Portfolio</h2>
+	<h2>{{'home.portfolio' | translate }}</h2>
 </div>
 <app-menu>
 	<app-menu-item [smallItem]="true"
 		imgSrc="assets/menu-items/about-me"
-		title="About Me"
+		title="{{'home.about' | translate }}"
 		route="/about-me"
 	></app-menu-item>
 	<app-menu-item [smallItem]="true"
 		imgSrc="assets/menu-items/sheet-music-organizer"
-		title="Personal Project"
-		subtitle="Sheet Music Organizer"
+		title="{{'home.project' | translate }}"
+		subtitle="{{'home.project-name' | translate }}"
 		route="/project"
 	></app-menu-item>
 	<app-menu-item [smallItem]="true"
 		imgSrc="assets/menu-items/photography"
-		title="Photography"
+		title="{{'home.photo' | translate }}"
 		route="/photography"
 	></app-menu-item>
 </app-menu>

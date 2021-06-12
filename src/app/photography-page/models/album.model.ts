@@ -1,6 +1,6 @@
 export interface IAlbum {
 	id: string;
-	title: string;
-	subtitle: string;
+	titleId: string;
+	subtitleId: string;
 	photoFileNames: string[];
 }

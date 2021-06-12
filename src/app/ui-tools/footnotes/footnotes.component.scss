@@ -1,8 +1,9 @@
 
 #footnotes {
+	height: 54px;
 	width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 	align-items: center;
@@ -17,6 +18,7 @@
 	}
 	
 	#contact-me {
+		margin-right: 20px;
 		text-decoration: none;
 		font-size: 1.4rem;
 		&:focus {
@@ -31,8 +33,12 @@
 	}
 
 	#icons-container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 		height: 100%;
 		text-align: end;
+		margin-left: 20px;
 		.image-container {
 			&:not(:first-child){
 				margin-left: 20px;
@@ -54,7 +60,7 @@
 	}
 
 	#contact-me, #icons-container {
-		flex-basis: 215px;
+		flex: 1 1 0;
 	}
 
 	@media only screen and (max-width: 800px) {
@@ -70,15 +76,15 @@
 		}
 	}
 
-	@media only screen and (max-width: 450px) {
-		#copyright {
+	@media only screen and (max-width: 650px) {
+		.image-container {
 			display: none;
 		}
 	}
 
 	@media only screen and (max-width: 350px) {
-		#icons-container .image-container img {
-			height: 26px;
+		#copyright {
+			display: none;
 		}
 	}
 }

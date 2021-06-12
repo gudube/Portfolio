@@ -3,8 +3,8 @@
 	<app-menu-item
 		*ngFor="let album of service.albums"
 		imgSrc="assets/photography/{{album.id}}/{{album.id}}-menu"
-		title={{album.title}}
-		subtitle={{album.subtitle}}
+		title="{{album.titleId | translate}}"
+		subtitle="{{album.subtitleId | translate}}"
 		[route]="['/photography', album.id]"
 	></app-menu-item>
 </app-menu>
