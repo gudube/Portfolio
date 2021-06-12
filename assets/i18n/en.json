@@ -1,0 +1,259 @@
+{
+	"about": {
+		"2016": {
+			"end": "std::cout << “The End!” << std::endl;",
+			"ubi1": {
+				"company": "Ubisoft, Montreal",
+				"dates": "May 2016 - July 2016",
+				"job": "Tools Tester",
+				"sub1": "Find and communicate bug reproduction steps to the development team using JIRA."
+			},
+			"usine": {
+				"company": "Usine C, Montreal",
+				"dates": "June 2013 - August 2013",
+				"job": "Data Collection Manager",
+				"sub1": "Generate different graphs and statistics from data collected on customer satisfaction"
+			},
+			"year": "2016 and before"
+		},
+		"2017": {
+			"dec": {
+				"company": "Collège de Maisonneuve, Montreal",
+				"dates": "2017",
+				"job": "College diploma in Computer Science and Mathematics"
+			},
+			"math-prize": {
+				"company": "Collège de Maisonneuve, Montreal",
+				"dates": "2015 - 2017 cohort",
+				"job": "First prize from the Department of Mathematics",
+				"sub1": "Highest average score for all the courses in mathematics - Cohort of 2015-2017"
+			},
+			"poly-admission": {
+				"company": "Polytechnique Montréal",
+				"dates": "2017 - 2018",
+				"job": "Admission scholarship",
+				"sub1": "Due to the academic level of excellence in college"
+			},
+			"roller": {
+				"company": "Final collegial project at Collège de Maisonneuve",
+				"dates": "Winter 2017",
+				"job": "Rollercoaster simulation",
+				"sub1": "Analyze, implement, and present the mathematical aspects related to the project"
+			},
+			"ubi2": {
+				"company": "Ubisoft, Montreal",
+				"dates": "June 2017 - July 2017",
+				"job": "Tools Programmer Intern",
+				"sub1": "Implement new functionalities in C# while respecting the deadlines (sprints of two weeks)",
+				"sub2": "Create Smoke tests and unit tests according to the needs of the Quality Assurance team"
+			},
+			"year": "2017"
+		},
+		"2018": {
+			"poly-chat": {
+				"company": "Project at Polytechnique Montréal",
+				"dates": "Autumn 2018",
+				"job": "Development of a web chat application",
+				"sub1": "Develop an web application communicating to a server through “Web Sockets”"
+			},
+			"poly-proj1": {
+				"company": "First year team project at Polytechnique Montréal",
+				"dates": "Winter 2018",
+				"job": "Embedded system",
+				"sub1": "Build a system containing software and hardware components from a microcontroller card",
+				"sub2": "Produce a complete computer system with inputs/outputs and external peripherals",
+				"sub3": "Technologies: AVR microcontroller and basic linux and shell scripting (Makefiles, GCC...)"
+			},
+			"year": "2018"
+		},
+		"2019": {
+			"kth": {
+				"company": "KTH Royal Institute of Technology, Stockholm (Sweden)",
+				"dates": "August 2019 - January 2020",
+				"job": "International Exchange Program",
+				"sub1": "Computer Science Master courses - English classes"
+			},
+			"ossim": {
+				"company": "Symgery (formerly OSSimTech), Montreal",
+				"dates": "May 2019 - July 2019",
+				"job": "Software Development Intern",
+				"sub1": "Design a SQL database according to the requirements of the Research & Development team",
+				"sub2": "Create the database and migrate data considering performance and long-term maintenance",
+				"sub3": "Transfer and refactor Unreal blueprints to c++"
+			},
+			"poly-proj2": {
+				"company": "Second year team project at Polytechnique Montréal",
+				"dates": "Winter 2019",
+				"job": "Web application with data management",
+				"sub1": "Design, develop and test an interactive web application (frontend and backend)",
+				"sub2": "Make the site user friendly using computer graphics and UI knowledge",
+				"sub3": "Save and recover user data from a NoSQL Database"
+			},
+			"year": "2019"
+		},
+		"2020": {
+			"bachelor": {
+				"company": "Polytechnique Montréal",
+				"dates": "2017 - Expected Graduation December 2021",
+				"job": "Bachelor's degree in Software Engineering",
+				"sub1": "111 credits accumulated, Grade Point Averages (GPA) of 3,79/4,00"
+			},
+			"excellence": {
+				"company": "Polytechnique Montréal",
+				"dates": "2020",
+				"job": "Mention of excellence from the General Director"
+			},
+			"mpfd": {
+				"company": "Personal project",
+				"dates": "March 2020 - Now",
+				"job": "SheetMusicOrganizer (WIP)"
+			},
+			"ms-1": {
+				"company": "Morgan Stanley, Montreal",
+				"dates": "June 2020 - August 2020",
+				"job": "Technology Summer Analyst",
+				"sub1": "Develop a Full Stack project using various DevOps tools and with an Agile approach",
+				"sub2": "Create a REST API backend accessing a database using Spring Data JPA (with Hibernate)",
+				"sub3": "Create an Angular frontend with an ag-Grid to display the data retrieved from the REST service"
+			},
+			"ms-2": {
+				"company": "Morgan Stanley, Montreal",
+				"dates": "September 2020 - December 2020",
+				"job": "Technology Part Time Analyst",
+				"sub1": "Make a Java project available on Docker (from the image creation to the deployment)",
+				"sub2": "Index a database using Hibernate Search (Lucene indexes) to add typeahead to a search feature",
+				"sub3": "Implement other functionalities in an asynchronous team-based approach using the Kanban methodology"
+			},
+			"perso-site": {
+				"company": "Personal project",
+				"dates": "August 2020 - Now",
+				"job": "This website"
+			},
+			"year": "2020"
+		},
+		"categories": {
+			"awards": {
+				"subtitle": "Award : ",
+				"title": "Awards"
+			},
+			"education": {
+				"subtitle": "Studies : ",
+				"title": "Education"
+			},
+			"internships": {
+				"subtitle": "Internship : ",
+				"title": "Internships"
+			},
+			"knowledge": {
+				"header-language": "Languages / Frameworks",
+				"header-practices": "Programming practices",
+				"header-tools": "Tools / Software",
+				"language1": "C#, Java, Typescript, C++, Scala (basic), Kotlin (basic)",
+				"language2": "Angular, WPF (.NET), Spring, React (basic)",
+				"language3": "SQL, MongoDB, Sybase, Hibernate, Spring Data JPA",
+				"language4": "Basic Linux and Shell scripting knowledge",
+				"practices1": "Agile (Sprints, Scrums, Pull requests, Code reviews)",
+				"practices2": "Unit tests, Smoke tests, Integration tests",
+				"practices3": "Test Driven Development",
+				"practices4": "Documentation (JavaDoc, Swagger UI, Markdown)",
+				"title": "Computer Knowledge",
+				"tools1": "Git, SVN (basic), Perforce (basic)",
+				"tools2": "Jira, Gradle, Jenkins, Artifactory",
+				"tools3": "Visual Studio, Eclipse, IntelliJ",
+				"tools4": "Unreal Engine (basic)"
+			},
+			"projects": {
+				"subtitle": "Project : ",
+				"title": "Projects"
+			},
+			"summary": {
+				"sum1": "Knowledge of several programming languages (C#, Java…), frameworks (Spring, Angular…) and database management (SQL, Hibernate…)",
+				"sum2": "Work experience in different environments, international studies, and multiple team projects",
+				"sum3": "Strong team spirit and professional communication skills",
+				"sum4": "Goal-driven, passion for technology and for learning!",
+				"title": "Summary"
+			}
+		},
+		"category-tab": "By category",
+		"date-tab": "By date",
+		"main": {
+			"contact-me": "CONTACT ME",
+			"download-cv": "DOWNLOAD CV",
+			"hi": "HI THERE!",
+			"i-am": "I'M",
+			"parag1": "Developer and future software engineer based in Montreal - currently in my final year of Software Engineering at Polytechnique Montreal.",
+			"parag2": "Although I'm still at the start of my career, I've already had the chance to work in multiple talented teams at <em>Morgan Stanley</em>, <em>Ubisoft</em> and other companies. I also had the great opportunity of studying abroad for a semester (at <em>KTH Royal Institute of Technology</em> in Stockholm, Sweden).",
+			"parag3": "On a personal note, I'm a huge movie buff and travel lover! I love being stable, but not being idle, so I keep striving to learn more and make new life experiences. I'm always open to meet new people and work on different projects, be it software related or not."
+		},
+		"main-tab": "About me",
+		"other-techs": " and other internal technologies...",
+		"techs": "Technologies: "
+	},
+	"contact": {
+		"captcha": "Once submitted, you might be redirected to a Google Captcha.",
+		"email-placeholder": "Your email",
+		"message-placeholder": "Your message",
+		"name-placeholder": "Your name",
+		"social-medias": "You can also reach me through social media: ",
+		"submit": "Submit",
+		"title": "Contact Me"
+	},
+	"footer": {
+		"contact": "Contact Me",
+		"copyright": "Copyright",
+		"copyright-date": "© 2020 - 2021"
+	},
+	"home": {
+		"about": "About Me",
+		"photo": "Photography",
+		"portfolio": "Portfolio",
+		"project": "Personal Project",
+		"project-name": "Sheet Music Organizer",
+		"title": "Home"
+	},
+	"lang-code": "en",
+	"lang-name": "English",
+	"others": {
+		"back-home": "to go back to the home page.",
+		"click-here": "Click Here",
+		"invalid": "Invalid Page",
+		"invalid-long": "Oops! Looks like that page doesn't exist."
+	},
+	"photos": {
+		"abisko": "Abisko",
+		"berlin": "Berlin",
+		"capri": "Capri",
+		"cinque-terre": "Cinque Terre",
+		"copenhagen": "Copenhagen",
+		"denmark": "Denmark",
+		"estonia": "Estonia",
+		"germany": "Germany",
+		"grid-view": "Grid View",
+		"italy": "Italy",
+		"lapland": "Lapland",
+		"list-view": "List View",
+		"ljubljana": "Ljubljana",
+		"naples": "Naples",
+		"russia": "Russia",
+		"saint-petersburg": "Saint Petersburg",
+		"slovenia": "Slovenia",
+		"stockholm": "Stockholm",
+		"sweden": "Sweden",
+		"swipe-message": "Swipe to navigate",
+		"tallinn": "Tallinn",
+		"triglav": "Triglav National Park"
+	},
+	"project": {
+		"availability": "Available late 2021",
+		"download": "v0.1b AVAILABLE SOON!",
+		"features": "EXPLORE FEATURES",
+		"library-view": "Library View",
+		"organize1": "Organize",
+		"organize2": " your songs.",
+		"partition-view": "Partition View",
+		"practice1": "Practice",
+		"practice2": " with the sheet music following along the song.",
+		"subtitle": "The music player that allows you to follow along the sheet music!",
+		"title": "Sheet Music Organizer"
+	}
+}
