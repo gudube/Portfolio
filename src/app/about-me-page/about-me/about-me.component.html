@@ -2,15 +2,15 @@
 	<app-back-button [light]="true"></app-back-button>
 	<!-- <img id="background-image" src="assets/about-me/background-code.png" alt="background"/> -->
 	<div id="about-type-chooser">
-		<button class="about-type-container hoverable smooth-hover transparent-button" [ngClass]="{'selected': typeShown == aboutTypes.aboutMe}"
+		<button class="about-type-container hoverable smooth-hover3 transparent-button" [ngClass]="{'selected': typeShown == aboutTypes.aboutMe}"
 			(click)="this.typeShown = aboutTypes.aboutMe">
 			<h4 class="about-type-text">{{'about.main-tab' | translate}}</h4>
 		</button>
-		<button class="about-type-container hoverable smooth-hover transparent-button" [ngClass]="{'selected': typeShown == aboutTypes.byCategory}"
+		<button class="about-type-container hoverable smooth-hover3 transparent-button" [ngClass]="{'selected': typeShown == aboutTypes.byCategory}"
 			(click)="this.typeShown = aboutTypes.byCategory">
 			<h4 class="about-type-text">{{'about.category-tab' | translate}}</h4>
 		</button>
-		<button class="about-type-container hoverable smooth-hover transparent-button" [ngClass]="{'selected': typeShown == aboutTypes.byDate}"
+		<button class="about-type-container hoverable smooth-hover3 transparent-button" [ngClass]="{'selected': typeShown == aboutTypes.byDate}"
 			(click)="this.typeShown = aboutTypes.byDate">
 			<h4 class="about-type-text">{{'about.date-tab' | translate}}</h4>
 		</button>
