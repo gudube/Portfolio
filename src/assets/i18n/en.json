@@ -199,7 +199,7 @@
 		"title": "Contact Me"
 	},
 	"footer": {
-		"contact": "Contact Me",
+		"contact": "Contact",
 		"copyright": "Copyright",
 		"copyright-date": "© 2020 - 2021"
 	},
@@ -212,7 +212,7 @@
 		"title": "Home"
 	},
 	"lang-code": "en",
-	"lang-name": "English",
+	"other-lang-name": "Francais",
 	"others": {
 		"back-home": "to go back to the home page.",
 		"click-here": "Click Here",

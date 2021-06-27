@@ -1,7 +1,7 @@
 <div id="menu-container" [ngClass]="{'light': light}">
 	<button id="menu-button-container" class="transparent-button" (click)="opened = !opened">
-		<em class="material-icons hoverable smooth-hover" *ngIf="opened">close</em>
-		<em class="material-icons hoverable smooth-hover" *ngIf="!opened">menu</em>
+		<em class="material-icons hoverable smooth-hover2" *ngIf="opened">close</em>
+		<em class="material-icons hoverable smooth-hover2" *ngIf="!opened">menu</em>
 	</button>
 	<div id="menu" *ngIf="opened">
 		<button *ngFor="let route of routes" class="route-container hoverable transparent-button" routerLink="/{{route.path}}">
@@ -10,5 +10,5 @@
 	</div>
 </div>
 <div id="up-arrow-container" [ngClass]="{'visible': showGoToTop}" (click)="scrollToTop()" tabindex="-1">
-	<em id="up-arrow" class="material-icons hoverable smooth-hover">expand_less</em>
+	<em id="up-arrow" class="material-icons hoverable smooth-hover2">expand_less</em>
 </div>

@@ -100,7 +100,6 @@
 		// }
 
 		.button {
-			user-select: none;
 			margin: 10px 20px;
 			width: 270px;
 			max-width: 80vw;
@@ -113,7 +112,6 @@
 			//margin-right: auto;
 			background-color: var(--background-soft-color);
 			text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
-			cursor: pointer;
 
 			&.main-button {
 				background-color: rgba(var(--accent-color-rgb), 0.4);
@@ -129,18 +127,6 @@
 				line-height: 60px;
 				font-size: 0.8em;
 				position: relative;
-			}
-
-			@media (hover: hover) {
-				p {
-					transition: color 0.2s;
-					color: var(--hoverable-color);
-				}
-				&:hover {
-					p{
-						color: var(--hovered-color);
-					}
-				}
 			}
 		}
 	}

@@ -110,6 +110,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .hoverable {
+	user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
 	cursor: pointer;
 	color: var(--hoverable-color);
 	p, h2, h3, h4, span {
@@ -144,7 +149,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 	}
 }
 
-.smooth-hover {
+.smooth-hover2 {
+	@media (hover: hover) {
+		&.hoverable{
+			transition: color 0.2s;
+		}
+		&.hoverable-opacity {
+			transition: opacity 0.2s;
+		}
+	}
+}
+
+.smooth-hover3 {
 	@media (hover: hover) {
 		&.hoverable{
 			transition: color 0.3s;
