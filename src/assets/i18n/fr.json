@@ -92,22 +92,6 @@
 			"year": "2019"
 		},
 		"2020": {
-			"bachelor": {
-				"company": "Polytechnique Montréal",
-				"dates": "2017 - Diplôme prévu en décembre 2021",
-				"job": "Baccalauréat en génie logiciel",
-				"sub1": "111 crédits acquis, moyenne pondérée cumulative (GPA) de 3.79/4.00"
-			},
-			"excellence": {
-				"company": "Polytechnique Montréal",
-				"dates": "2020",
-				"job": "Mention d'excellence du directeur général"
-			},
-			"mpfd": {
-				"company": "Projet personnel",
-				"dates": "Mars 2020 - Maintenant",
-				"job": "SheetMusicOrganizer (WIP)"
-			},
 			"ms-1": {
 				"company": "Morgan Stanley, Montréal",
 				"dates": "Juin 2020 - Août 2020",
@@ -126,10 +110,32 @@
 			},
 			"perso-site": {
 				"company": "Projet personnel",
-				"dates": "Août 2020 - Maintenant",
+				"dates": "Commencé en août 2020",
 				"job": "Ce site"
 			},
 			"year": "2020"
+		},
+		"2021": {
+			"bachelor": {
+				"company": "Polytechnique Montréal",
+				"dates": "2017 - 2021",
+				"job": "Baccalauréat en génie logiciel",
+				"sub1": "Moyenne pondérée cumulative (GPA) de 3.88/4.00"
+			},
+			"excellence": {
+				"company": "Polytechnique Montréal",
+				"dates": "2021",
+				"job": "Mention d'excellence du directeur général"
+			},
+			"year": "2021"
+		},
+		"2022": {
+			"mpfd": {
+				"company": "Projet personnel",
+				"dates": "Mars 2020 - Maintenant",
+				"job": "SheetMusicOrganizer (WIP)"
+			},
+			"year": "2022"
 		},
 		"categories": {
 			"awards": {
@@ -201,7 +207,7 @@
 	"footer": {
 		"contact": "Contact",
 		"copyright": "Copyright",
-		"copyright-date": "© 2020 - 2021"
+		"copyright-date": "© 2020 - 2022"
 	},
 	"home": {
 		"about": "À propos",
