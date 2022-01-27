@@ -250,9 +250,10 @@
 		"triglav": "Parc national du Triglav"
 	},
 	"project": {
-		"availability": "Disponible fin 2021",
-		"download": "v0.1b BIENTÔT DISPONIBLE",
+		"download": "TÉLÉCHARGER",
 		"features": "FONCTIONNALITÉS",
+		"github-code": "Voir le code sur GitHub",
+		"github-releases": "Accéder à toutes les versions",
 		"library-view": "Vue Bibliothèque",
 		"organize1": "Organisez",
 		"organize2": " vos chansons.",
@@ -260,6 +261,7 @@
 		"practice1": "Entrainez vous",
 		"practice2": " avec la partition suivant le rythme de la chanson.",
 		"subtitle": "Le lecteur de musique qui vous permet de jouer en suivant la partition !",
-		"title": "Sheet Music Organizer"
+		"title": "Sheet Music Organizer",
+		"version": "Version 0.1.0"
 	}
 }
