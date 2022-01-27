@@ -6,8 +6,13 @@
 		<h2 id="title">{{'project.title' | translate}}</h2>
 		<h3 id="subtitle">{{'project.subtitle' | translate}}</h3>
 		<div id="buttons-container">
-			<div id="download-button" class="button disabled">
-				<a><p class="hoverable smooth-hover2">{{'project.download' | translate}}</p></a>
+			<div id="download-button-container">
+				<div id="download-button" class="button">
+					<a href="https://github.com/gudube/SheetMusicOrganizer/releases/download/v0.1.0/SheetMusicOrganizer_0.1.0.zip" download>
+						<p class="hoverable smooth-hover2">{{'project.download' | translate}}</p>
+					</a>
+				</div>
+				<p class="version-text">{{'project.version' | translate}}</p>
 			</div>
 			<div class="button" (click)="scrollToBottom(header)">
 				<a><p class="hoverable smooth-hover2">{{'project.features' | translate}}</p></a>
@@ -39,6 +44,13 @@
 			<img src="/assets/project/{{'lang-code' | translate}}/partition-view.png" alt="Partition view"/>
 		</picture>
 	</div>
-	<h3 id="download-message">{{'project.availability' | translate}}</h3>
+	<div id="more-info">
+		<a href="https://github.com/gudube/SheetMusicOrganizer/releases" target="_blank" rel="noopener" >
+			<p class="hoverable smooth-hover2">{{'project.github-releases' | translate}}</p>
+		</a>
+		<a href="https://github.com/gudube/SheetMusicOrganizer" target="_blank" rel="noopener" >
+			<p class="hoverable smooth-hover2">{{'project.github-code' | translate}}</p>
+		</a>
+	</div>
 </div>
 </div>

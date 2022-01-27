@@ -127,11 +127,6 @@
 				"dates": "2021",
 				"job": "Mention of excellence from the General Director"
 			},
-			"mpfd": {
-				"company": "Personal project",
-				"dates": "March 2020 - Now",
-				"job": "SheetMusicOrganizer (WIP)"
-			},
 			"year": "2021"
 		},
 		"2022": {
@@ -255,9 +250,10 @@
 		"triglav": "Triglav National Park"
 	},
 	"project": {
-		"availability": "Available late 2021",
-		"download": "v0.1b AVAILABLE SOON!",
+		"download": "DOWNLOAD NOW",
 		"features": "EXPLORE FEATURES",
+		"github-code": "View the code on Github",
+		"github-releases": "View all releases",
 		"library-view": "Library View",
 		"organize1": "Organize",
 		"organize2": " your songs.",
@@ -265,6 +261,7 @@
 		"practice1": "Practice",
 		"practice2": " with the sheet music following along the song.",
 		"subtitle": "The music player that allows you to follow along the sheet music!",
-		"title": "Sheet Music Organizer"
+		"title": "Sheet Music Organizer",
+		"version": "Version 0.1.0"
 	}
 }
