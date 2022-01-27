@@ -92,22 +92,6 @@
 			"year": "2019"
 		},
 		"2020": {
-			"bachelor": {
-				"company": "Polytechnique Montréal",
-				"dates": "2017 - Expected Graduation December 2021",
-				"job": "Bachelor's degree in Software Engineering",
-				"sub1": "111 credits accumulated, Grade Point Averages (GPA) of 3,79/4,00"
-			},
-			"excellence": {
-				"company": "Polytechnique Montréal",
-				"dates": "2020",
-				"job": "Mention of excellence from the General Director"
-			},
-			"mpfd": {
-				"company": "Personal project",
-				"dates": "March 2020 - Now",
-				"job": "SheetMusicOrganizer (WIP)"
-			},
 			"ms-1": {
 				"company": "Morgan Stanley, Montreal",
 				"dates": "June 2020 - August 2020",
@@ -126,10 +110,32 @@
 			},
 			"perso-site": {
 				"company": "Personal project",
-				"dates": "August 2020 - Now",
+				"dates": "Started in August 2020",
 				"job": "This website"
 			},
 			"year": "2020"
+		},
+		"2021": {
+			"bachelor": {
+				"company": "Polytechnique Montréal",
+				"dates": "2017 - 2021",
+				"job": "Bachelor's degree in Software Engineering",
+				"sub1": "Grade Point Averages (GPA) of 3,88/4,00"
+			},
+			"excellence": {
+				"company": "Polytechnique Montréal",
+				"dates": "2021",
+				"job": "Mention of excellence from the General Director"
+			},
+			"year": "2021"
+		},
+		"2022": {
+			"mpfd": {
+				"company": "Personal project",
+				"dates": "March 2020 - Now",
+				"job": "SheetMusicOrganizer (WIP)"
+			},
+			"year": "2022"
 		},
 		"categories": {
 			"awards": {
@@ -201,7 +207,7 @@
 	"footer": {
 		"contact": "Contact",
 		"copyright": "Copyright",
-		"copyright-date": "© 2020 - 2021"
+		"copyright-date": "© 2020 - 2022"
 	},
 	"home": {
 		"about": "About Me",
@@ -244,9 +250,10 @@
 		"triglav": "Triglav National Park"
 	},
 	"project": {
-		"availability": "Available late 2021",
-		"download": "v0.1b AVAILABLE SOON!",
+		"download": "DOWNLOAD NOW",
 		"features": "EXPLORE FEATURES",
+		"github-code": "View the code on Github",
+		"github-releases": "View all releases",
 		"library-view": "Library View",
 		"organize1": "Organize",
 		"organize2": " your songs.",
@@ -254,6 +261,7 @@
 		"practice1": "Practice",
 		"practice2": " with the sheet music following along the song.",
 		"subtitle": "The music player that allows you to follow along the sheet music!",
-		"title": "Sheet Music Organizer"
+		"title": "Sheet Music Organizer",
+		"version": "Version 0.1.0"
 	}
 }
