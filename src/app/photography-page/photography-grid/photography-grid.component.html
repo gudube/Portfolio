@@ -1,9 +1,9 @@
-<full-image-viewer
+<app-full-image-viewer
 	[(visible)]=showingFullImage
 	[hasPreviousImage]=hasPreviousImage
 	[hasNextImage]=hasNextImage
 	(nextImage)="nextImage($event)">
-</full-image-viewer>
+</app-full-image-viewer>
 
 <div id="view-selection">
 	<span class="option hoverable" [ngClass]="{'selected': gridView}" (click)="gridView = true">{{'photos.grid-view' | translate}}</span>

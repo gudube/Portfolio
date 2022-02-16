@@ -6,7 +6,7 @@ import { catchError, map } from 'rxjs/operators';
 enum Resolution { UHD = 'uhd', HD = 'hd', SD = 'sd' }
 
 @Component({
-	selector: 'full-image-viewer',
+	selector: 'app-full-image-viewer',
 	templateUrl: './full-image-viewer.component.html',
 	styleUrls: ['./full-image-viewer.component.scss'],
 })
@@ -42,20 +42,22 @@ export class FullImageViewerComponent {
 		this.loaded = false;
 		this.imgName = imgName;
 		this.albumName = albumName;
-		//this.shownRes = this.defaultRes;
+		// this.shownRes = this.defaultRes;
 
-		//We wait to see which resolutions are available before changing the image
+		// We wait to see which resolutions are available before changing the image
 		Promise.all([
 			this.fileExists(this.getImgSrc(Resolution.HD)).then((exists) => this.hdAvailable = exists),
 			this.fileExists(this.getImgSrc(Resolution.UHD)).then((exists) => this.uhdAvailable = exists),
-			//we suppose SD always exist
+			// we suppose SD always exist
 		]).then(() => {
-			if(	this.defaultRes == Resolution.UHD && this.uhdAvailable ||
-					this.defaultRes == Resolution.HD && this.hdAvailable ||
-					this.defaultRes == Resolution.SD)
+			if (	this.defaultRes === Resolution.UHD && this.uhdAvailable ||
+					this.defaultRes === Resolution.HD && this.hdAvailable ||
+					this.defaultRes === Resolution.SD) {
 				this.shownRes = this.defaultRes;
-			else
+			}
+			else {
 				this.shownRes =  this.hdAvailable ? Resolution.HD : Resolution.SD;
+			}
 
 			this.zoomedHeightOverflow = false;
 			this.zoomedWidthOverflow = false;
@@ -67,15 +69,17 @@ export class FullImageViewerComponent {
 			} else {
 				sessionStorage.setItem('imageOpenedBefore', 'yes');
 				// show navigation message
-				if(matchMedia('(hover: none), (pointer: coarse)').matches)
+				if (matchMedia('(hover: none), (pointer: coarse)').matches) {
 					this.showSwipeMessage = true;
+				}
 			}
 		});
 	}
 
 	public getImgSrc(resolution?: string): string {
-		if(!resolution)
+		if (!resolution) {
 			resolution = this.shownRes;
+		}
 		return `assets/photography/${this.albumName}/${resolution}/${this.imgName}`;
 	}
 
@@ -99,7 +103,7 @@ export class FullImageViewerComponent {
 
 	public fileExists(url: string): Promise<boolean> {
 		return this.httpClient.head(url).pipe(map(() => true), catchError(() => of(false))).toPromise();
-		//return this.httpClient.get(url).pipe(map(() => true), catchError(() => of(false)));
+		// return this.httpClient.get(url).pipe(map(() => true), catchError(() => of(false)));
 	}
 
 	@HostListener('window:resize')
@@ -109,9 +113,6 @@ export class FullImageViewerComponent {
 	}
 
 	public zoom(e: MouseEvent): void {
-		if(this.shownRes == Resolution.SD)
-			return; //cant zoom on SD pictures
-
 		if (this.zoomedHeightOverflow) {
 			this.zoomedHeightOverflow = false;
 		} else if (this.zoomedWidthOverflow) {
@@ -121,29 +122,35 @@ export class FullImageViewerComponent {
 			const image = nativeContainer.querySelector('img') as HTMLImageElement;
 			const bounds: DOMRect = image.getBoundingClientRect();
 
-			//size of the real image (image file itself)
+			// size of the real image (image file itself)
 			const naturalRatio = image.naturalWidth / image.naturalHeight;
-			//size of the img Element (filling the space)
+			// size of the img Element (filling the space)
 			const visibleRatio = image.clientWidth / image.clientHeight;
-			if (naturalRatio > visibleRatio) //width is 100% unzoomed
+			if (naturalRatio > visibleRatio) // width is 100% unzoomed
 			{
-				if(e.target == image){ //if clicked in image, make sure it was actually the image
+				if (e.target === image){ // if clicked in image, make sure it was actually the image
 					const clickY = e.clientY - bounds.top;
 					const actualHeight = image.clientWidth * image.naturalHeight / image.naturalWidth;
 					const emptyBorder = (image.clientHeight - actualHeight) / 2;
-					if(clickY < emptyBorder || clickY > emptyBorder + actualHeight)
-						return; //clicking outside the image
+					if (clickY < emptyBorder || clickY > emptyBorder + actualHeight) {
+						return;
+					} // clicking outside the image
 				}
-				this.zoomedWidthOverflow = true;
-			}else{ //height is 100% unzoomed
-				if(e.target == image){
+				if (this.shownRes !== Resolution.SD) {
+					this.zoomedWidthOverflow = true; // cant zoom on SD pictures
+				}
+			}else{ // height is 100% unzoomed
+				if (e.target === image){
 					const clickX = e.clientX - bounds.left;
 					const actualWidth = image.clientHeight * image.naturalWidth / image.naturalHeight;
 					const emptyBorder = (image.clientWidth - actualWidth) / 2;
-					if(clickX < emptyBorder || clickX > emptyBorder + actualWidth)
+					if (clickX < emptyBorder || clickX > emptyBorder + actualWidth) {
 						return;
+					}
 				}
-				this.zoomedHeightOverflow = true;
+				if (this.shownRes !== Resolution.SD) {
+					this.zoomedHeightOverflow = true;
+				}
 			}
 		}
 		e.stopPropagation();
@@ -157,22 +164,23 @@ export class FullImageViewerComponent {
 	}
 
 	public switchHd(resolution: Resolution): void {
-		if(resolution == Resolution.SD) {
+		if (resolution === Resolution.SD) {
 			this.zoomedHeightOverflow = false;
 			this.zoomedWidthOverflow = false;
 		}
 		this.shownRes = resolution;
 		this.defaultRes = resolution;
 		const newImgSrc = this.getImgSrc();
-		if(newImgSrc !== this.imgSrc){
+		if (newImgSrc !== this.imgSrc){
 			this.loaded = false;
 			this.imgSrc = newImgSrc;
 		}
 	}
 
 	public swipe(nextImage: boolean, horizontally: boolean): void{
-		if(!this.zoomedWidthOverflow && !this.zoomedHeightOverflow)
+		if (!this.zoomedWidthOverflow && !this.zoomedHeightOverflow) {
 			this.changeImage(nextImage);
+		}
 	}
 
 	@HostListener('window:keydown.arrowright', ['true'])
