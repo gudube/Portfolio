@@ -13,7 +13,7 @@ export class PhotographyService {
 	public loadAlbums(): void {
 		this.albums = this._route.config.filter(route => {
 			const paths = route.path.split('/');
-			return paths.length > 1 && paths[0] == 'photography';
+			return paths.length > 1 && paths[0] === 'photography';
 		}).map(route => route.data.personal as IAlbum);
 	}
 }

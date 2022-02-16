@@ -1,8 +1,6 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 import { IAlbum } from '../models/album.model';
-import { PhotographyService } from '../photography.service';
 
 @Component({
 	selector: 'app-photography-grid',
@@ -10,40 +8,41 @@ import { PhotographyService } from '../photography.service';
 	styleUrls: ['./photography-grid.component.scss'],
 })
 export class PhotographyGridComponent implements OnInit, OnDestroy {
-	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
-
+	@Input()
 	public album: IAlbum;
-	private _showingFullImage = false;
+
 	public get showingFullImage(): boolean {
 		return this._showingFullImage;
 	}
 
 	@Input()
 	public set showingFullImage(newValue: boolean) {
-		if(newValue)
+		if (newValue) {
 			document.body.style.overflow = 'hidden';
-		else
+		}
+		else {
 			document.body.style.overflow = 'auto';
+		}
 		this._showingFullImage = newValue;
 	}
+
+	constructor() {}
+
+	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
+
+	private _showingFullImage = false;
 	public hasPreviousImage = false;
 	public hasNextImage = false;
 	public gridView = true;
 
-	constructor(private route: ActivatedRoute, private service: PhotographyService) {}
+	private selectedFileName: string;
 
 	ngOnInit(): void {
-		this.route.url.subscribe(url => {
-			const albumId: string = url[1].path;
-			this.album = this.service.albums.find(x => x.id == albumId);
-		});
 	}
 
 	ngOnDestroy(): void {
 		document.body.style.overflow = 'auto';
 	}
-
-	private selectedFileName: string;
 
 	public selectImage(index: number): void{
 		this.selectedFileName = this.album.photoFileNames[index];
@@ -57,7 +56,8 @@ export class PhotographyGridComponent implements OnInit, OnDestroy {
 	public nextImage(next: boolean): void{
 		const currentId = this.album.photoFileNames.indexOf(this.selectedFileName);
 		const newId = next ? currentId + 1 : currentId - 1;
-		if(newId >=0 && newId < this.album.photoFileNames.length)
+		if (newId >= 0 && newId < this.album.photoFileNames.length) {
 			this.selectImage(newId, );
+		}
 	}
 }

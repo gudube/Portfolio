@@ -7,9 +7,10 @@ import { PhotographyGridComponent } from './photography-grid/photography-grid.co
 import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
+import { PhotographyMainComponent } from './photography-main/photography-main.component';
 
 @NgModule({
-	declarations: [PhotographyMenuComponent, PhotographyGridComponent, FullImageViewerComponent],
+	declarations: [PhotographyMainComponent, PhotographyMenuComponent, PhotographyGridComponent, FullImageViewerComponent],
 	imports: [CommonModule, UiToolsModule, AppRoutingModule, MatProgressSpinnerModule, TranslateModule],
 })
 export class PhotographyPageModule {}

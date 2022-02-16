@@ -21,4 +21,4 @@ When adding a new route:
 1. add symlink index.html in the created folder (or see github for format), or just point to the real index.html (../../index.html)
 
 ## Test on another device
-ng serve --host 192.168.0.199 --disableHostCheck
+ng serve --host 192.168.0.199 --disable-host-check

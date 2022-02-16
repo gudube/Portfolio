@@ -3,11 +3,11 @@ import { RouterModule, Route } from '@angular/router';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { AboutMeComponent } from './about-me-page/about-me/about-me.component';
 import { PhotographyMenuComponent } from './photography-page/photography-menu/photography-menu.component';
-import { PhotographyGridComponent } from './photography-page/photography-grid/photography-grid.component';
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 import { environment } from 'src/environments/environment';
 import { ErrorMainComponent } from './error-page/error-main/error-main.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
+import { PhotographyMainComponent } from './photography-page/photography-main/photography-main.component';
 
 type TypedRoutes = TypedRoute[]
 
@@ -63,7 +63,7 @@ class PhotographyRoute implements TypedRoute {
 		};
 	}
 	path: string;
-	component = PhotographyGridComponent;
+	component = PhotographyMainComponent;
 	data: RouteData;
 }
 

@@ -5,8 +5,6 @@
 	(nextImage)="nextImage($event)">
 </full-image-viewer>
 
-<app-back-button route='/photography'></app-back-button>
-
 <div id="view-selection">
 	<span class="option hoverable" [ngClass]="{'selected': gridView}" (click)="gridView = true">{{'photos.grid-view' | translate}}</span>
 	<span> / </span>
