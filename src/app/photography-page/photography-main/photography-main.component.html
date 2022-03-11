@@ -2,7 +2,7 @@
 <app-back-button route='/photography'></app-back-button>
 <div id="header">
 	<div class="background-overlay"></div>
-	<video autoplay [muted]="'muted'" muted loop src="assets/photography/{{album.id}}/header.mp4" type="video/mp4"></video>
+	<video autoplay [muted]="'muted'" muted loop src="assets/photography/{{album.id}}/header.mp4" type="video/mp4" poster="assets/photography/{{album.id}}/header.jpg"></video>
 	<h3 id="header-title">{{album.titleId | translate}}</h3>
 </div>
 <div id="grid-container">
