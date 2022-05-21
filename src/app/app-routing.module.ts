@@ -70,9 +70,9 @@ class PhotographyRoute implements TypedRoute {
 const defaultSeo: SeoData = {
 	title: 'Guilhem Dubois | Developer Portfolio',
 	metaTags: [
-		{ name: 'description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+		{ name: 'description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Learn more about my professional background and see some of my photographs here.' },
 		{ property: 'og:title', content: 'Guilhem Dubois | Developer Portfolio' },
-		{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+		{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Learn more about my professional background and see some of my photographs here.' },
 		{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 		{ property: 'og:url', content: environment.baseUrl + 'home' }
 		//{ name: 'twitter:card', content: 'summary_large_image' },
@@ -104,9 +104,9 @@ export const ROUTES: TypedRoutes = [
 			seo: {
 				title: 'Guilhem Dubois | About Me',
 				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Learn more about my professional background and see some of my photographs here.' },
 					{ property: 'og:title', content: 'Guilhem Dubois | About Me' },
-					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Learn more about my professional background and see some of my photographs here.' },
+					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Learn more about my professional background and see some of my photographs here.' },
 					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 					{ property: 'og:url', content: environment.baseUrl + 'about-me' },
 				]
@@ -185,9 +185,9 @@ export const ROUTES: TypedRoutes = [
 			seo: {
 				title: 'Guilhem Dubois | Contact Me',
 				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Feel free to contact me here or through any of my social media!' },
+					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
 					{ property: 'og:title', content: 'Guilhem Dubois | Contact Me' },
-					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, future software engineer and travel lover. Feel free to contact me here or through any of my social media!' },
+					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
 					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 					{ property: 'og:url', content: environment.baseUrl + 'contact-me' },
 					//{ name: 'twitter:card', content: 'summary_large_image' },
