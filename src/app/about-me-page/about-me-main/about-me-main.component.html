@@ -2,9 +2,9 @@
 <div id="about-me-container">
 	<div id="intro-container">
 		<div id="portrait">
-			<img src="assets/about-me/thats-me.jpg" width="720" height="900" alt="Portrait">
+			<img src="assets/about-me/thats-me.png" width="720" height="900" alt="Portrait">
 		</div>
-		<div id="empty-space-separator"></div>
+		<div class="empty-space-separator"></div>
 		<div id="description">
 			<h4>{{'about.main.hi' | translate}}</h4>
 			<h4 class="bold">{{'about.main.i-am' | translate}} <span id="name">GUILHEM DUBOIS</span></h4>
@@ -16,16 +16,16 @@
 			<p class="readable-text">
 				{{'about.main.parag3' | translate}}
 			</p>
-			<div id="contact-container">
-				<div class="button main-button">
-					<a href="/assets/about-me/CV_Guilhem_Dubois_{{'lang-code' | translate}}.pdf" download><p class="hoverable smooth-hover2">
-						{{'about.main.download-cv' | translate}}</p></a>
-				</div>
-				<div class="button">
-					<a routerLink="/contact-me"><p class="hoverable smooth-hover2">{{'about.main.contact-me' | translate}}</p></a>
-				</div>
-			</div>
 		</div>
-		<div id="empty-space-right"></div>
 	</div>
+	<div id="contact-container">
+		<div class="button main-button">
+			<a href="/assets/about-me/CV_Guilhem_Dubois_{{'lang-code' | translate}}.pdf" download><p class="hoverable smooth-hover2">
+				{{'about.main.download-cv' | translate}}</p></a>
+		</div>
+		<div class="button">
+			<a routerLink="/contact-me"><p class="hoverable smooth-hover2">{{'about.main.contact-me' | translate}}</p></a>
+		</div>
+	</div>
+	<div class="empty-space-separator"></div>
 </div>
