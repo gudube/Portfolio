@@ -2,11 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://www.guilhemdubois.com/</loc><priority>1</priority></url>
 <url><loc>https://www.guilhemdubois.com/about-me</loc><priority>0.6</priority></url>
-<url><loc>https://www.guilhemdubois.com/project</loc><priority>0.5</priority></url>
+<url><loc>https://www.guilhemdubois.com/project</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography</loc><priority>0.5</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/triglav</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/capri</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/saint-petersburg</loc><priority>0.2</priority></url>
+<url><loc>https://www.guilhemdubois.com/photography/azores</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/switzerland</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/ljubljana</loc><priority>0.2</priority></url>
 <url><loc>https://www.guilhemdubois.com/photography/cinque-terre</loc><priority>0.2</priority></url>

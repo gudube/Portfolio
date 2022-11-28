@@ -6,6 +6,13 @@ http://guilhemdubois.com
 # GuilhemDuboisPortfolio
 Repository for my personal website.
 
+## Adding pictures
+1. Add header (jpg + mp4), menu (jpg + webp) and sd, hd, udh pics.
+1. Use in powershell to get file names: ((dir).name) -join "', '"
+1. Add page and file names in app-routing.module.ts
+1. Add titles in en.json and fr.json
+1. Add page in sitemap.xml
+
 ## Deploy
 1. npm run deploy (ng build --prod)
 1. in gh-pages, delete all files except CNAME and 404.html and delete the assets folder ONLY.
