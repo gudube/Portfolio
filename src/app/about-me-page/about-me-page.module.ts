@@ -8,10 +8,11 @@ import { MatLegacySliderModule as MatSliderModule } from '@angular/material/lega
 import { AboutMeMainComponent } from './about-me-main/about-me-main.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
 	declarations: [AboutMeComponent, AboutMeDateComponent, AboutMeTypeComponent, AboutMeMainComponent],
-	imports: [CommonModule, UiToolsModule, MatSliderModule, AppRoutingModule, TranslateModule],
+	imports: [CommonModule, UiToolsModule, MatSliderModule, AppRoutingModule, TranslateModule, NgOptimizedImage],
 	exports: [],
 })
 export class AboutMePageModule {}

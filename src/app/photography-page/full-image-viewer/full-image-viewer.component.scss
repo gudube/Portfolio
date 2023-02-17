@@ -94,9 +94,12 @@
 	width: 10px;
 	top: 50vh;
 	left: 50vw;
-	z-index: 15;
+	z-index: 100;
 	margin-left: -50px;
 	margin-top: -50px;
+	::ng-deep circle {
+		stroke: var(--accent-color);
+	}
 }
 
 .arrowContainer {

@@ -5,12 +5,13 @@ import { UiToolsModule } from '../ui-tools/ui-tools.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { PhotographyGridComponent } from './photography-grid/photography-grid.component';
 import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
-import { MatLegacyProgressSpinnerModule as MatProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
 import { PhotographyMainComponent } from './photography-main/photography-main.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
 	declarations: [PhotographyMainComponent, PhotographyMenuComponent, PhotographyGridComponent, FullImageViewerComponent],
-	imports: [CommonModule, UiToolsModule, AppRoutingModule, MatProgressSpinnerModule, TranslateModule],
+	imports: [CommonModule, UiToolsModule, AppRoutingModule, MatProgressSpinnerModule, TranslateModule, NgOptimizedImage],
 })
 export class PhotographyPageModule {}

@@ -35,38 +35,38 @@ export class HammerConfig extends HammerGestureConfig {
 @NgModule({
 	declarations: [AppComponent, TitlePageComponent, ProjectPageComponent],
 	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		UiToolsModule,
-		PhotographyPageModule,
-		AboutMePageModule,
-		ErrorPageModule,
-		HammerModule,
-		BrowserAnimationsModule,
-		ContactModule,
-		HttpClientModule,
-		TranslateModule.forRoot({
-			loader: {
-				provide: TranslateLoader,
-				useFactory: HttpLoaderFactory,
-				deps: [HttpClient]
-			},
-			defaultLanguage: 'en'
+	BrowserModule,
+	AppRoutingModule,
+	UiToolsModule,
+	PhotographyPageModule,
+	AboutMePageModule,
+	ErrorPageModule,
+	HammerModule,
+	BrowserAnimationsModule,
+	ContactModule,
+	HttpClientModule,
+	TranslateModule.forRoot({
+		loader: {
+		provide: TranslateLoader,
+		useFactory: HttpLoaderFactory,
+		deps: [HttpClient]
+		},
+		defaultLanguage: 'en'
 		})
 	],
 	providers: [{
-		provide: APP_INITIALIZER,
-		useFactory: ConfigurationServiceFactory,
-		deps: [PhotographyService],
-		multi: true
+	provide: APP_INITIALIZER,
+	useFactory: ConfigurationServiceFactory,
+	deps: [PhotographyService],
+	multi: true
 	},
 	{
-		provide: HAMMER_GESTURE_CONFIG,
-		useClass: HammerConfig
+	provide: HAMMER_GESTURE_CONFIG,
+	useClass: HammerConfig
 	},
 	SeoService ],
 	bootstrap: [AppComponent],
-})
+	})
 export class AppModule {}
 
 export function ConfigurationServiceFactory(photoService: PhotographyService){
