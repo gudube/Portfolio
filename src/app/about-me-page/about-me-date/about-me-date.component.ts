@@ -1,5 +1,5 @@
 import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
-import { MatSlider } from '@angular/material/slider';
+import { MatLegacySlider as MatSlider } from '@angular/material/legacy-slider';
 
 @Component({
 	selector: 'app-about-me-date',
