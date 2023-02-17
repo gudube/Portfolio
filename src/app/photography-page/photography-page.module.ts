@@ -5,7 +5,7 @@ import { UiToolsModule } from '../ui-tools/ui-tools.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { PhotographyGridComponent } from './photography-grid/photography-grid.component';
 import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatLegacyProgressSpinnerModule as MatProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
 import { PhotographyMainComponent } from './photography-main/photography-main.component';
 
