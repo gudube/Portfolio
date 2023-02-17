@@ -216,7 +216,7 @@
 	"footer": {
 		"contact": "Contact",
 		"copyright": "Copyright",
-		"copyright-date": "© 2020 - 2022"
+		"copyright-date": "© 2020 - 2023"
 	},
 	"home": {
 		"about": "About Me",
@@ -251,6 +251,7 @@
 		"ljubljana": "Ljubljana",
 		"mexico": "Mexico",
 		"naples": "Naples",
+		"new-york": "New York",
 		"portugal": "Portugal",
 		"quintana-roo": "Quintana Roo",
 		"russia": "Russia",
@@ -262,7 +263,8 @@
 		"swiss-cities": "Swiss cities",
 		"switzerland": "Switzerland",
 		"tallinn": "Tallinn",
-		"triglav": "Triglav National Park"
+		"triglav": "Triglav National Park",
+		"united-states": "United States"
 	},
 	"project": {
 		"download": "DOWNLOAD NOW",
