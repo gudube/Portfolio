@@ -224,7 +224,7 @@ export const ROUTES: TypedRoutes = [
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(ROUTES, { scrollPositionRestoration: 'enabled', relativeLinkResolution: 'legacy' })],
+	imports: [RouterModule.forRoot(ROUTES, { scrollPositionRestoration: 'enabled' })],
 	exports: [RouterModule],
 })
 export class AppRoutingModule {}
