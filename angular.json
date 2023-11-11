@@ -85,19 +85,19 @@
 					"options": {
 					},
 					"configurations": {
-						"production": {
-							"browserTarget": "gd-portfolio:build:production"
+            "production": {
+              "buildTarget": "gd-portfolio:build:production"
 						},
-						"development": {
-							"browserTarget": "gd-portfolio:build:development"
+            "development": {
+              "buildTarget": "gd-portfolio:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "gd-portfolio:build"
+          "options": {
+            "buildTarget": "gd-portfolio:build"
 					}
 				},
 				"test": {
