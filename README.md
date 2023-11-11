@@ -10,7 +10,7 @@ Repository for my personal website.
 1. Add header (jpg + mp4), menu (jpg + webp) and sd, hd, udh pics.
 1. Use in powershell to get file names: ((dir).name) -join "', '"
 1. Add page and file names in app-routing.module.ts
-1. Add titles in en.json and fr.json
+1. Add titles in en.json and fr.json (can use BabelEdit)
 1. See next two sections
 
 (old way: ng add angular-cli-ghpages)
