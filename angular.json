@@ -144,8 +144,7 @@
 				}
 			}
 		}
-	},
-  "defaultProject": "gd-portfolio",
+  },
   "cli": {
     "analytics": false
   }
