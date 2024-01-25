@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Output, EventEmitter, Input, ViewChild, ElementRef, HostListener, } from '@angular/core';
 import { of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
+import { VideoPlayerComponent } from '../video-player/video-player.component';
 
 enum Resolution { UHD = 'uhd', HD = 'hd', SD = 'sd' }
 
@@ -27,11 +28,12 @@ export class FullImageViewerComponent {
 	public zoomedHeightOverflow = false;
 	public loaded = false;
 	public showImage = false;
+	public isVideo = false;
 	public imgSrc: string;
 	public uhdAvailable = false;
 	public hdAvailable = false;
 	public showSwipeMessage = false;
-	private imgName: string;
+	public imgName: string;
 	private albumName: string;
 
 	@ViewChild('fullImgContainer') public imageContainer: ElementRef;
@@ -48,7 +50,7 @@ export class FullImageViewerComponent {
 		Promise.all([
 			this.fileExists(this.getImgSrc(Resolution.HD)).then((exists) => this.hdAvailable = exists),
 			this.fileExists(this.getImgSrc(Resolution.UHD)).then((exists) => this.uhdAvailable = exists),
-			// we suppose SD always exist
+			// we suppose SD image always exist
 		]).then(() => {
 			if (	this.defaultRes === Resolution.UHD && this.uhdAvailable ||
 					this.defaultRes === Resolution.HD && this.hdAvailable ||
@@ -62,6 +64,10 @@ export class FullImageViewerComponent {
 			this.zoomedHeightOverflow = false;
 			this.zoomedWidthOverflow = false;
 			this.imgSrc = this.getImgSrc();
+			this.isVideo = VideoPlayerComponent.isVideo(imgName);
+			if(this.isVideo) {
+				this.loaded = true;
+			}
 			this.showImage = true;
 			if (sessionStorage.getItem('imageOpenedBefore')) {
 				// doesn't need to show the message again
@@ -187,6 +193,7 @@ export class FullImageViewerComponent {
 	@HostListener('window:keydown.arrowleft', ['false'])
 	public changeImage(nextImage: boolean): void{
 		this.showSwipeMessage = false;
+		// this.showImage = false;
 		this.nextImage.emit(nextImage);
 	}
 }

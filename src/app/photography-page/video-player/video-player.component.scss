@@ -1,0 +1,12 @@
+vg-player {
+	max-height: inherit;
+
+	::ng-deep span  {
+		all: unset !important;
+	}
+}
+
+video {
+	width: 100% !important;
+	height: auto !important;
+}

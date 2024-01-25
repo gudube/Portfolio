@@ -8,10 +8,16 @@ import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslateModule } from '@ngx-translate/core';
 import { PhotographyMainComponent } from './photography-main/photography-main.component';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 import { NgOptimizedImage } from '@angular/common';
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 
 @NgModule({
-	declarations: [PhotographyMainComponent, PhotographyMenuComponent, PhotographyGridComponent, FullImageViewerComponent],
-	imports: [CommonModule, UiToolsModule, AppRoutingModule, MatProgressSpinnerModule, TranslateModule, NgOptimizedImage],
+	declarations: [PhotographyMainComponent, PhotographyMenuComponent, PhotographyGridComponent, FullImageViewerComponent, VideoPlayerComponent],
+	imports: [CommonModule, UiToolsModule, AppRoutingModule, MatProgressSpinnerModule, TranslateModule,
+		NgOptimizedImage, VgCoreModule, VgControlsModule, VgOverlayPlayModule, VgBufferingModule],
 })
 export class PhotographyPageModule {}

@@ -1,6 +1,7 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 import { IAlbum } from '../models/album.model';
+import { VideoPlayerComponent } from '../video-player/video-player.component';
 
 @Component({
 	selector: 'app-photography-grid',
@@ -8,6 +9,8 @@ import { IAlbum } from '../models/album.model';
 	styleUrls: ['./photography-grid.component.scss'],
 })
 export class PhotographyGridComponent implements OnInit, OnDestroy {
+	public readonly VideoPlayerComponent: typeof VideoPlayerComponent = VideoPlayerComponent;
+
 	@Input()
 	public album: IAlbum;
 
