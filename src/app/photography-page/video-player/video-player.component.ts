@@ -9,19 +9,15 @@ import { Component, Input } from '@angular/core';
 
 export class VideoPlayerComponent {
 	@Input() public vidSrc: string;
-	// private vidUrl = (vidSrc: string): boolean => { return URL.createObjectURL(vidSrc); }
-
-	// public videoElement: IMediaElement;
-
 	static isVideo = (fileName: string): boolean => { return fileName.toLowerCase().endsWith('.mp4'); }
 
-	static getThumbnail = (fileName: string): string => {
-		if(VideoPlayerComponent.isVideo(fileName)) {
-			return fileName.substring(0, fileName.lastIndexOf('.')) + '.jpg';
-		} else {
-			return fileName;
-		}
-	}
+	// static getThumbnail = (fileName: string): string => {
+	// 	if(VideoPlayerComponent.isVideo(fileName)) {
+	// 		return fileName.substring(0, fileName.lastIndexOf('.')) + '.jpg';
+	// 	} else {
+	// 		return fileName;
+	// 	}
+	// }
 
 }
 

@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
 import { IAlbum } from '../models/album.model';
 import { VideoPlayerComponent } from '../video-player/video-player.component';
@@ -22,9 +22,11 @@ export class PhotographyGridComponent implements OnInit, OnDestroy {
 	public set showingFullImage(newValue: boolean) {
 		if (newValue) {
 			document.body.style.overflow = 'hidden';
+			this.gridVideos.forEach(x => x.nativeElement.pause());
 		}
 		else {
 			document.body.style.overflow = 'auto';
+			this.gridVideos.forEach(x => x.nativeElement.play());
 		}
 		this._showingFullImage = newValue;
 	}
@@ -32,6 +34,8 @@ export class PhotographyGridComponent implements OnInit, OnDestroy {
 	constructor() {}
 
 	@ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
+
+	@ViewChildren('gridVideo') private gridVideos: QueryList<ElementRef<HTMLVideoElement>>;
 
 	private _showingFullImage = false;
 	public hasPreviousImage = false;

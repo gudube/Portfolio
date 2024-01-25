@@ -14,7 +14,8 @@
 <div id="grid-view" *ngIf="gridView" [ngClass]="{'background-grid': showingFullImage}">
 	<div class="grid-cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
 		<div class="square-img-container" (click)="selectImage(index)">
-			<img ngSrc="assets/photography/{{album.id}}/sd/{{VideoPlayerComponent.getThumbnail(imageFileName)}}" alt="photo: {{imageFileName}}" fill>
+			<img *ngIf="!VideoPlayerComponent.isVideo(imageFileName)" ngSrc="assets/photography/{{album.id}}/sd/{{imageFileName}}" alt="photo: {{imageFileName}}" fill>
+			<video #gridVideo *ngIf="VideoPlayerComponent.isVideo(imageFileName)" src="assets/photography/{{album.id}}/sd/{{imageFileName}}" autoplay [muted]="'muted'" muted loop type="video/mp4"></video>
 		</div>
 	</div>
 </div>
