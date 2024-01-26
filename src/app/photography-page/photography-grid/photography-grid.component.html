@@ -13,7 +13,7 @@
 
 <div id="grid-view" *ngIf="gridView" [ngClass]="{'background-grid': showingFullImage}">
 	<div class="grid-cell" *ngFor="let imageFileName of album.photoFileNames; let index = index">
-		<div class="square-img-container" (click)="selectImage(index)">
+		<div class="square-img-container" (tap)="selectImage(index)">
 			<img *ngIf="!VideoPlayerComponent.isVideo(imageFileName)" ngSrc="assets/photography/{{album.id}}/sd/{{imageFileName}}" alt="photo: {{imageFileName}}" fill>
 			<video #gridVideo *ngIf="VideoPlayerComponent.isVideo(imageFileName)" src="assets/photography/{{album.id}}/sd/{{imageFileName}}" autoplay [muted]="'muted'" muted loop type="video/mp4"></video>
 		</div>
@@ -22,7 +22,7 @@
 
 <div id="list-view" *ngIf="!gridView" [ngClass]="{'background-list': showingFullImage}">
 	<div class="list-element" *ngFor="let imageFileName of album.photoFileNames; let index = index">
-		<img *ngIf="!VideoPlayerComponent.isVideo(imageFileName)" src="assets/photography/{{album.id}}/hd/{{imageFileName}}" alt="photo: {{imageFileName}}" (click)="selectImage(index)" loading="lazy">
+		<img *ngIf="!VideoPlayerComponent.isVideo(imageFileName)" src="assets/photography/{{album.id}}/hd/{{imageFileName}}" alt="photo: {{imageFileName}}" (tap)="selectImage(index)" loading="lazy">
 		<app-video-player *ngIf="VideoPlayerComponent.isVideo(imageFileName)" vidSrc="assets/photography/{{album.id}}/hd/{{imageFileName}}"/>
 	</div>
 </div>

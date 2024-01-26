@@ -98,7 +98,7 @@ export class FullImageViewerComponent {
 		// 	this.hdAvailable = false;
 		// 	this.shownRes = Resolution.SD;
 		// }else if(this.shownRes == Resolution.SD){
-		console.error(`Image not found: ${this.imgSrc}`);
+		console.warn(`Image not found: ${this.imgSrc}`);
 		// return;
 		// }
 
@@ -117,6 +117,7 @@ export class FullImageViewerComponent {
 	}
 
 	public zoom(e): void {
+		const event = e as HammerInput;
 		if(this.isVideo)
 			return;
 		if (this.zoomedHeightOverflow) {
@@ -135,7 +136,7 @@ export class FullImageViewerComponent {
 			if (naturalRatio > visibleRatio) // width is 100% unzoomed
 			{
 				if (e.target === image){ // if clicked in image, make sure it was actually the image
-					const clickY = (e as HammerInput).changedPointers[0].clientY - bounds.top;
+					const clickY = event.changedPointers[0].clientY - bounds.top;
 					const actualHeight = image.clientWidth * image.naturalHeight / image.naturalWidth;
 					const emptyBorder = (image.clientHeight - actualHeight) / 2;
 					if (clickY < emptyBorder || clickY > emptyBorder + actualHeight) {
@@ -149,7 +150,7 @@ export class FullImageViewerComponent {
 				}
 			}else{ // height is 100% unzoomed
 				if (e.target === image){
-					const clickX = (e as HammerInput).changedPointers[0].clientX - bounds.left;
+					const clickX = event.changedPointers[0].clientX - bounds.left;
 					const actualWidth = image.clientHeight * image.naturalWidth / image.naturalHeight;
 					const emptyBorder = (image.clientWidth - actualWidth) / 2;
 					if (clickX < emptyBorder || clickX > emptyBorder + actualWidth) {
