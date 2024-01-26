@@ -38,7 +38,7 @@
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Full Size Photograph">
 	<app-video-player *ngIf="this.showImage && this.isVideo;" vidSrc={{imgSrc}} (click)="$event.stopPropagation()"/>
 </div>
-<mat-spinner id="loadingSpinner" *ngIf="visible && !loaded" diameter="100" strokeWidth="5"></mat-spinner>
+<mat-spinner id="loadingSpinner" *ngIf="visible && !loaded && !this.isVideo" diameter="100" strokeWidth="5"></mat-spinner>
 <div class="arrowContainer hoverable" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">

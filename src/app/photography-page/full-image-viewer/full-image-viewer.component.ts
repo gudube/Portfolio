@@ -65,9 +65,6 @@ export class FullImageViewerComponent {
 			this.zoomedWidthOverflow = false;
 			this.imgSrc = this.getImgSrc();
 			this.isVideo = VideoPlayerComponent.isVideo(imgName);
-			if(this.isVideo) {
-				this.loaded = true;
-			}
 			this.showImage = true;
 			if (sessionStorage.getItem('imageOpenedBefore')) {
 				// doesn't need to show the message again
