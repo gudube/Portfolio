@@ -29,14 +29,14 @@
 		</g>
 		</svg>
 </div>
-<div #fullImgContainer id="fullImgContainer" (click)="hide()" *ngIf="visible"
+<div #fullImgContainer id="fullImgContainer" (tap)="zoom($event)" *ngIf="visible"
 	[ngClass]="{'zoomedHeightOverflowContainer': zoomedHeightOverflow, 'zoomedWidthOverflowContainer': zoomedWidthOverflow,
 		'unzoomedContainer': (!zoomedWidthOverflow && !zoomedHeightOverflow)}"
-	(swipeLeft)="swipe(true, true)" (swipeRight)="swipe(false, true)" (swipeUp)="swipe(true, false)" (swipeDown)="swipe(false, false)">
-	<img src={{imgSrc}} (click)="zoom($event)" (load)="loaded = true" (error)="imageNotFound()" *ngIf="this.showImage && !this.isVideo;"
+	(swipeLeft)="swipe($event, true)" (swipeRight)="swipe($event, false)" (swipeUp)="swipe($event, true)" (swipeDown)="swipe($event, false)">
+	<img src={{imgSrc}} (load)="loaded = true" (error)="imageNotFound()" *ngIf="this.showImage && !this.isVideo;" draggable="false"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Full Size Photograph">
-	<app-video-player *ngIf="this.showImage && this.isVideo;" vidSrc={{imgSrc}} (click)="$event.stopPropagation()"/>
+	<app-video-player #videoPlayer *ngIf="this.showImage && this.isVideo;" vidSrc={{imgSrc}} (click)="$event.stopPropagation()"/>
 </div>
 <mat-spinner id="loadingSpinner" *ngIf="visible && !loaded && !this.isVideo" diameter="100" strokeWidth="5"></mat-spinner>
 <div class="arrowContainer hoverable" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">

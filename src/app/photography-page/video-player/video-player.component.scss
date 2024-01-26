@@ -10,3 +10,14 @@ video {
 	width: 100% !important;
 	height: auto !important;
 }
+
+@media only screen and (max-width: 700px) {
+	vg-volume {
+		display: none;
+	}
+}
+@media only screen and (max-width: 500px) {
+	vg-time-display {
+		display: none;
+	}
+}

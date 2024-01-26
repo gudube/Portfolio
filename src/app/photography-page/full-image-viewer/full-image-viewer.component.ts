@@ -37,6 +37,7 @@ export class FullImageViewerComponent {
 	private albumName: string;
 
 	@ViewChild('fullImgContainer') public imageContainer: ElementRef;
+	@ViewChild('videoPlayer') public videoPlayer: VideoPlayerComponent;
 
 	constructor(private httpClient: HttpClient) { }
 
@@ -115,7 +116,9 @@ export class FullImageViewerComponent {
 		this.zoomedWidthOverflow = false;
 	}
 
-	public zoom(e: MouseEvent): void {
+	public zoom(e): void {
+		if(this.isVideo)
+			return;
 		if (this.zoomedHeightOverflow) {
 			this.zoomedHeightOverflow = false;
 		} else if (this.zoomedWidthOverflow) {
@@ -132,31 +135,34 @@ export class FullImageViewerComponent {
 			if (naturalRatio > visibleRatio) // width is 100% unzoomed
 			{
 				if (e.target === image){ // if clicked in image, make sure it was actually the image
-					const clickY = e.clientY - bounds.top;
+					const clickY = (e as HammerInput).changedPointers[0].clientY - bounds.top;
 					const actualHeight = image.clientWidth * image.naturalHeight / image.naturalWidth;
 					const emptyBorder = (image.clientHeight - actualHeight) / 2;
 					if (clickY < emptyBorder || clickY > emptyBorder + actualHeight) {
-						return;
+						return this.hide();
 					} // clicking outside the image
+				} else {
+					return this.hide();
 				}
 				if (this.shownRes !== Resolution.SD) {
 					this.zoomedWidthOverflow = true; // cant zoom on SD pictures
 				}
 			}else{ // height is 100% unzoomed
 				if (e.target === image){
-					const clickX = e.clientX - bounds.left;
+					const clickX = (e as HammerInput).changedPointers[0].clientX - bounds.left;
 					const actualWidth = image.clientHeight * image.naturalWidth / image.naturalHeight;
 					const emptyBorder = (image.clientWidth - actualWidth) / 2;
 					if (clickX < emptyBorder || clickX > emptyBorder + actualWidth) {
-						return;
+						return this.hide();
 					}
+				} else {
+					return this.hide();
 				}
 				if (this.shownRes !== Resolution.SD) {
 					this.zoomedHeightOverflow = true;
 				}
 			}
 		}
-		e.stopPropagation();
 	}
 
 	public hide(): void {
@@ -180,7 +186,10 @@ export class FullImageViewerComponent {
 		}
 	}
 
-	public swipe(nextImage: boolean, horizontally: boolean): void{
+	public swipe(event, nextImage: boolean): void{
+		if(this.isVideo && this.videoPlayer.isInControls(event as HammerInput)) {
+			return;
+		}
 		if (!this.zoomedWidthOverflow && !this.zoomedHeightOverflow) {
 			this.changeImage(nextImage);
 		}

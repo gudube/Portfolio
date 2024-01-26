@@ -21,10 +21,10 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {
-	overrides = <any> {
+	overrides = <{ [key: string]: HammerOptions}> {
 		pinch: { enable: false },
 		rotate: { enable: false },
-		tap: { enable: false },
+		tap: { enable: true },
 		doubletap: { enable: false },
 		press: { enable: false },
 		pan: { enable: false },

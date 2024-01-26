@@ -28,4 +28,5 @@ When adding a new route:
 1. Commit and push gh-pages
 
 ## Test on another device
-ng serve --host 192.168.0.199 --disable-host-check
+get ip from 'ipconfig'
+ng serve --host {ip} --disable-host-check
