@@ -157,6 +157,7 @@ export const ROUTES: TypedRoutes = [
 	new PhotographyRoute('azores', 'portugal', 'Azores', 'Portugal', 119),
 	new PhotographyRoute('saint-petersburg', 'russia', 'Saint Petersburg', 'Russia', 45),
 	new PhotographyRoute('bali', 'indonesia', 'Bali', 'Indonesia', 55),
+	new PhotographyRoute('jodipan', 'indonesia', 'Jodipan', 'Indonesia', 10),
 	new PhotographyRoute('swiss-cities', 'switzerland', 'Swiss cities', 'Switzerland', 108),
 	new PhotographyRoute('new-york', 'united-states', 'New York', 'United States', 90),
 	new PhotographyRoute('capri', 'italy', 'Capri', 'Italy', 76),
