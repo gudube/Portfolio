@@ -158,6 +158,7 @@ export const ROUTES: TypedRoutes = [
 	new PhotographyRoute('saint-petersburg', 'russia', 'Saint Petersburg', 'Russia', 45),
 	new PhotographyRoute('bali', 'indonesia', 'Bali', 'Indonesia', 55),
 	new PhotographyRoute('jodipan', 'indonesia', 'Jodipan', 'Indonesia', 10),
+	new PhotographyRoute('komodo', 'indonesia', 'Komodo', 'Indonesia', 17),
 	new PhotographyRoute('swiss-cities', 'switzerland', 'Swiss cities', 'Switzerland', 108),
 	new PhotographyRoute('new-york', 'united-states', 'New York', 'United States', 90),
 	new PhotographyRoute('capri', 'italy', 'Capri', 'Italy', 76),
@@ -172,21 +173,6 @@ export const ROUTES: TypedRoutes = [
 	new PhotographyRoute('italy-cities', 'italy', 'Italian cities', 'Italy', 36),
 	new PhotographyRoute('stockholm', 'sweden', 'Stockholm', 'Sweden', 32),
 	new PhotographyRoute('copenhagen', 'denmark', 'Copenhagen', 'Denmark', 11),
-	// { path: 'sheet-music-organizer', component: ProjectPageComponent,
-	// 	data: {
-	// 		seo: {
-	// 			title: 'Sheet Music Organizer | Free Player & Learning Tool',
-	// 			metaTags: [
-	// 				{ name: 'description', content: 'Sheet Music Organizer is a free software to sync each score / tablature to its music and help musician play along. It also helps organizing sheet music files.' },
-	// 				{ property: 'og:title', content: 'Sheet Music Organizer | Free Player & Learning Tool' },
-	// 				{ property: 'og:description', content: 'Sheet Music Organizer is a free software to sync each score / tablature to its music and help musician play along. It also helps organizing sheet music files.' },
-	// 				{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
-	// 				{ property: 'og:url', content: environment.baseUrl + 'sheet-music-organizer' },
-	// 				//{ name: 'twitter:card', content: 'summary_large_image' },
-	// 			]
-	// 		}
-	// 	}
-	// },
 	{ path: 'contact-me', component: ContactPageComponent,
 		data: {
 			seo: {
@@ -197,7 +183,6 @@ export const ROUTES: TypedRoutes = [
 					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
 					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
 					{ property: 'og:url', content: environment.baseUrl + 'contact-me' },
-					//{ name: 'twitter:card', content: 'summary_large_image' },
 				]
 			},
 			personal: {
