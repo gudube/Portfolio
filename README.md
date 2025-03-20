@@ -7,7 +7,7 @@ http://guilhemdubois.com
 Repository for my personal website.
 
 ## Adding pictures
-1. Add header (jpg + mp4), menu (jpg + webp) and sd, hd, udh pics.
+1. Add header (jpg + mp4), menu (jpg + webp) and sd, hd, udh pics. If need to rename: Dir | Rename-Item –NewName { $_.name –replace "old","new" }
 1. Use in powershell to get file names: ((dir).name) -join "', '"
 1. Add page and file names in app-routing.module.ts
 1. Add titles in en.json and fr.json (can use BabelEdit)

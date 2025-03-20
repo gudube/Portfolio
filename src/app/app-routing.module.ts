@@ -161,6 +161,7 @@ export const ROUTES: TypedRoutes = [
 	new PhotographyRoute('komodo', 'indonesia', 'Komodo', 'Indonesia', 17),
 	new PhotographyRoute('bromo', 'indonesia', 'Bromo', 'Indonesia', 34),
 	new PhotographyRoute('sumatra', 'indonesia', 'Sumatra', 'Indonesia', 26),
+	new PhotographyRoute('chinese-cities', 'china', 'Chinese cities', 'China', 85),
 	new PhotographyRoute('swiss-cities', 'switzerland', 'Swiss cities', 'Switzerland', 108),
 	new PhotographyRoute('new-york', 'united-states', 'New York', 'United States', 90),
 	new PhotographyRoute('capri', 'italy', 'Capri', 'Italy', 76),
