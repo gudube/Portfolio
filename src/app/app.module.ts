@@ -7,7 +7,7 @@ import { UiToolsModule } from './ui-tools/ui-tools.module';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { PhotographyPageModule } from './photography-page/photography-page.module';
 import { AboutMePageModule } from './about-me-page/about-me-page.module';
-import { ContactModule } from './contact/contact.module';
+// import { ContactModule } from './contact/contact.module';
 import { PhotographyService } from './photography-page/photography.service';
 import * as Hammer from 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -43,7 +43,7 @@ export class HammerConfig extends HammerGestureConfig {
 	ErrorPageModule,
 	HammerModule,
 	BrowserAnimationsModule,
-	ContactModule,
+	// ContactModule,
 	HttpClientModule,
 	TranslateModule.forRoot({
 		loader: {

@@ -1,5 +1,6 @@
 <div id="footnotes" *ngIf="this.location.path() !== '/contact-me'" [ngClass]="{'light': this.location.path() == '/about-me'}">
-	<a id="contact-me" class="hoverable" routerLink="/contact-me">{{ 'footer.contact' | translate }}</a>
+	<div id="contact-me"></div>
+	<!-- <a id="contact-me" class="hoverable" routerLink="/contact-me">{{ 'footer.contact' | translate }}</a> -->
 	<p id="copyright"><span>{{ 'footer.copyright' | translate }} </span>{{ 'footer.copyright-date' | translate }}<span> Guilhem Dubois</span></p>
 	<div id="icons-container">
 		<a class="hoverable" (click)="switchLanguage()">{{ 'other-lang-name' | translate }}</a>

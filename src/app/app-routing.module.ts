@@ -3,7 +3,7 @@ import { RouterModule, Route } from '@angular/router';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { AboutMeComponent } from './about-me-page/about-me/about-me.component';
 import { PhotographyMenuComponent } from './photography-page/photography-menu/photography-menu.component';
-import { ContactPageComponent } from './contact/contact-page/contact-page.component';
+// import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 import { environment } from 'src/environments/environment';
 import { ErrorMainComponent } from './error-page/error-main/error-main.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
@@ -177,24 +177,24 @@ export const ROUTES: TypedRoutes = [
 	new PhotographyRoute('italy-cities', 'italy', 'Italian cities', 'Italy', 36),
 	new PhotographyRoute('stockholm', 'sweden', 'Stockholm', 'Sweden', 32),
 	new PhotographyRoute('copenhagen', 'denmark', 'Copenhagen', 'Denmark', 11),
-	{ path: 'contact-me', component: ContactPageComponent,
-		data: {
-			seo: {
-				title: 'Guilhem Dubois | Contact Me',
-				metaTags: [
-					{ name: 'description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
-					{ property: 'og:title', content: 'Guilhem Dubois | Contact Me' },
-					{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
-					{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
-					{ property: 'og:url', content: environment.baseUrl + 'contact-me' },
-				]
-			},
-			personal: {
-				titleId: 'footer.contact',
-				level: 0
-			}
-		}
-	},
+	// { path: 'contact-me', component: ContactPageComponent,
+	// 	data: {
+	// 		seo: {
+	// 			title: 'Guilhem Dubois | Contact Me',
+	// 			metaTags: [
+	// 				{ name: 'description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
+	// 				{ property: 'og:title', content: 'Guilhem Dubois | Contact Me' },
+	// 				{ property: 'og:description', content: 'I\'m Guilhem Dubois, developer, software engineering graduate and travel lover. Feel free to contact me here or through any of my social media!' },
+	// 				{ property: 'og:image', content: environment.baseUrl + 'assets/presentation-image.jpg' },
+	// 				{ property: 'og:url', content: environment.baseUrl + 'contact-me' },
+	// 			]
+	// 		},
+	// 		personal: {
+	// 			titleId: 'footer.contact',
+	// 			level: 0
+	// 		}
+	// 	}
+	// },
 	{ path: '**', component: ErrorMainComponent,
 		data: {
 			seo: {
