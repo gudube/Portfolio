@@ -40,7 +40,7 @@ export interface PersonalData {
 
 //todo: translate SEOs. That will also let me remove citySeo and countrySeo as they will be received from the locale using cityId and countryId
 class PhotographyRoute implements TypedRoute {
-	constructor(id: string, countryId: string, citySeo: string, countrySeo: string, photoMaxIndex: number) {
+	constructor(id: string, countryId: string, citySeo: string, countrySeo: string, photoMaxIndex: number, videoMaxIndex: number = 0) {
 		this.path = 'photography/' + id;
 		this.data = {
 			seo: {
@@ -57,7 +57,7 @@ class PhotographyRoute implements TypedRoute {
 				id: id,
 				titleId: 'photos.'+ id,
 				subtitleId: 'photos.' + countryId,
-				photoFileNames: [...Array(photoMaxIndex).keys()].map(x => `${id}-${("00" + (x+1)).slice(-3)}.jpg`),
+				photoFileNames: [...Array(videoMaxIndex).keys()].map(x => `${id}-${("00" + (x+1)).slice(-3)}.mp4`).concat([...Array(photoMaxIndex).keys()].map(x => `${id}-${("00" + (x+1)).slice(-3)}.jpg`)),
 				level: 2
 			}
 		};

@@ -118,8 +118,13 @@ export class FullImageViewerComponent {
 
 	public zoom(e): void {
 		const event = e as HammerInput;
-		if(this.isVideo)
+		if(this.isVideo) {
+			const nativeContainer = this.imageContainer.nativeElement;
+			if(e.target === nativeContainer) {
+				return this.hide();
+			}
 			return;
+		}
 		if (this.zoomedHeightOverflow) {
 			this.zoomedHeightOverflow = false;
 		} else if (this.zoomedWidthOverflow) {

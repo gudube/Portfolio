@@ -36,7 +36,7 @@
 	<img src={{imgSrc}} (load)="loaded = true" (error)="imageNotFound()" *ngIf="this.showImage && !this.isVideo;" draggable="false"
 		[ngClass]="{'zoomedWidthOverflowImg': zoomedWidthOverflow, 'zoomedHeightOverflowImg': zoomedHeightOverflow,
 		'unzoomedImg': (!zoomedWidthOverflow && !zoomedHeightOverflow)}" alt="Full Size Photograph">
-	<app-video-player #videoPlayer *ngIf="this.showImage && this.isVideo;" vidSrc={{imgSrc}} (click)="$event.stopPropagation()"/>
+	<app-video-player #videoPlayer *ngIf="this.showImage && this.isVideo;" vidSrc={{imgSrc}}/> <!--  (click)="$event.stopPropagation()"/> -->
 </div>
 <mat-spinner id="loadingSpinner" *ngIf="visible && !loaded && !this.isVideo" diameter="100" strokeWidth="5"></mat-spinner>
 <div class="arrowContainer hoverable" *ngIf="visible && hasNextImage && !(zoomedHeightOverflow || zoomedWidthOverflow)" style="right: 0;" (click)="changeImage(true)">
